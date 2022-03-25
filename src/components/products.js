@@ -33,8 +33,9 @@ export default function Products() {
                   style={{
                       width:"100%",
                     //   #e58594,#d8586c,#0e8d6a, #22809f, #991aa2,#005132,#b3e1d3
-                    backgroundColor: "#36fdc9",
-                    borderColor: "#36fdc9",
+                    //#36fdc9, #17e8e0, 
+                    backgroundColor: "#45edaf",
+                    borderColor: "#45edaf",
                     color:"#000"
                   }}
                 >
