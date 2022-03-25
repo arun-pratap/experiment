@@ -6,7 +6,7 @@ export default function Products() {
     "//api.whatsapp.com/send/?phone=+918505903150&text=दवाई या पर्चे की फोटो खींच कर भेजें";
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid pt-5 mt-5">
       <div className="container">
         <div className="row justify-content-center align-items-start">
           {products.data.map((product) => (
@@ -52,7 +52,7 @@ export default function Products() {
                   <div class="card-body">
                     <h5 style={{ color: "#454545" }}>{product.name}</h5>
                     <div>
-                      <p style={{ fontSize: "18px", color: "#a33419" }}>
+                      <p  className="mb-0" style={{ fontSize: "18px", color: "#a33419" }}>
                         MRP&nbsp;
                         <span style={{ textDecoration: "line-through" }}>
                           ₹{product.actual_price}
@@ -66,13 +66,14 @@ export default function Products() {
                   </div>
                   <a
                     href={whatsAppURL}
-                    className="btn btn-primary btn py-2"
+                    className="btn btn-primary btn py-2 shadow-sm"
                     style={{
+                        // #45edb5,#15d19c#5defc5
                       margin: "auto",
                       width: "95%",
                       backgroundColor: "transparent",
-                      borderColor: "#fa50a1",
-                      color: "#fa50a1",
+                      borderColor: "#15d19c",
+                      color: "#15d19c",
                     }}
                   >
                     <strong>अभी ऑर्डर करें</strong>
