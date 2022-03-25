@@ -1,9 +1,8 @@
 import doctors from "../assets/doctors.png";
-
 import bloodPressure from "../assets/bloodPressure.jpg";
 import logo from "../assets/logo.png";
 
-export default function Brand({ brandPopulation }) {
+export default function Brand() {
   const brandPopulation = [];
   return (
     <div
@@ -28,12 +27,12 @@ export default function Brand({ brandPopulation }) {
                   margin: "auto"
                 }}
               >
-                <img src={medicine} class="card-img-top" alt="..." />
-                <div class="card-body">
+                <img src={medicine} className="card-img-top" alt="..." />
+                <div className="card-body">
                   <h4>
                     <strong>{category.heading}</strong>
                   </h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>

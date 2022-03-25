@@ -2,8 +2,6 @@ import diabetes from "../assets/diabetes.jpg";
 import bloodPressure from "../assets/blood-pressure.jpg";
 import nervousness from "../assets/nervousness.jpg";
 import medicalDevices from "../assets/medical-devices.jpg";
-import medicine from "../assets/medicine.png";
-import logo from "../assets/logo.png";
 
 export default function Category({ categoryPopulation }) {
   const whatsAppURL =
