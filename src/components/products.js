@@ -32,9 +32,10 @@ export default function Products() {
                   className="btn btn-primary btn shadow py-2"
                   style={{
                       width:"100%",
-                    //   #e58594,#d8586c,#0e8d6a, #22809f, #991aa2
-                    backgroundColor: "#991aa2",
-                    borderColor: "#991aa2",
+                    //   #e58594,#d8586c,#0e8d6a, #22809f, #991aa2,#005132,#b3e1d3
+                    backgroundColor: "#36fdc9",
+                    borderColor: "#36fdc9",
+                    color:"#000"
                   }}
                 >
                   <strong>अभी ऑर्डर करें</strong>
