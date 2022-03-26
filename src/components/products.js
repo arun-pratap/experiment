@@ -66,12 +66,13 @@ export default function Products() {
                   </div>
                   <a
                     href={whatsAppURL}
-                    className="btn btn-primary btn py-2 shadow-sm"
+                    className="btn btn-primary btn py-2 shadow"
                     style={{
                         // #45edb5,#15d19c#5defc5
                       margin: "auto",
                       width: "95%",
                       backgroundColor: "transparent",
+                      borderWidth:"2px",
                       borderColor: "#15d19c",
                       color: "#15d19c",
                     }}
