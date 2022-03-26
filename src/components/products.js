@@ -53,7 +53,7 @@ export default function Products() {
                           position: "absolute",
                           backgroundColor: "#0e8d6a22",
                           color: "#00000088",
-                          fontSize: "10px",
+                          fontSize: "8px",
                           left: "-8px",
                           top: "-24px",
                         }}
