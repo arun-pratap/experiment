@@ -3,7 +3,9 @@ import medicine from "../assets/white-bg.jpg";
 // import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
-
+const handleCart =()=> {
+    console.log("ok")
+}
   return (
     <div className="container-fluid pt-5 mt-5">
       <div className="container">
@@ -55,7 +57,7 @@ export default function Products() {
                           color: "#00000088",
                           fontSize: "8px",
                           left: "-8px",
-                          top: "-24px",
+                          top: "-25px",
                         }}
                       >
                         <strong>Prescription Required</strong>
@@ -89,9 +91,7 @@ export default function Products() {
                     style={{ position: "relative" }}
                   >
                     <button
-                      onClick={() => {
-                        console.log("Ok");
-                      }}
+                      onClick={handleCart}
                       className="btn"
                       style={{
                         // #45edb5,#15d19c#5defc5
@@ -108,15 +108,16 @@ export default function Products() {
                       {/* AddToCart Button */}
                       <div
                         className="row px-0 justify-content-start"
-                        //   style={{ display: "none" }}
+                          style={{ display: "none" }}
                       >
                         <div className="col-12 px-0 text-start">
                           <span
                             className="btn btn-lg py-2"
                             style={{
                               borderWidth: "2px",
-                              borderColor: "#0e8d6a",
-                              color: "#0e8d6a",
+                              backgroundColor:"#15d19c",
+                              borderColor: "#15d19c",
+                              color: "#000",
                               fontSize: "16px",
                               fontWeight: "500",
                               width: "100%",
@@ -130,14 +131,15 @@ export default function Products() {
                       {/* plus, minus and amount */}
                       <div
                         className="row px-0 justify-content-left"
-                        style={{ display: "none" }}
+                        // style={{ display: "none" }}
                       >
                         <div className="col-2 px-0 text-start">
                           <span
                             style={{
                               display: "inline-block",
                               textAlign: "center",
-                              backgroundColor: "#0e8d6a",
+                              backgroundColor: "#15d19c",
+                              color:"#000"
                             }}
                             className="px-3 py-1 rounded cart-border"
                           >
@@ -161,7 +163,8 @@ export default function Products() {
                             style={{
                               display: "inline-block",
                               textAlign: "center",
-                              backgroundColor: "#0e8d6a",
+                              backgroundColor: "#15d19c",
+                              color:"#000"
                             }}
                             className="px-3 py-1 rounded cart-border"
                           >
