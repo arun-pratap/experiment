@@ -107,8 +107,8 @@ const handleCart =()=> {
                     >
                       {/* AddToCart Button */}
                       <div
-                        className="row px-0 justify-content-start"
-                          style={{ display: "none" }}
+                        className="row px-0 justify-content-end"
+                        //   style={{ display: "none" }}
                       >
                         <div className="col-12 px-0 text-start">
                           <span
@@ -130,8 +130,8 @@ const handleCart =()=> {
 
                       {/* plus, minus and amount */}
                       <div
-                        className="row px-0 justify-content-left"
-                        // style={{ display: "none" }}
+                        className="row px-0 justify-content-end"
+                        style={{ display: "none" }}
                       >
                         <div className="col-2 px-0 text-start">
                           <span
