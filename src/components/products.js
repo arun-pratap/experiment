@@ -3,8 +3,6 @@ import medicine from "../assets/white-bg.jpg";
 // import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
-  const whatsAppURL =
-    "//api.whatsapp.com/send/?phone=+918505903150&text=दवाई या पर्चे की फोटो खींच कर भेजें";
 
   return (
     <div className="container-fluid pt-5 mt-5">
