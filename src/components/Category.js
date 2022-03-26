@@ -71,7 +71,7 @@ export default function Category({ categoryPopulation }) {
                     style={{
                       backgroundColor: "#15d19c",
                       borderColor: "#15d19c",
-                      color:""
+                      color:"#000"
                     }}
                   >
                     <strong>अभी ऑर्डर करें</strong>
