@@ -1,5 +1,6 @@
 import { products } from "./../database/products";
-import medicine from "../assets/medicine.png";
+import medicine from "../assets/white-bg.jpg";
+// import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
   const whatsAppURL =
@@ -8,79 +9,172 @@ export default function Products() {
   return (
     <div className="container-fluid pt-5 mt-5">
       <div className="container">
-        <div className="row justify-content-center align-items-start">
+        <div className="row justify-content-start">
           {products.data.map((product) => (
-            <div className="col-sm-6 col-md-4 col-xl-3 mb-4 justify-content-around">
-              <a href={`/${product.name}`} style={{ textDecoration: "none" }}>
-                <div
-                  className="card pb-4 px-3 shadow-sm"
-                  style={{
-                    width: "95%",
-                    border: "none",
-                    margin: "auto",
-                  }}
+            <div className="col-sm-6 col-md-4 col-xl-3 px-0 g-3">
+              <div
+                className="card px-2 py-4 shadow"
+                style={{
+                  width: "95%",
+                  border: "none",
+                  margin: "auto",
+                }}
+              >
+                <a
+                  href={`/${product.name}`}
+                  style={{ textDecoration: "none", display: "block" }}
                 >
-                  <div
-                    style={{
-                      textAlign: "center",
-                      height: "165px",
-                      width: "100%",
-                      position: "relative",
-                      margin: "20px auto",
-                      marginBottom: "0",
-                      display: "inline-block",
-                    }}
-                  >
-                    <img
-                      src={medicine}
+                  <div className="row g-0 align-items-top">
+                    <div
+                      className="col col-sm-12 align-self-center"
                       style={{
-                        width: "auto",
-                        height: "auto",
-                        maxHeight: "100%",
-                        maxWidth: "100%",
-                        position: "absolute",
-                        top: "0",
-                        left: "0",
-                        bottom: "0",
-                        right: "0",
-                        margin: "auto",
+                        position: "relative",
+                        height: "180px",
+                        width: "100%",
                       }}
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 style={{ color: "#454545" }}>{product.name}</h5>
-                    <div>
-                      <p  className="mb-0" style={{ fontSize: "14px", color: "#a33419" }}>
-                        MRP&nbsp;
-                        <span style={{ textDecoration: "line-through" }}>
-                          ₹{product.actual_price}
+                    >
+                      <img
+                        src={medicine}
+                        alt="..."
+                        style={{
+                          maxHeight: "100%",
+                          maxWidth: "100%",
+                          width: "auto",
+                          height: "auto",
+                          position: "absolute",
+                          top: 0,
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          margin: "auto",
+                        }}
+                      />
+                      <span
+                        className="px-2 py-1"
+                        style={{
+                          position: "absolute",
+                          backgroundColor: "#0e8d6a22",
+                          color: "#00000088",
+                          fontSize: "10px",
+                          left: "-8px",
+                          top: "-24px",
+                        }}
+                      >
+                        <strong>Prescription Required</strong>
+                      </span>
+                    </div>
+                    <div className="col-8 col-sm-12">
+                      <div className="card-body mx-2">
+                        <h6 className="mb-0" style={{ color: "#555555" }}>
+                          {product.name}
+                        </h6>
+                        <span style={{ color: "#555555ee", fontSize: "13px" }}>
+                          Company: Company Name
                         </span>
-                        <br />
-                        <span style={{ fontSize: "18px", color: "#454545" }}>
-                          <strong> ₹ {product.discounted_price}</strong>
-                        </span>
-                      </p>
+                        <p
+                          className="mb-2 mt-2"
+                          style={{ fontSize: "14px", color: "#a33419" }}
+                        >
+                          <span style={{ fontSize: "20px", color: "#454545" }}>
+                            Price: <strong>₹{product.discounted_price}</strong>
+                          </span>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <a
-                    href={whatsAppURL}
-                    className="btn btn-primary btn py-2 shadow"
-                    style={{
-                        // #45edb5,#15d19c#5defc5
-                      margin: "auto",
-                      width: "95%",
-                      backgroundColor: "transparent",
-                      borderWidth:"2px",
-                      borderColor: "#15d19c",
-                      color: "#15d19c",
-                    }}
+                </a>
+
+                {/* handleCart from Here */}
+                <div className="row g-0 px-3 align-items-top">
+                  <div
+                    className="mb-5 pb-2"
+                    style={{ position: "relative" }}
                   >
-                    <strong>अभी ऑर्डर करें</strong>
-                  </a>
+                    <button
+                      onClick={() => {
+                        console.log("Ok");
+                      }}
+                      className="btn"
+                      style={{
+                        // #45edb5,#15d19c#5defc5
+                        //green shade #0dfd9e
+                        // complement color #cd3951,#d8586c
+
+                        position: "absolute",
+                        zIndex: "10000 !important",
+                        margin: "auto",
+                        width: "100%",
+                        color: "#fff",
+                      }}
+                    >
+                      {/* AddToCart Button */}
+                      <div
+                        className="row px-0 justify-content-start"
+                        //   style={{ display: "none" }}
+                      >
+                        <div className="col-12 px-0 text-start">
+                          <span
+                            className="btn btn-lg py-2"
+                            style={{
+                              borderWidth: "2px",
+                              borderColor: "#0e8d6a",
+                              color: "#0e8d6a",
+                              fontSize: "16px",
+                              fontWeight: "500",
+                              width: "100%",
+                            }}
+                          >
+                            Add To Cart
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* plus, minus and amount */}
+                      <div
+                        className="row px-0 justify-content-left"
+                        style={{ display: "none" }}
+                      >
+                        <div className="col-2 px-0 text-start">
+                          <span
+                            style={{
+                              display: "inline-block",
+                              textAlign: "center",
+                              backgroundColor: "#0e8d6a",
+                            }}
+                            className="px-3 py-1 rounded cart-border"
+                          >
+                            <strong>-</strong>
+                          </span>
+                        </div>
+                        <div className="col-3 px-0 text-center">
+                          <span
+                            style={{
+                              display: "inline-block",
+                              textAlign: "center",
+                              color: "#000",
+                            }}
+                            className="px-2 py-1 rounded"
+                          >
+                            <strong>1</strong>
+                          </span>
+                        </div>
+                        <div className="col-2 px-0 text-end">
+                          <span
+                            style={{
+                              display: "inline-block",
+                              textAlign: "center",
+                              backgroundColor: "#0e8d6a",
+                            }}
+                            className="px-3 py-1 rounded cart-border"
+                          >
+                            <strong>+</strong>
+                          </span>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
           ))}
         </div>

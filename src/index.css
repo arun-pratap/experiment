@@ -5,14 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f6f6f6;
+  background-color: #f7fff9 ;
+  /* #fbf4f0 #e7fff9 */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.cart-border{
+border:  1px solid #0e8d6a!important;
 
+}
 button {
   border-color: #0e8d6a;
 }
