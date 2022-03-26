@@ -52,7 +52,7 @@ export default function Products() {
                   <div class="card-body">
                     <h5 style={{ color: "#454545" }}>{product.name}</h5>
                     <div>
-                      <p  className="mb-0" style={{ fontSize: "18px", color: "#a33419" }}>
+                      <p  className="mb-0" style={{ fontSize: "14px", color: "#a33419" }}>
                         MRP&nbsp;
                         <span style={{ textDecoration: "line-through" }}>
                           ₹{product.actual_price}
