@@ -1,5 +1,4 @@
 import { products } from "./../database/products";
-import { useState } from "react";
 // import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
