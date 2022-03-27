@@ -1,6 +1,5 @@
 import { products } from "./../database/products";
-import medicine from "../assets/white-bg.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
