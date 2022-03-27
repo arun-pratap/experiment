@@ -3,10 +3,10 @@ import { useState } from "react";
 // import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
-  const [cart, setCart] = useState({
+  const cart = {
     disabledAddToCart: false,
     itemInCart: [],
-  });
+  }
 
   return (
     <div className="container-fluid pt-5 mt-5">
