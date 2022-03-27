@@ -64,12 +64,12 @@ export default function Landingpage() {
                   margin: "auto"
                 }}
               >
-                <img src={medicine} class="card-img-top" alt="..." />
-                <div class="card-body">
+                <img src={medicine} className="card-img-top" alt="..." />
+                <div className="card-body">
                   <h4>
                     <strong>डायबिटीज की दवाइयां</strong>
                   </h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
@@ -97,12 +97,12 @@ export default function Landingpage() {
                   margin: "auto"
                 }}
               >
-                <img src={medicine} class="card-img-top" alt="..." />
-                <div class="card-body">
+                <img src={medicine} className="card-img-top" alt="..." />
+                <div className="card-body">
                   <h4>
                     <strong>नींद की दवाइयां</strong>
                   </h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
@@ -130,12 +130,12 @@ export default function Landingpage() {
                   margin: "auto"
                 }}
               >
-                <img src={medicine} class="card-img-top" alt="..." />
-                <div class="card-body">
+                <img src={medicine} className="card-img-top" alt="..." />
+                <div className="card-body">
                   <h4>
                     <strong> ब्लड प्रेशर की दवाइयां</strong>
                   </h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
@@ -163,12 +163,12 @@ export default function Landingpage() {
                   margin: "auto"
                 }}
               >
-                <img src={medicine} class="card-img-top" alt="..." />
-                <div class="card-body">
+                <img src={medicine} className="card-img-top" alt="..." />
+                <div className="card-body">
                   <h4>
                     <strong>घबराहट की दवाइयां</strong>
                   </h4>
-                  <p class="card-text">
+                  <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>

@@ -1,17 +1,23 @@
 import { products } from "./../database/products";
 import medicine from "../assets/white-bg.jpg";
+import { useEffect, useState } from "react";
 // import medicine from "../assets/white-bg.jpg";
 
 export default function Products() {
-const handleCart =()=> {
-    console.log("ok")
-}
+  const [cart, setCart] = useState({
+    disabledAddToCart: false,
+    itemInCart: [],
+  });
+
   return (
     <div className="container-fluid pt-5 mt-5">
       <div className="container">
         <div className="row justify-content-start">
           {products.data.map((product) => (
-            <div className="col-sm-6 col-md-4 col-xl-3 px-0 g-3">
+            <div
+              key={product.id}
+              className="col-sm-6 col-md-4 col-xl-3 px-0 g-3"
+            >
               <div
                 className="card px-2 py-4 shadow"
                 style={{
@@ -21,7 +27,7 @@ const handleCart =()=> {
                 }}
               >
                 <a
-                  href={`/${product.name}`}
+                  href={`//api.whatsapp.com/send/?phone=+918505903150&text=मुझे ये वाली दवाई चाहिए => ${product.name}`}
                   style={{ textDecoration: "none", display: "block" }}
                 >
                   <div className="row g-0 align-items-top">
@@ -34,7 +40,8 @@ const handleCart =()=> {
                       }}
                     >
                       <img
-                        src={medicine}
+
+                        src={require(`../assets/medicines/${product.images}`)}
                         alt="..."
                         style={{
                           maxHeight: "100%",
@@ -58,6 +65,7 @@ const handleCart =()=> {
                           fontSize: "8px",
                           left: "-8px",
                           top: "-25px",
+                          display: "none",
                         }}
                       >
                         <strong>Prescription Required</strong>
@@ -69,14 +77,14 @@ const handleCart =()=> {
                           {product.name}
                         </h6>
                         <span style={{ color: "#555555ee", fontSize: "13px" }}>
-                          Company: Company Name
+                          {/* NOT IN USE */}
                         </span>
                         <p
                           className="mb-2 mt-2"
                           style={{ fontSize: "14px", color: "#a33419" }}
                         >
                           <span style={{ fontSize: "20px", color: "#454545" }}>
-                            Price: <strong>₹{product.discounted_price}</strong>
+                            Price: <strong>₹{product.actual_price}</strong>
                           </span>
                         </p>
                       </div>
@@ -86,12 +94,9 @@ const handleCart =()=> {
 
                 {/* handleCart from Here */}
                 <div className="row g-0 px-3 align-items-top">
-                  <div
-                    className="mb-5 pb-2"
-                    style={{ position: "relative" }}
-                  >
-                    <button
-                      onClick={handleCart}
+                  <div className="mb-5 pb-2" style={{ position: "relative" }}>
+                    <a
+                      href={`//api.whatsapp.com/send/?phone=+918505903150&text=मुझे ये वाली दवाई चाहिए => ${product.name}`}
                       className="btn"
                       style={{
                         // #45edb5,#15d19c#5defc5
@@ -99,7 +104,6 @@ const handleCart =()=> {
                         // complement color #cd3951,#d8586c
 
                         position: "absolute",
-                        zIndex: "10000 !important",
                         margin: "auto",
                         width: "100%",
                         color: "#fff",
@@ -108,14 +112,18 @@ const handleCart =()=> {
                       {/* AddToCart Button */}
                       <div
                         className="row px-0 justify-content-end"
-                        //   style={{ display: "none" }}
+                        style={{
+                          display: `${
+                            cart.disabledAddToCart === true ? "none" : ""
+                          }`,
+                        }}
                       >
                         <div className="col-12 px-0 text-start">
                           <span
                             className="btn btn-lg py-2"
                             style={{
                               borderWidth: "2px",
-                              backgroundColor:"#15d19c",
+                              backgroundColor: "#15d19c",
                               borderColor: "#15d19c",
                               color: "#000",
                               fontSize: "16px",
@@ -123,7 +131,7 @@ const handleCart =()=> {
                               width: "100%",
                             }}
                           >
-                            Add To Cart
+                            <strong> अभी ऑर्डर करें</strong>
                           </span>
                         </div>
                       </div>
@@ -131,7 +139,11 @@ const handleCart =()=> {
                       {/* plus, minus and amount */}
                       <div
                         className="row px-0 justify-content-end"
-                        style={{ display: "none" }}
+                        style={{
+                          display: `${
+                            cart.disabledAddToCart === true ? "" : "none"
+                          }`,
+                        }}
                       >
                         <div className="col-2 px-0 text-start">
                           <span
@@ -139,7 +151,7 @@ const handleCart =()=> {
                               display: "inline-block",
                               textAlign: "center",
                               backgroundColor: "#15d19c",
-                              color:"#000"
+                              color: "#000",
                             }}
                             className="px-3 py-1 rounded cart-border"
                           >
@@ -164,7 +176,7 @@ const handleCart =()=> {
                               display: "inline-block",
                               textAlign: "center",
                               backgroundColor: "#15d19c",
-                              color:"#000"
+                              color: "#000",
                             }}
                             className="px-3 py-1 rounded cart-border"
                           >
@@ -172,7 +184,7 @@ const handleCart =()=> {
                           </span>
                         </div>
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -9,7 +9,7 @@ export default function Category({ categoryPopulation }) {
 
   categoryPopulation = [
     {
-      id: "",
+      category_id: "1",
       heading: "डायबिटीज की दवाइयां",
       image: diabetes,
       imageAlt: "...",
@@ -18,17 +18,17 @@ export default function Category({ categoryPopulation }) {
       link: ""
     },
     {
-      id: "",
+      category_id: "2",
       heading: "ब्लड प्रेशर की दवाइयां",
       image: bloodPressure
     },
     {
-      id: "",
+      category_id: "3",
       heading: "घबराहट की दवाइयां",
       image: nervousness
     },
     {
-      id: "",
+      category_id: "4",
       heading: "मेडिकल उपकरण",
       image:medicalDevices
     }
@@ -47,7 +47,7 @@ export default function Category({ categoryPopulation }) {
           </div>
 
           {categoryPopulation.map((category) => (
-            <div className="col-sm-12 col-md-6 col-xl-3 mb-4">
+            <div key={category.category_id} className="col-sm-12 col-md-6 col-xl-3 mb-4">
               <div
                 className="card shadow bg-body"
                 style={{

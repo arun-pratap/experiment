@@ -9,12 +9,12 @@ export default function OfferBanner() {
       <a href={whatsAppURL}>
         <div
           id="carouselExampleIndicators"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={banner} class="d-block w-100" alt="..." />
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={banner} className="d-block w-100" alt="..." />
             </div>
           </div>
         </div>
