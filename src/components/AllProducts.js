@@ -7,8 +7,6 @@ export default function Products({ filteredProducts,categoryName }) {
     itemInCart: [],
   };
 
-  console.log("ffff:", filteredProducts);
-
   return (
     <div
       className="container-fluid pt-5 px-0"

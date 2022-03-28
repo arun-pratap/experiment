@@ -1,8 +1,8 @@
 import { category } from "../database/products";
 
 export default function Category({ handleClick }) {
-  const whatsAppURL =
-    "//api.whatsapp.com/send/?phone=+918505903150&text=दवाई या पर्चे की फोटो खींच कर भेजें";
+  // const whatsAppURL =
+  //   "//api.whatsapp.com/send/?phone=+918505903150&text=दवाई या पर्चे की फोटो खींच कर भेजें";
 
   return (
     <div
