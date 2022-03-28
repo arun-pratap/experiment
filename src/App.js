@@ -23,6 +23,7 @@ export default function App() {
 
   const filteredProducts = () => {
     if (params.category !== "") {
+      window.location.hash=`#${params.category}`
       return productsByCategory(params.category);
     } else {
       return products.data;

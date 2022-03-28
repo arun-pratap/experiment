@@ -26,8 +26,9 @@ export default function Category({ handleClick }) {
                 className="card shadow-sm h-100"
                 style={{
                   // backgroundColor:"#9bffc7",
-                   backgroundColor: "#ffffff",
-                  backgroundImage: "linear-gradient(0deg, #ffffff 0%, #d7e1ec 74%)",
+                  backgroundColor: "#ffffff",
+                  backgroundImage:
+                    "linear-gradient(0deg, #ffffff 0%, #d7e1ec 74%)",
                   width: "95%",
                   border: "none",
                   margin: "auto",
@@ -44,7 +45,7 @@ export default function Category({ handleClick }) {
                     <strong>{category.heading}</strong>
                   </h5>
                   <p className="card-text"></p>
-                  <button
+                  <a
                     onClick={() => handleClick(category.category_name)}
                     href={`#${category.category_name}`}
                     className="btn btn-primary shadow px-4 py-2"
@@ -55,7 +56,7 @@ export default function Category({ handleClick }) {
                     }}
                   >
                     <strong>अभी ऑर्डर करें</strong>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
