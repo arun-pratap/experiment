@@ -20,7 +20,7 @@ export default function Category({ handleClick }) {
           {category.data.map((category) => (
             <div
               key={category.category_id}
-              className="col-6 col-md-4 col-xl-3 mb-4"
+              className="col-12 col-sm-6 col-md-4 col-xl-3 mb-4"
             >
               <div
                 className="card shadow-sm h-100"
