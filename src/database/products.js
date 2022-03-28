@@ -56,7 +56,7 @@ export const products = {
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
       images: "medicine-plus.svg",
       actual_price: "400",
-      category_id: "डायबिटीज और शुगर",
+      category_id: "Sugar",
     },
     {
       id: "8",
@@ -119,7 +119,7 @@ export const products = {
       id: "15",
       name: "Amlokind-TM 40mg/5mg Tablet 10's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine-plus.svg",
+      images: "Amlokind-TM-40mg-5mg-Tablet-10.jpg",
       actual_price: "57",
       category_id: "Blood Pressure",
     },
@@ -321,3 +321,38 @@ export const products = {
     },
   ],
 };
+
+export const category={
+  data:[
+    {
+      category_id: "1",
+      category_name:"Sugar",
+      heading: "डायबिटीज की दवाइयां",
+      image: "diabetes.png",
+    },
+    {
+      category_id: "2",
+      category_name:"Blood Pressure",
+      heading: "ब्लड प्रेशर की दवाइयां",
+      image: "blood-pressure.png"
+    },
+    {
+      category_id: "3",
+      category_name:"Heart Attack",
+      heading: "घबराहट की दवाइयां",
+      image: "diabetes.png"
+    },
+    {
+      category_id: "4",
+      category_name:"Brain Disorder",
+      heading: "मेडिकल उपकरण",
+      image:"diabetes.png"
+    },
+    {
+      category_id: "5",
+      category_name:"Thyride",
+      heading: "मेडिकल उपकरण",
+      image:"diabetes.png"
+    }
+  ]
+}

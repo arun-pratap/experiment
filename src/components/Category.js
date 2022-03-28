@@ -1,80 +1,61 @@
-import diabetes from "../assets/diabetes.jpg";
-import bloodPressure from "../assets/blood-pressure.jpg";
-import nervousness from "../assets/nervousness.jpg";
-import medicalDevices from "../assets/medical-devices.jpg";
+import { category } from "../database/products";
 
-export default function Category({ categoryPopulation }) {
+export default function Category({ handleClick }) {
   const whatsAppURL =
     "//api.whatsapp.com/send/?phone=+918505903150&text=दवाई या पर्चे की फोटो खींच कर भेजें";
 
-  categoryPopulation = [
-    {
-      category_id: "1",
-      heading: "डायबिटीज की दवाइयां",
-      image: diabetes,
-      imageAlt: "...",
-      para: "",
-      linkText: "",
-      link: ""
-    },
-    {
-      category_id: "2",
-      heading: "ब्लड प्रेशर की दवाइयां",
-      image: bloodPressure
-    },
-    {
-      category_id: "3",
-      heading: "घबराहट की दवाइयां",
-      image: nervousness
-    },
-    {
-      category_id: "4",
-      heading: "मेडिकल उपकरण",
-      image:medicalDevices
-    }
-  ];
   return (
     <div
       className="container-fluid pt-5 pb-5"
-      style={{ backgroundColor: "#0e408d10" }}
+      style={{ backgroundColor: "#fff" }}
     >
       <div className="container">
         <div className="row justify-content-start">
           <div className="col-12 text-center">
-            <h1 className="mb-4 text-start">
+            <h1 className="mb-4 mt-4 text-start">
               <strong>समस्या के हिसाब से दवाइयां ऑर्डर करें </strong>
             </h1>
           </div>
 
-          {categoryPopulation.map((category) => (
-            <div key={category.category_id} className="col-sm-12 col-md-6 col-xl-3 mb-4">
+          {category.data.map((category) => (
+            <div
+              key={category.category_id}
+              className="col-6 col-md-4 col-xl-3 mb-4"
+            >
               <div
-                className="card shadow bg-body"
+                className="card shadow-sm h-100"
                 style={{
+                  // backgroundColor:"#9bffc7",
+                   backgroundColor: "#ffffff",
+                  backgroundImage: "linear-gradient(0deg, #ffffff 0%, #d7e1ec 74%)",
                   width: "95%",
                   border: "none",
-                  margin: "auto"
+                  margin: "auto",
                 }}
               >
-                <img src={category.image} className="card-img-top" alt="..." />
+                <img
+                  style={{ margin: "auto" }}
+                  src={require(`../assets/${category.image}`)}
+                  className="card-img-top pt-4 w-25"
+                  alt="..."
+                />
                 <div className="card-body">
-                  <h4>
+                  <h5>
                     <strong>{category.heading}</strong>
-                  </h4>
-                  <p className="card-text">
-                  
-                  </p>
-                  <a
-                    href={whatsAppURL}
-                    className="btn btn-primary btn shadow px-4 py-2"
+                  </h5>
+                  <p className="card-text"></p>
+                  <button
+                    onClick={() => handleClick(category.category_name)}
+                    href={`#${category.category_name}`}
+                    className="btn btn-primary shadow px-4 py-2"
                     style={{
                       backgroundColor: "#15d19c",
                       borderColor: "#15d19c",
-                      color:"#000"
+                      color: "#000",
                     }}
                   >
                     <strong>अभी ऑर्डर करें</strong>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

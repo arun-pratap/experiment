@@ -1,23 +1,34 @@
-import { products } from "./../database/products";
 // import medicine from "../assets/white-bg.jpg";
 
-export default function Products() {
+
+export default function Products({ filteredProducts,categoryName }) {
   const cart = {
     disabledAddToCart: false,
     itemInCart: [],
-  }
+  };
+
+  console.log("ffff:", filteredProducts);
 
   return (
-    <div className="container-fluid pt-5 mt-5">
-      <div className="container">
-        <div className="row justify-content-start">
-          {products.data.map((product) => (
+    <div
+      className="container-fluid pt-5 px-0"
+      style={{ position: "relative",backgroundColor:"#0e8d6a21" }}
+    >
+      <div className="container mt-4">
+        
+        <div id={categoryName} className="row justify-content-start">
+        <div className="col-12 text-center">
+            <h1 className="mb-4 text-start">
+              <strong>आपके लिए दवाइयां</strong>
+            </h1>
+          </div>
+          {filteredProducts.map((product) => (
             <div
               key={product.id}
               className="col-sm-6 col-md-4 col-xl-3 px-0 g-3"
             >
               <div
-                className="card px-2 py-4 shadow"
+                className="card px-2 py-4 shadow h-100"
                 style={{
                   width: "95%",
                   border: "none",
@@ -28,7 +39,7 @@ export default function Products() {
                   href={`//api.whatsapp.com/send/?phone=+918505903150&text=मुझे ये वाली दवाई चाहिए => ${product.name}`}
                   style={{ textDecoration: "none", display: "block" }}
                 >
-                  <div className="row g-0 align-items-top">
+                  <div className="row g-0 align-items-center">
                     <div
                       className="col col-sm-12 align-self-center"
                       style={{
@@ -38,7 +49,6 @@ export default function Products() {
                       }}
                     >
                       <img
-
                         src={require(`../assets/medicines/${product.images}`)}
                         alt="..."
                         style={{
@@ -91,7 +101,7 @@ export default function Products() {
                 </a>
 
                 {/* handleCart from Here */}
-                <div className="row g-0 px-3 align-items-top">
+                <div className="row g-0 px-3">
                   <div className="mb-5 pb-2" style={{ position: "relative" }}>
                     <a
                       href={`//api.whatsapp.com/send/?phone=+918505903150&text=मुझे ये वाली दवाई चाहिए => ${product.name}`}
@@ -188,6 +198,31 @@ export default function Products() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      {/* Sticky Filter at Bottom */}
+      <div
+        className="container my-0"
+        style={{
+          position: "sticky",
+          bottom: 0,
+          zIndex: "1020",
+        }}
+      >
+        <div className="row justify-content-end align-items-center">
+          <div
+            className="col-12 text-center"
+            style={{
+              borderTop: "1px solid #cfcfcf",
+              backgroundColor: "#666666dd",
+             }}
+          >
+            <button className="btn py-3" style={{
+              color:"#ffffff"
+            }}>
+              <h5 className="my-0" >Apply Filters</h5>
+            </button>
+          </div>
         </div>
       </div>
     </div>
