@@ -1,3 +1,4 @@
+// sugar heartAttack bp braindisorder  tyride apparatus
 export const products = {
   data: [
     {
@@ -37,7 +38,7 @@ export const products = {
       id: "5",
       name: "Glimestar-PM 3 Tablet 10's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine-plus.svg",
+      images: "medicine.png",
       actual_price: "96",
       category_id: "Sugar",
     },
@@ -54,7 +55,7 @@ export const products = {
       id: "7",
       name: "BGR-34 Tablet 100's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine-plus.svg",
+      images: "BGR-34-Tablet-100.jpeg",
       actual_price: "400",
       category_id: "Sugar",
     },
@@ -70,7 +71,7 @@ export const products = {
       id: "9",
       name: "Ecosprin AV 75/20 Capsule 10's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "Ecosprin-AV-75_20-Capsule-10.webp",
+      images: "Ecosprin-AV-75_20-Capsule-15.jpeg",
       actual_price: "35",
       category_id: "Heart Attack",
     },
@@ -78,7 +79,7 @@ export const products = {
       id: "10",
       name: "Ecosprin AV 75/40 Capsule 10's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine-plus.svg",
+      images: "Ecosprin-AV-75-40-Capsule-10.jpeg",
       actual_price: "210",
       category_id: "Heart Attack",
     },
@@ -250,7 +251,7 @@ export const products = {
       id: "31",
       name: "Blupin 10mg Tablet 10's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine-plus.svg",
+      images: "medicine.png",
       actual_price: "103",
       category_id: "Brain Disorder",
     },
@@ -264,9 +265,9 @@ export const products = {
     },
     {
       id: "33",
-      name: "Alprex-1 Tablet 15's",
+      name: "Alprax-1 Tablet 15's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine-plus.svg",
+      images: "medicine.png",
       actual_price: "114",
       category_id: "Blood Pressure",
     },
@@ -321,38 +322,44 @@ export const products = {
     },
   ],
 };
-
+// sugar heartAttack bp braindisorder  tyride apparatus
 export const category={
   data:[
     {
       category_id: "1",
       category_name:"Sugar",
       heading: "डायबिटीज की दवाइयां",
-      image: "diabetes.png",
+      image: "medicine.png",
     },
     {
       category_id: "2",
       category_name:"Blood Pressure",
       heading: "ब्लड प्रेशर की दवाइयां",
-      image: "blood-pressure.png"
+      image: "medicine.png"
     },
     {
       category_id: "3",
       category_name:"Heart Attack",
       heading: "घबराहट की दवाइयां",
-      image: "diabetes.png"
+      image: "medicine.png"
     },
     {
       category_id: "4",
       category_name:"Brain Disorder",
-      heading: "मेडिकल उपकरण",
-      image:"diabetes.png"
+      heading: "नींद की दवाइयां",
+      image:"medicine.png"
     },
     {
       category_id: "5",
       category_name:"Thyride",
-      heading: "मेडिकल उपकरण",
-      image:"diabetes.png"
-    }
+      heading: "थायराइड की दवाइयां",
+      image:"medicine.png"
+    },
+    {
+      category_id: "6",
+      category_name:"all",
+      heading: "सभी दवाइयां देखें",
+      image:"medicine.png"
+    },
   ]
 }

@@ -11,7 +11,7 @@ import "./index.css";
 
 export default function App() {
   const [params, setParams] = useState({
-    category: "",
+    category: "all",
   });
 
   const handleCategory = (category) => {
@@ -22,7 +22,7 @@ export default function App() {
   };
 
   const filteredProducts = () => {
-    if (params.category !== "") {
+    if (params.category !== "all") {
       window.location.hash=`#${params.category}`
       return productsByCategory(params.category);
     } else {

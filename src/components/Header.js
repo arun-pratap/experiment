@@ -1,14 +1,14 @@
-import logo from "../assets/logo-green-bg.jpeg";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   return (
-    <div className="container-fluid" style={{ backgroundColor: "#0e8d6a" }}>
+    <div className="container-fluid" style={{ backgroundColor: "#fff" }}>
       <div className="container">
-        <div className="row align-items-center justify-content-center py-3">
+        <div className="row align-items-center justify-content-start py-3">
           {/* logo+navigation */}
           <div className="col-6">
             <div className="row align-items-center justify-content-start">
-              <div className="col-1" style={{ paddingRight: "25px" }}>
+              <div className="col-1 d-none" style={{ paddingRight: "25px" }}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -26,13 +26,13 @@ export default function Header() {
                 </div>
               </div>
               <div className="col-3 px-4">
-                <img src={logo} alt="25mg" height="35px" />
+                <img src={logo} alt="25mg" height="50px" />
               </div>
             </div>
           </div>
 
           {/* signin+cart */}
-          <div className="col-6">
+          <div className="col-6 d-none">
             <div className="row align-items-center justify-content-start">
               <div className="col d-none text-end">
                 <div>

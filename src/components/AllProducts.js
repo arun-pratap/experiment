@@ -1,21 +1,18 @@
-// import medicine from "../assets/white-bg.jpg";
-
-
-export default function Products({ filteredProducts,categoryName }) {
+export default function Products({ filteredProducts, categoryName }) {
   const cart = {
     disabledAddToCart: false,
     itemInCart: [],
   };
-
+  const whatsApp =
+    "//api.whatsapp.com/send/?phone=+919193497332&text=मुझे ये वाली दवाई चाहिए => ";
   return (
     <div
       className="container-fluid pt-5 px-0"
-      style={{ position: "relative",backgroundColor:"#0e8d6a21" }}
+      style={{ position: "relative", backgroundColor: "#0e8d6a21" }}
     >
       <div className="container mt-4">
-        
         <div id={categoryName} className="row justify-content-start">
-        <div className="col-12 text-center">
+          <div className="col-12 text-center">
             <h1 className="mb-4 text-start">
               <strong>आपके लिए दवाइयां</strong>
             </h1>
@@ -34,7 +31,7 @@ export default function Products({ filteredProducts,categoryName }) {
                 }}
               >
                 <a
-                  href={`//api.whatsapp.com/send/?phone=+918505903150&text=मुझे ये वाली दवाई चाहिए => ${product.name}`}
+                  href={`${whatsApp} ${product.name}`}
                   style={{ textDecoration: "none", display: "block" }}
                 >
                   <div className="row g-0 align-items-center">
@@ -102,7 +99,7 @@ export default function Products({ filteredProducts,categoryName }) {
                 <div className="row g-0 px-3">
                   <div className="mb-5 pb-2" style={{ position: "relative" }}>
                     <a
-                      href={`//api.whatsapp.com/send/?phone=+918505903150&text=मुझे ये वाली दवाई चाहिए => ${product.name}`}
+                      href={`${whatsApp} ${product.name}`}
                       className="btn"
                       style={{
                         // #45edb5,#15d19c#5defc5
@@ -213,13 +210,17 @@ export default function Products({ filteredProducts,categoryName }) {
             style={{
               borderTop: "1px solid #cfcfcf",
               backgroundColor: "#666666dd",
-             }}
+            }}
           >
-            <button className="btn py-3" style={{
-              color:"#ffffff"
-            }}>
-              <h5 className="my-0" >Apply Filters</h5>
-            </button>
+            <a
+              href="#problem"
+              className="btn py-3"
+              style={{
+                color: "#ffffff",
+              }}
+            >
+              <h5 className="my-0">Apply Filters</h5>
+            </a>
           </div>
         </div>
       </div>
