@@ -7,6 +7,7 @@
         "type":"image/png"
     }],
     "start_url":"/",
+    "id":"/",
     "scope":"/",
     "background_color":"#ffffff",
     "display":"standalone",
