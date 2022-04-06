@@ -1,4 +1,4 @@
-import banner from "../assets/banner1.png";
+import banner from "../assets/banner-white.png";
 
 export default function OfferBanner() {
   const whatsAppURL =
