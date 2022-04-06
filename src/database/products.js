@@ -38,7 +38,7 @@ export const products = {
       id: "5",
       name: "Glimestar-PM 3 Tablet 10's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine.png",
+      images: "Glimestar-PM-3-Tablet-10.jpg",
       actual_price: "96",
       category_id: "Sugar",
     },
@@ -247,14 +247,14 @@ export const products = {
       category_id: "Brain Disorder",
     },
 
-    {
-      id: "31",
-      name: "Blupin 10mg Tablet 10's",
-      composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine.png",
-      actual_price: "103",
-      category_id: "Brain Disorder",
-    },
+    // {
+    //   id: "31",
+    //   name: "Blupin 10mg Tablet 10's",
+    //   composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
+    //   images: "medicine.png",
+    //   actual_price: "103",
+    //   category_id: "Brain Disorder",
+    // },
     {
       id: "32",
       name: "Clonafit plus Tablet 10's",
@@ -267,7 +267,7 @@ export const products = {
       id: "33",
       name: "Alprax-1 Tablet 15's",
       composition: ["GLIMEPIRIDE-1MG", "METFORMIN-500MG"],
-      images: "medicine.png",
+      images: "Alprax-1-Tablet-15.png",
       actual_price: "114",
       category_id: "Blood Pressure",
     },
@@ -363,3 +363,7 @@ export const category={
     },
   ]
 }
+
+export const disclaimerHi ="यहाँ पर दिखाई गयीं छवियां केवल प्रदर्शन के लिए प्रयोग की गयीं हैं जो की वास्तविक छवियों से भिन्न हो सकती हैं | ये वेबसाइट प्रदर्शन मात्र के लिए है | "
+
+export const disclaimerEn ="Images shown here are used for illustration only, which may differ from actual images. This website is for demonstration purposes only."
