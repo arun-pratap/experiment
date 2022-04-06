@@ -1,3 +1,4 @@
+const self= this
 const CACHE_NAME = "my-cache";
 self.addEventListener("install", (event) => {
   console.log("Installing service worker 😀");
