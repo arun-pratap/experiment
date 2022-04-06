@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -26,14 +26,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <script defer>
-      if("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js",{scope:"/"})
-        .then((registration) =>{
-          console.log("Service Worker Registered")
-        })
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js", { scope: "/" })
+          .then((registration) => {
+            console.log("Service Worker Registered");
+          });
         navigator.serviceWorker.ready.then((registration) => {
-          console.log("Service Worker Ready")
-        })
+          console.log("Service Worker Ready");
+        });
       }
     </script>
     <title>Online Medical Store | 25-MG</title>
