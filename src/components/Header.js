@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="container-fluid" style={{ backgroundColor: "#0e8d6a" }}>
       <div className="container">
-        <div className="row align-items-center justify-content-start py-3">
+        <div className="row align-items-center justify-content-start py-2">
           {/* logo+navigation */}
           <div className="col-6">
             <div className="row align-items-center justify-content-start">
@@ -26,7 +26,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="col-3 px-4">
-                <img src={logo} alt="25mg" height="50px" />
+                <img src={logo} alt="25mg" height="45px" />
               </div>
             </div>
           </div>
