@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="container-fluid" style={{ backgroundColor: "#01594d" }}>
       <div className="container">
-        <div className="row align-items-center justify-content-start py-2">
+        <div className="row align-items-center justify-content-start py-3">
           {/* logo+navigation */}
           <div className="col-6">
             <div className="row align-items-center justify-content-start">
