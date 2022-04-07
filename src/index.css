@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,12 +10,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.cart-border{
-border:  1px solid #15d19c!important;
-
+.cart-border {
+  border: 1px solid #15d19c !important;
 }
 button {
   border-color: #0e8d6a;
@@ -25,3 +24,33 @@ button {
   outline: 0;
   box-shadow: none;
 }
+
+.primary-button {
+  /* light#0a644c dark#01594d */
+  background-color: #01594d;
+  border-color: #01594d;
+  color: #fff;
+}
+.primary-button:hover{
+  color: #fff;
+}
+.secondary-button {
+  background-color: #12bc8e;
+  border-color: #12bc8e;
+  color: #fff;
+}
+.secondary-button:hover {
+color: #fff;
+}
+/*
+// fucking colors
+
+- light green => rgb(0 166 111)
+- dark green => #01594d
+- green =>
+      primary: hsl(167deg 73% 56%)  #3de1bd  #19a385
+      secondry: hsl(169deg 48% 29%) #266d60  #19483f
+
+- royal blue #4169e1
+
+*/

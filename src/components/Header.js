@@ -1,8 +1,8 @@
-import logo from "../assets/logo-green-bg.jpeg";
+import logo from "../assets/logo-green-bg.png";
 
 export default function Header() {
   return (
-    <div className="container-fluid" style={{ backgroundColor: "#0e8d6a" }}>
+    <div className="container-fluid" style={{ backgroundColor: "#01594d" }}>
       <div className="container">
         <div className="row align-items-center justify-content-start py-2">
           {/* logo+navigation */}

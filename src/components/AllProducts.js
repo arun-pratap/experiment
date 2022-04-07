@@ -123,12 +123,10 @@ export default function Products({ filteredProducts, categoryName }) {
                       >
                         <div className="col-12 px-0 text-start">
                           <span
-                            className="btn btn-lg py-2"
+                            className="btn btn-lg py-2 primary-button"
                             style={{
                               borderWidth: "2px",
-                              backgroundColor: "#15d19c",
-                              borderColor: "#15d19c",
-                              color: "#000",
+                              color: "#fff",
                               fontSize: "16px",
                               fontWeight: "500",
                               width: "100%",
