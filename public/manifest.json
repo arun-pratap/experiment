@@ -2,7 +2,7 @@
     "name":"Online Medical Store",
     "short_name":"25mg.in",
     "icons":[{
-        "src":"logo-green-bg.png",
+        "src":"logo-white-bg.png",
         "sizes":"1080x1080",
         "type":"image/png"
     }],
