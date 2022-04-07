@@ -1,15 +1,15 @@
 {
-    "name":"Online Medical Store",
-    "short_name":"25mg.in",
+    "theme_color":"#01594d",
+    "background_color":"#01594d",
+    "display":"standalone",
+    "scope":"/",
+    "start_url":"/",
+    "id":"/",
+    "name":"25mg",
+    "short_name":"25mg",
     "icons":[{
         "src":"logo-green-bg.png",
         "sizes":"1080x1080",
         "type":"image/png"
-    }],
-    "start_url":"/",
-    "id":"/",
-    "scope":"/",
-    "background_color":"#ffffff",
-    "display":"standalone",
-    "theme_color":"#01594d"
+    }]
 }
