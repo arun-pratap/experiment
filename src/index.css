@@ -35,9 +35,9 @@ button {
   color: #fff;
 }
 .secondary-button {
-  /* #12bc8e #12bca8 #12bcb7 */
-  background-color: #13a099;
-  border-color: #13a099;
+  /* #12bc8e */
+  background-color: #12bc8e;
+  border-color: #12bc8e;
   color: #fff;
 }
 .secondary-button:hover {
