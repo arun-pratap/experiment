@@ -7,6 +7,7 @@
     "id":"/",
     "name":"25mg",
     "short_name":"25mg",
+    "description": "Leading Online Medical Store In Shikohabad",
     "icons":[{
         "src":"logo-green-bg.png",
         "sizes":"1080x1080",
