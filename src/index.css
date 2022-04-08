@@ -26,9 +26,9 @@ button {
 }
 
 .primary-button {
-  /* light#0a644c dark#01594d  #015954 #0c7e7a */
-  background-color: #084441;
-  border-color: #084441;
+  /* light#0a644c dark#01594d */
+  background-color: #01594d;
+  border-color: #01594d;
   color: #fff;
 }
 .primary-button:hover{
