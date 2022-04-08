@@ -26,17 +26,18 @@ button {
 }
 
 .primary-button {
-  /* light#0a644c dark#01594d */
-  background-color: #01594d;
-  border-color: #01594d;
+  /* light#0a644c dark#01594d  #015954 #0c7e7a */
+  background-color: #084441;
+  border-color: #084441;
   color: #fff;
 }
 .primary-button:hover{
   color: #fff;
 }
 .secondary-button {
-  background-color: #12bc8e;
-  border-color: #12bc8e;
+  /* #12bc8e #12bca8 #12bcb7 */
+  background-color: #13a099;
+  border-color: #13a099;
   color: #fff;
 }
 .secondary-button:hover {
