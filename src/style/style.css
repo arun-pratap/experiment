@@ -1,0 +1,352 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/*
+colortheme
+#6b92e1 ->light,#081020->dark, #f4b625->accent
+*/
+
+/* rgb(113 138 251 / 22%) */
+:root {
+    /*#0052f5 #0058f1 */
+    --color-primary: #0052f5;
+    /* #f37900 #f5a300 👇*/
+    --color-secondary: #ffd91a;
+    --color-dark: #000000;
+    --color-light: #ffffff;
+    --color-black: #15151e;
+    --color-white: #fafafa;
+
+    --color-primary-50: #e9ebfe;
+    --color-primary-100: #c6ccfd;
+    --color-primary-200: #9eabfb;
+    /* undraw kit color 👇  */
+    --color-primary-300: #718afb;
+    --color-primary-400: #496ef9;
+    /* main color 👇 */
+    --color-primary-500: #0052f5;
+    --color-primary-600: #0049e9;
+    --color-primary-700: #003edc;
+    --color-primary-800: #0032d2;
+    --color-primary-900: #0018c1;
+
+    --color-complementary-50: #fefde6;
+    --color-complementary-100: #fdf8c0;
+    --color-complementary-200: #fbf396;
+    --color-complementary-300: #faee6c;
+    --color-complementary-400: #f7e948;
+    --color-complementary-500: #f4e41d;
+    --color-complementary-600: #f7d41a;
+    --color-complementary-700: #f6bc0f;
+    --color-complementary-800: #f5a300;
+    --color-complementary-900: #f37900;
+
+    --color-analogous1-50: #dff7fc;
+    --color-analogous1-100: #ace9f9;
+    --color-analogous1-200: #70dbf6;
+    --color-analogous1-300: #00ccf5;
+    --color-analogous1-400: #00c1f7;
+    --color-analogous1-500: #00b5f8;
+    --color-analogous1-600: #00a7ea;
+    --color-analogous1-700: #0094d8;
+    --color-analogous1-800: #0082c5;
+    --color-analogous1-900: #0062a6;
+
+
+    --color-analogous2-50: #f0e6ff --color-analogous2-100: #d5c1ff;
+    --color-analogous2-200: #b898ff;
+    --color-analogous2-300: #986bff;
+    --color-analogous2-400: #7c45ff;
+    --color-analogous2-500: #5914ff;
+    --color-analogous2-600: #480ffd;
+    --color-analogous2-: #2900f5;
+    --color-analogous2-800: #0000f1;
+    --color-analogous2-900: #0000ed;
+
+
+    --color-triadic1-50: #f5e6fe;
+    --color-triadic1-100: #e5bffc;
+    --color-triadic1-200: #d494fb;
+    --color-triadic1-300: #c166fa;
+    --color-triadic1-400: #b33ff8;
+    --color-triadic1-500: #a300f5;
+    --color-triadic1-600: #9009ef;
+    --color-triadic1-700: #730ee8;
+    --color-triadic1-800: #5710e3;
+    --color-triadic1-900: #0012de --color-triadic2-50: #ffe4ea;
+    --color-triadic2-100: #ffbacb;
+    --color-triadic2-200: #fe8da8;
+    --color-triadic2-300: #fc5d85;
+    --color-triadic2-400: #f8366b;
+    --color-triadic2-500: #f50052;
+    --color-triadic2-600: #e40050;
+    --color-triadic2-700: #cf004d;
+    --color-triadic2-800: #bb004b;
+    --color-triadic2-900: #980047;
+
+    --grey-50: #fcfcfc;
+    --grey-100: #f7f7f7;
+    --grey-200: #f2f2f2;
+    --grey-300: #eaeaea;
+    --grey-400: #c8c8c8;
+    --grey-500: #aaaaaa;
+    --grey-600: #808080;
+    --grey-700: #6b6b6b;
+    --grey-800: #4c4c4c;
+    --grey-900: #2a2a2a;
+}
+
+.card--about {
+    background: #f2f4fe;
+    background: linear-gradient(135deg, rgba(245, 248, 255, 1) 33%, rgba(255, 254, 245, 1) 66%);
+    padding-bottom: 15px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card--about:hover {
+    transform: translateY(-15px);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+hr {
+    background-color: #c8d5f3;
+    opacity: 0.4;
+}
+
+.bg--primary {
+    background-color: var(--color-primary);
+}
+
+.bg--secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg--light {
+    background-color: var(--color-white);
+}
+
+.bg--dark {
+    background-color: var(--color-black);
+}
+
+.text--primary {
+    color: var(--color-primary);
+}
+
+.text--secondary {
+    color: var(--color-secondary);
+}
+
+.text--light {
+    color: var(--color-white);
+}
+
+.text--dark {
+    color: var(--color-black);
+}
+
+.cursor--pointer {
+    cursor: pointer;
+}
+
+
+
+.font--weight-500 {
+    font-weight: 500;
+}
+
+
+#blog--container p {
+    font-size: 1.3rem;
+    line-height: 1.55em;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.gradient--heading-blue {
+    color: var(--color-primary);
+    background-image: linear-gradient(100deg, var(--color-black), var(--color-primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text--gradient-blue {
+    color: var(--color-primary);
+    background-image: linear-gradient(100deg, var(--color-white), var(--color-primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg--gradient-blue {
+    background-color: var(--color-primary);
+    background-image: linear-gradient(100deg, var(--color-primary-200), var(--color-primary-700));
+}
+
+
+.softbg--gradient-light {
+
+    background: rgb(245, 248, 255);
+    /* 99% light */
+    background: linear-gradient(135deg, rgb(250 251 255) 33%, rgb(255 254 250) 66%);
+}
+
+.bg--about {
+    align-items: center;
+    background: linear-gradient(135deg, rgba(1, 8, 25, 0.85) 33%, rgba(1, 5, 15, 0.9) 66%),
+        url("../images/1694.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.softbg--gradient-dark {
+    background: rgba(1, 8, 25, 1);
+    background: linear-gradient(135deg, rgba(1, 8, 25, 1) 33%, rgba(1, 5, 15, 1) 66%);
+
+}
+
+.softbg--gradient-blue {
+    background: rgb(0, 57, 172);
+    background: linear-gradient(286deg, rgba(0, 57, 172, 1) 33%, rgba(0, 52, 157, 1) 66%);
+}
+
+.border--primary {
+    border-color: var(--color-primary) !important;
+}
+
+.step--1:after {
+    position: absolute;
+    display: block;
+    content: "1";
+    top: 0px;
+    right: 15px;
+    color: var(--grey-300);
+    font-size: 5.85rem;
+}
+
+.step--2:after {
+    position: absolute;
+    display: block;
+    content: "2";
+    top: 0px;
+    right: 15px;
+    color: var(--grey-300);
+    font-size: 5.85rem;
+}
+
+.step--3:after {
+    position: absolute;
+    display: block;
+    content: "3";
+    top: 0px;
+    right: 15px;
+    color: var(--grey-300);
+    font-size: 5.85rem;
+}
+
+.step--4:after {
+    position: absolute;
+    display: block;
+    content: "4";
+    top: 0px;
+    right: 15px;
+    color: var(--grey-300);
+    font-size: 5.85rem;
+}
+
+.step--5:after {
+    position: absolute;
+    display: block;
+    content: "5";
+    top: 0px;
+    right: 15px;
+    color: var(--grey-300);
+    font-size: 5.85rem;
+}
+
+.nav-header a,
+li {
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-header a:hover {
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.underline::after {
+    display: block;
+    border-radius: .25rem !important;
+    margin: auto;
+    content: "";
+    width: 65px;
+    height: 4px;
+    margin-top: 10px;
+    background-color: var(--color-primary);
+    /* background: linear-gradient(to right, var(--color-secondary) 0%, var(--color-secondary) 25%, var(--color-secondary) 25%, var(--color-secondary) 50%, var(--color-primary) 50%, var(--color-primary) 50%, var(--color-primary) 75%, var(--color-primary) 100%) */
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    border-bottom: 2px solid #002489;
+}
+
+.card a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+
+}
+
+.image-wrapper::before {
+    content: "";
+    width: 99%;
+    height: 89%;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    background-color: rgb(0 36 137 / 16%);
+    z-index: -1;
+}
+
+.services--card {
+    background-color: #ffffff0a !important;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.services--card:hover {
+    background-color: #ffffff05 !important;
+    transform: translateY(-15px);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.margin--bottom-0 {
+    margin-bottom: 0px !important;
+}
+
+/* 
+.image-wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -18px;
+    bottom: -18px;
+    background-color: red;
+    z-index: -1;
+} */

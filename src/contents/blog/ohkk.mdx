@@ -1,0 +1,82 @@
+---
+docTitle: Obviously, Its a doc Title.
+blogTitle: Yes, it could be same as docTitle but still...you know
+coverImageURL: "damn! its a URL"
+coverImageAlt: "For Better Accessbility"
+coverImageCredit: "It helps designer to recohnise their work"
+categories:
+  - Web Application Development
+  - Progressive Web Applications Development
+authorName: Arun Pratap Singh
+authorAvatarURL: Again! its a damn URL
+publishingDate: 20 April 2022
+lastUpdatedAt: 29 April 2022
+quickSummary: It is not so important But it helps reader to understand things better
+---
+
+# Ohkk
+In this video we will learn about events, event listeners, how to listen to them
+and how to do stuff when things happen. In this video we will learn about
+events, event listeners, how to listen to them and how to do stuff when things
+happen.
+
+### [#](#oh-ids) Determine your goals hah
+
+In this video we will learn about events, event listeners, how to listen to them
+and how to do stuff when things happen. In this video we will learn about
+events, event listeners, how to listen to them and how to do stuff when things
+happen.
+
+#### Facebook Job Postings
+
+In this video we will learn about events, event listeners, how to listen to them
+and how to do stuff when things happen. In this video we will learn about
+events, event listeners, how to listen to them and how to do stuff when things
+happen.
+
+**DOM Elements**, things that are on the page, they emit events for things like
+when they are clicked, hovered, dragged, they will fire off events when they are
+interacted with.
+
+We can use **event listeners** to listen for when these things happen and react
+to them.
+
+You can attach event listeners to all elements, as well as the document and the
+window.
+
+To demonstrate this, let's start by creating a button.
+
+Within the `/exercises/29 - Events` directory, open the `events.html` file.
+
+In the body, add a button with a class of "butts", as shown below 👇
+
+```html
+<button class="butts">Click Me!</button>
+<script src="./events.js"></script>
+```
+
+<!-- night-owl -xxx, blackboard, cobalt -->
+
+Create a file `events.js` (if it's not already there).
+
+If you open the html file, you should see the button and when you click it,
+nothing should happen.
+
+![button showing click me!](./316.png)
+
+In order to attach event listeners, you first need to select the element you
+want to attach it to.
+
+```js
+const butts = document.querySelector(".butts");
+```
+
+> "hey, when the `butts` button is clicked, can you please do me a favour and
+> call this function?"
+
+```js
+butts.addEventListener("click", function () {});
+```
+
+\_NOTE: For the click event on a button, you don't have to worry about thinking
+about keyboard events, if the user hits enter to click the button instead of
