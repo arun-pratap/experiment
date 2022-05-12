@@ -32,6 +32,7 @@ async function makeBlogPostFromMdx({ graphql, actions }) {
                 coverImageURL
                 coverImageCredit
                 coverImageAlt
+                slug
                 categories
                 authorName
                 authorAvatarURL
@@ -56,7 +57,7 @@ async function makeBlogPostFromMdx({ graphql, actions }) {
   //   console.log(blogPosts);
    blogPosts.forEach((blogPost, index) => {
     createPage({
-      path: `/${blogPost.node.slug}`,
+      path: `/blog/${blogPost.node.frontmatter.slug}`,
       component: blogPostTemplatePath,
       context: {
         //unique Identifier

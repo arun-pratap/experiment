@@ -2,7 +2,7 @@ import React from "react";
 import image431 from "../images/431.jpg";
 
 //Blog Listing
-export function RecommendedBlogs({
+export function BlogsList({
   blogTitle,
   shortDescrition,
   coverImageURL,
@@ -27,8 +27,8 @@ export function RecommendedBlogs({
             <span className="text-muted font--weight-500">
               <small>{timeRead}</small>
             </span>
-            <h2 className="fs-5 fw-bold">{blogTitle}</h2>
-            <p className="fs-6 font--weight-500 text-muted mb-2">{shortDescrition}</p>
+            <h5 className="fs-3 fw-bold">{blogTitle}</h5>
+            <p className="fs-5 text-muted mb-2">{shortDescrition}</p>
 
             <div className="d-flex align-items-center">
               <span className="text-muted mb-0 pe-3">

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/logo/logo-primary.png";
+import { Link } from "gatsby";
 
 const Logo = () => {
   return (
@@ -56,7 +57,7 @@ export default function Footer() {
           </div>
           {/* Addresses */}
           <div className="col-12 col-md-6 col-xl-4">
-            <h5>Noida</h5>
+            <h5 className="text--primary">Noida</h5>
             <p className="fs-6">
               A-16, 2nd Floor, Sector 9 <br />
               Noida Uttar Pradesh 201301, India
@@ -76,9 +77,12 @@ export default function Footer() {
         {/* navigation in footer */}
         <div className="row">
           {footerNav.map((nav) => (
-            <div key={nav.heading} className="col-12 col-md-6 col-xl-4 py-3 pe-5">
+            <div
+              key={nav.heading}
+              className="col-12 col-md-6 col-xl-4 py-3 pe-5"
+            >
               <div className="d-flex align-items-center justify-content-between">
-                <p className="mb-2 text-capitalize fs-6 font--weight-500 text--primary">
+                <p className="mb-2 text-capitalize fs-5 font--weight-500 text--primary">
                   {nav.heading}
                 </p>
                 <i className="bi bi-plus-lg d-none"></i>

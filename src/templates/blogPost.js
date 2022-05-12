@@ -2,18 +2,18 @@ import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import image from "../images/1694.jpg";
-import { RecommendedBlogs } from "./blog";
-import Footer from "./../components/Footer";
-import Header from "./../components/Header";
+import { BlogsList } from "./blogsList";
+
 import ContactForm from "../components/ContactForm";
 import ContactCall from "../components/ContactCall";
+import Layout from "../components/Layout";
 
 export default function BlogPost(props) {
   const { data } = props;
   console.log(props);
+
   return (
-    <>
-      <Header />
+    <Layout>
       <div className="container-fluid">
         <article
           id="blog--container"
@@ -86,10 +86,10 @@ export default function BlogPost(props) {
           </main>
           <footer className="pt-4">
             {/* Author Profile */}
-            <div className="row my-5">
+            <div className="row mt-5 mb-3">
               <div className="col-12">
-                <div className="row align-items-center">
-                  <div className="col">
+                <div className="row justify-content-between align-items-center">
+                  <div className="col-12 col-md-5 col-lg-5 me-4">
                     <div className="image-wrapper">
                       <img
                         src={image}
@@ -99,16 +99,16 @@ export default function BlogPost(props) {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-sm-7 text-start">
+                  <div className="col-12 col-md-6 col-lg-6 text-start">
                     <p>
                       <span className="fs-6 text-muted font--weight-500">
                         About Author
                       </span>
                       <br />
-                      <span className="fs-4 font--weight-500 mb-2">
+                      <h5 className="fs-3 fw-bold mb-2">
                         Arun Pratap Singh
-                      </span>
-                      <br />
+                      </h5>
+                      
                       <p>
                         Tejas is a Senior Tech Consultant at Simform excelling
                         in mobile and server-side technologies, with extensive
@@ -135,12 +135,12 @@ export default function BlogPost(props) {
             </div>
             {/* Related Articles */}
             <hr />
-            <div className="row g-4 pt-2 pb-2">
+            <div className="row g-4 pt-2 pb-2 justify-content-center">
               <div className="col-12">
                 <h2 className="display-6 fw-bold">Related Blogs</h2>
               </div>
-              <div className="col-12 col-sm-6 col-lg-4">
-                <RecommendedBlogs
+              <div className="col-12 col-sm-6 ">
+                <BlogsList
                   blogTitle="How Much Does It Cost to Create an App in 2022? A Detailed Guide"
                   shortDescrition="Some quick example text to build on the card title and make up the
               bulk of the car They’re a utility that often receives..."
@@ -150,8 +150,8 @@ export default function BlogPost(props) {
                   authorName="Arun Pratap Singh"
                 />
               </div>
-              <div className="col-12 col-sm-6 col-lg-4">
-                <RecommendedBlogs
+              <div className="col-12 col-sm-6 ">
+                <BlogsList
                   blogTitle="How much does it cost to Create an App in 2022? A Detailed Guide"
                   shortDescrition="Some quick example text to build on the card title and make up the
               bulk of the car. They’re a utility that often receives..."
@@ -161,8 +161,8 @@ export default function BlogPost(props) {
                   authorName="Arun Pratap Singh"
                 />
               </div>
-              <div className="col-12 col-sm-6 col-lg-4">
-                <RecommendedBlogs
+              <div className="col-12 col-sm-6">
+                <BlogsList
                   blogTitle="How much does it cost to Create an App in 2022? A Detailed Guide"
                   shortDescrition="Some quick example text to build on the card title and make up the
               bulk of the car. They’re a utility that often receives"
@@ -172,8 +172,8 @@ export default function BlogPost(props) {
                   authorName="Arun Pratap Singh"
                 />
               </div>
-              <div className="col-12 col-sm-6 col-lg-4">
-                <RecommendedBlogs
+              <div className="col-12 col-sm-6">
+                <BlogsList
                   blogTitle="How much does it cost to Create an App in 2022? A Detailed Guide"
                   shortDescrition="Some quick example text to build on the card title and make up the
               bulk of the car. They’re a utility that often receives"
@@ -189,8 +189,7 @@ export default function BlogPost(props) {
       </div>
       <ContactForm />
       <ContactCall />
-      <Footer />
-    </>
+    </Layout>
   );
 }
 // https://www.gatsbyjs.com/docs/programmatically-create-pages-from-data/#:~:text=%7D-,export%20const%20query%20%3D%20graphql,-%60

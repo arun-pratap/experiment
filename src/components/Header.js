@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "gatsby";
 import Slide from "react-reveal/Slide";
 import logo from "../images/logo/logo-dark.png";
 
@@ -62,7 +63,7 @@ const navLink = [
 
 const Logo = () => {
   return (
-    <div className="d-block px-3 text-start">
+    <div className="d-block text-start">
       <a href="/" className="fs-3 font--weight-500 m-0">
         <img src={logo} alt="logo" height={70} />
       </a>
@@ -148,7 +149,7 @@ const MobileMenu = () => {
   };
 
   return (
-    <ul className="pb-4 bg-light h-100">
+    <ul className="pb-4 pt-3 bg-light h-100">
       {navLink.map((nav) => (
         <li key={nav.text}>
           {nav.isSubNav ? (
@@ -156,7 +157,7 @@ const MobileMenu = () => {
               <div className="d-flex justify-content-between align-items-center pt-3">
                 <a
                   href={`/${nav.slug}`}
-                  className="font--size-para font--weight-500"
+                  className="fs-5"
                 >
                   {nav.text}
                 </a>
@@ -178,7 +179,7 @@ const MobileMenu = () => {
             <div className="d-flex justify-content-between align-items-center pt-3">
               <a
                 href={`/${nav.slug}`}
-                className="font--size-para font--weight-500"
+                className="fs-5"
               >
                 {nav.text}
               </a>
@@ -200,7 +201,9 @@ const MobileMenu = () => {
 const Contact = () => {
   return (
     <div className="d-block text-end">
-      <button className="btn fw-bold text-light bg--primary py-2">Contact Us</button>
+      <button className="btn fw-bold text-light bg--primary py-2">
+        Contact Us
+      </button>
     </div>
   );
 };
@@ -214,11 +217,11 @@ export default function Header() {
   };
   return (
     <>
-      <div className="container-fluid px-0 sticky-top nav-header shadow text-dark softbg--gradient-light">
-        <div
-          className="container "
-          style={{ lineHeight: "2rem", height: "75px" }}
-        >
+      <div
+        className="container-fluid position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
+        style={{ lineHeight: "2rem", height: "75px",zIndex:"1020",top:"0px" }}
+      >
+        <div className="container">
           <div className="row h-100 justify-content-between">
             <div className="col align-self-center">
               <Logo />
@@ -229,21 +232,21 @@ export default function Header() {
             <div className="col align-self-center d-none d-lg-block">
               <Contact />
             </div>
-            <div className="col align-self-center px-4 d-block d-lg-none">
+            <div className="col align-self-center d-block d-lg-none">
               {isMenuOpen ? (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary font--weight-500"
+                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary font--weight-500 fs-6"
                   onClick={handleMenu}
                 >
-                  <i className="bi bi-x fs-4"></i>
+                  <i className="bi bi-x fs-3"></i>
                   <span>close</span>
                 </button>
               ) : (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm text-light bg--primary font--weight-500"
+                  className="d-flex align-items-center ms-auto btn btn-sm text-light bg--primary font--weight-500 fs-6"
                   onClick={handleMenu}
                 >
-                  <i className="bi bi-list fs-4"></i>
+                  <i className="bi bi-list fs-3"></i>
                   <span>&nbsp;Menu</span>
                 </button>
               )}
@@ -253,7 +256,7 @@ export default function Header() {
       </div>
       {isMenuOpen && (
         <div
-          className="container-fluid nav-header top-0 pt-5 mt-4 d-block d-lg-none"
+          className="container-fluid nav-header top-0 pt-5 mt-3 d-block d-lg-none"
           style={{
             backgroundColor: "#00000073",
             position: "fixed",
@@ -263,7 +266,7 @@ export default function Header() {
           }}
         >
           <Slide right>
-            <div className="row justify-content-end">
+            <div className="row justify-content-end mt-2 h-100">
               <div className="col-11 col-md-10 px-0">
                 <MobileMenu />
               </div>

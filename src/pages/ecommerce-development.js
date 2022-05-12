@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
@@ -136,9 +136,9 @@ const howWeDo = [
   },
 ];
 
-export default function EcommerceDevelopment() {
+const EcommerceDevelopment = () => {
   return (
-    <>
+    <Layout>
       {/* Cover Page */}
       <div className="container-fluid py-5 softbg--gradient-dark text-white">
         <div className="container py-5">
@@ -270,7 +270,7 @@ export default function EcommerceDevelopment() {
             {howWeDo.map((step, index) => (
               <Fade key={step.heading} bottom>
                 <div className="col-12 col-md-6 col-xl-4">
-                  <div className="card p-4 h-100 border-0 shadow services--card">
+                  <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
                     <div
                       style={{ width: "65px", height: "65px" }}
                       className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
@@ -389,6 +389,7 @@ export default function EcommerceDevelopment() {
       </div>
       <ContactForm />
       <ContactCall />
-    </>
+    </Layout>
   );
-}
+};
+export default EcommerceDevelopment;

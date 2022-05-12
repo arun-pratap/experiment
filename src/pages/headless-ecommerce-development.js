@@ -24,6 +24,7 @@ import productDesigning from "../svgs/designing.svg";
 import productDevelopment from "../svgs/development.svg";
 import automateDeployment from "../svgs/deployment.svg";
 import optimimizePerformance from "../svgs/performance.svg";
+import Layout from './../components/Layout';
 
 /* @TODO
   1. Cover Page with contact Form or just cta
@@ -93,6 +94,7 @@ const offers = [
     heading: "Third Party Integration",
     para: "Get real-time updates on customers’ orders, delivery and other important information by integrating any CRM, CMS, and ERP using APIs.",
   },
+
   {
     iconImage: erp,
     iconAlt: "ERP System",
@@ -136,7 +138,7 @@ const howWeDo = [
 
 export default function HeadlessEcommerceDevelopment() {
   return (
-    <>
+    <Layout>
       {/* Cover Page */}
       <div className="container-fluid py-5 softbg--gradient-dark text-white">
         <div className="container py-5">
@@ -175,7 +177,7 @@ export default function HeadlessEcommerceDevelopment() {
       {/* How appQue can help you */}
       <div className="container-fluid py-5 softbg--gradient-light">
         <div className="container py-5">
-          <div className="row g-5">
+          <div className="row g-5 justify-content-center">
             <h2 className="display-4 px-5 pb-5 mb-4 text-center fw-bold underline">
               We Can Help You
             </h2>
@@ -271,7 +273,7 @@ export default function HeadlessEcommerceDevelopment() {
             {howWeDo.map((step, index) => (
               <Fade key={step.heading} bottom>
                 <div className="col-12 col-md-6 col-xl-4">
-                  <div className="card p-4 h-100 border-0 shadow services--card">
+                  <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
                     <div
                       style={{ width: "65px", height: "65px" }}
                       className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
@@ -390,6 +392,6 @@ export default function HeadlessEcommerceDevelopment() {
       </div>
       <ContactForm />
       <ContactCall />
-    </>
+    </Layout>
   );
 }

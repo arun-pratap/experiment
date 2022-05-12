@@ -154,15 +154,6 @@ hr {
     font-weight: 500;
 }
 
-
-#blog--container p {
-    font-size: 1.3rem;
-    line-height: 1.55em;
-    margin-bottom: 1.5rem;
-}
-
-
-
 .gradient--heading-blue {
     color: var(--color-primary);
     background-image: linear-gradient(100deg, var(--color-black), var(--color-primary));
@@ -219,50 +210,50 @@ hr {
     position: absolute;
     display: block;
     content: "1";
-    top: 0px;
-    right: 15px;
+    top: 15px;
+    right: 25px;
     color: var(--grey-300);
-    font-size: 5.85rem;
+    font-size: 5.65rem;
 }
 
 .step--2:after {
     position: absolute;
     display: block;
     content: "2";
-    top: 0px;
-    right: 15px;
+    top: 15px;
+    right: 25px;
     color: var(--grey-300);
-    font-size: 5.85rem;
+    font-size: 5.65rem;
 }
 
 .step--3:after {
     position: absolute;
     display: block;
     content: "3";
-    top: 0px;
-    right: 15px;
+    top: 15px;
+    right: 25px;
     color: var(--grey-300);
-    font-size: 5.85rem;
+    font-size: 5.65rem;
 }
 
 .step--4:after {
     position: absolute;
     display: block;
     content: "4";
-    top: 0px;
-    right: 15px;
+    top: 15px;
+    right: 25px;
     color: var(--grey-300);
-    font-size: 5.85rem;
+    font-size: 5.65rem;
 }
 
 .step--5:after {
     position: absolute;
     display: block;
     content: "5";
-    top: 0px;
-    right: 15px;
+    top: 15px;
+    right: 25px;
     color: var(--grey-300);
-    font-size: 5.85rem;
+    font-size: 5.65rem;
 }
 
 .nav-header a,
@@ -306,24 +297,6 @@ li {
     color: inherit;
 }
 
-.image-wrapper {
-    position: relative;
-    width: fit-content;
-    height: 100%;
-
-}
-
-.image-wrapper::before {
-    content: "";
-    width: 99%;
-    height: 89%;
-    position: absolute;
-    top: -18px;
-    left: -18px;
-    background-color: rgb(0 36 137 / 16%);
-    z-index: -1;
-}
-
 .services--card {
     background-color: #ffffff0a !important;
     transition: transform 0.3s, background-color 0.3s;
@@ -337,6 +310,33 @@ li {
 
 .margin--bottom-0 {
     margin-bottom: 0px !important;
+}
+
+
+#blog--container p {
+    /* fs-5 = 1.25rem */
+    /* line-height: 1.55em; */
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+
+}
+
+.image-wrapper::before {
+    content: "";
+    width: 99%;
+    height: 89%;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    background-color: rgb(0 36 137 / 16%);
+    z-index: -1;
 }
 
 /* 

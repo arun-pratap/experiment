@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
@@ -12,10 +13,11 @@ import bncTogether from "../svgs/undraw-build.svg";
 import commitedToGrowth from "../svgs/undraw-commited.svg";
 
 import latestTechnology from "../svgs/undraw-technology.svg";
+import Layout from "../components/Layout";
 
 export default function About() {
   return (
-    <>
+    <Layout>
       <div className="container-fluid py-5 bg--about text-white">
         <div className="container py-5">
           <div className="row justify-content-between align-items-center g-5">
@@ -65,16 +67,16 @@ export default function About() {
         </div>
       </section>
       <section className="container-fluid py-5">
-        <div className="container py-5">
-          <div className="row g-5 justify-content-center">
+        <div className="container py-5 px-0">
+          <div className="row g-3 justify-content-center">
             <div className="col-12">
               <h2 className="display-4 px-5 pb-5 mb-4 text-center fw-bold underline">
                 Why Us?
               </h2>
             </div>
           </div>
-          <div className="row g-5 justify-content-center align-items-center">
-            <div className="col-10 col-sm-6 col-lg-4">
+          <div className="row g-4 justify-content-center align-items-center">
+            <div className="col-12 col-sm-6 col-lg-4">
               <div className="card border-0 card--about">
                 <img src={rdDevelopment} className="card-img-top p-5" />
                 <div className="card-body">
@@ -85,7 +87,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="col-10 col-sm-6 col-lg-6">
+            <div className="col-12 col-sm-6 col-lg-6">
               <div className="card border-0 card--about">
                 <img src={commitedToGrowth} className="card-img-top p-5" />
                 <div className="card-body">
@@ -94,7 +96,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="col-10 col-sm-6 col-lg-6">
+            <div className="col-12 col-sm-6 col-lg-6">
               <div className="card border-0 card--about">
                 <img src={latestTechnology} className="card-img-top p-5" />
                 <div className="card-body">
@@ -105,7 +107,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="col-10 col-sm-6 col-lg-4">
+            <div className="col-12 col-sm-6 col-lg-4">
               <div className="card border-0 card--about">
                 <img src={bncTogether} className="card-img-top p-5" />
                 <div className="card-body">
@@ -124,11 +126,11 @@ export default function About() {
           className="container py-5 mb-5 rounded"
           style={{ backgroundColor: "rgb(235 241 255)" }}
         >
-          <div className="row g-4 justify-content-center align-items-center px-2 mb-1">
-            <div className="col-12 col-md-6">
+          <div className="row g-5 justify-content-center align-items-center px-2 mb-1">
+            <div className="col-12 col-lg-5 col-xl-6">
               <h2 className="display-4 text-center fw-bold">Ready To Grow?</h2>
             </div>
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-lg-6 col-xl-5">
               <div
                 className="card border-0"
                 style={{ backgroundColor: "rgb(249 251 255)" }}
@@ -140,18 +142,18 @@ export default function About() {
                     businesses. Let's find out if we are the right match for
                     you.
                   </p>
-                  <a
+                  <Link
                     href="/career"
                     className="btn btn-lg text-white bg--primary font--weight-500"
                   >
                     Apply Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </Layout>
   );
 }

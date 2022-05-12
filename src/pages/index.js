@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from './../components/Layout';
 
 const IndexPage =()=> {
   return (
-    <div>IndexPage</div>
+    <Layout>IndexPage</Layout>
   )
 }
 

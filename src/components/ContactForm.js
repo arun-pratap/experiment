@@ -8,13 +8,10 @@ export default function ContactForm() {
       className="container-fluid py-5"
       style={{ backgroundColor: "rgba(1, 8, 25, 1)" }}
     >
-      <div className="container py-5 mt-5">
-        {/* Contact Form */}
-        <Zoom>
-          <div
-            className="row justify-content-center align-items-start shadow-lg rounded g-5 mx-1 pt-2 pb-5 softbg--gradient-light"
-            style={{ backgroundColor: "#fff" }}
-          >
+      <Zoom>
+        <div className="container pt-5 my-5 rounded shadow-lg softbg--gradient-light">
+          {/* Contact Form */}
+          <div className="row justify-content-center align-items-start  g-5 pt-2 pb-5 ">
             <div className=" col-6 col-xl-5 d-none d-lg-block">
               <h2 className="display-4 mb-5 fw-bold text-center">
                 How Can We Help You?
@@ -70,9 +67,7 @@ export default function ContactForm() {
                       Select Budget:
                     </label>
                     <select className="form-select fs-5">
-                      <option defaultValue="none">
-                        Select Budget
-                      </option>
+                      <option defaultValue="none">Select Budget</option>
                       <option className="font--weight-500">
                         ₹10000-₹15000
                       </option>
@@ -113,8 +108,8 @@ export default function ContactForm() {
               </div>
             </div>
           </div>
-        </Zoom>
-      </div>
+        </div>
+      </Zoom>
     </div>
   );
 }
