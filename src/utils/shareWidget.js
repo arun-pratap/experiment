@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 export const LinkedInShareButton = ({ pageURL }) => {
   const linkedInShareURL = `https://www.linkedin.com/shareArticle?url=${pageURL}`;
   return (
-    <a href={linkedInShareURL} target="_blank" className="btn bg-info text-white">
+    <a href={linkedInShareURL} target="_blank" className="btn btn-sm bg-info text-white">
       <i className="bi bi-linkedin"></i>
     </a>
   );
@@ -11,7 +11,7 @@ export const LinkedInShareButton = ({ pageURL }) => {
 export const TwitterShareButton = ({ title, pageURL}) => {
   const twitterShareURL = `https://www.twitter.com/intent/tweet?text=${title}&url=${pageURL}`;
   return (
-    <a href={twitterShareURL} target="_blank" className="btn bg-primary text-white">
+    <a href={twitterShareURL} target="_blank" className="btn btn-sm bg-primary text-white">
       <i className="bi bi-twitter"></i>
     </a>
   );
@@ -26,7 +26,7 @@ export const WhatsAppShareButton = ({ pageURL }) => {
   };
 
   return (
-    <button onClick={handleClick} className="btn bg-success text-white">
+    <button onClick={handleClick} className="btn btn-sm bg-success text-white">
       <i className="bi bi-whatsapp"></i>
     </button>
   );

@@ -113,7 +113,7 @@ export default function BlogPost(props) {
               </div>
             </div>
             {/* Author Profile */}
-            <div className="row mt-5 mb-3">
+            <div className="row mt-5 mb-4">
               <div className="col-12">
                 <div className="row justify-content-between align-items-center">
                   <div className="col-12 col-md-5 col-lg-5 me-4">
@@ -148,13 +148,13 @@ export default function BlogPost(props) {
             </div>
 
             {/* prev and next */}
-            <div className="row mt-4">
+            <div className="row mt-2">
               <div className="col-12 justify-content-between">
                 <div className="d-flex justify-content-between">
-                  <small className="text-muted fw-bold mb-4 border px-2 py-1 cursor--pointer">
+                  <small className="text-muted fw-bold mb-1 border px-2 py-1 cursor--pointer">
                     Prev Article
                   </small>
-                  <small className="text-muted fw-bold mb-4 border px-2 py-1 cursor--pointer">
+                  <small className="text-muted fw-bold mb-1 border px-2 py-1 cursor--pointer">
                     Next Article
                   </small>
                 </div>

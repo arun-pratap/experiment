@@ -252,8 +252,8 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <Slide right when={isMenuOpen}>
-        {isMenuOpen && (
+      {isMenuOpen && (
+        <Slide right>
           <div
             className="container-fluid nav-header bg-light top-0 pt-5 mt-3 d-block d-lg-none"
             style={{
@@ -269,8 +269,8 @@ export default function Header() {
               </div>
             </div>
           </div>
-        )}
-      </Slide>
+        </Slide>
+      )}
     </>
   );
 }
