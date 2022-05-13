@@ -21,8 +21,7 @@ const IndexPage = () => {
   );
 
   const { site } = data;
-
-  console.log(site);
+  
   return (
     <>
       <Seo

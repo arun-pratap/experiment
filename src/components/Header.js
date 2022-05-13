@@ -208,7 +208,6 @@ export default function Header() {
   const handleMenu = () => {
     let p;
     setIsMenuOpen((prevState) => !prevState);
-    console.log("prevState:", p, "nextState:", isMenuOpen);
   };
   return (
     <>
