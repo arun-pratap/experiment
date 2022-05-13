@@ -10,7 +10,6 @@ import Layout from "../components/Layout";
 
 export default function BlogPost(props) {
   const { data } = props;
-  console.log(props);
 
   return (
     <Layout>
