@@ -4,6 +4,11 @@ import { useStaticQuery, graphql } from "gatsby";
 import Layout from "./../components/Layout";
 import Seo from "../components/Seo";
 import logoPrimary from "../images/logo/logo-primary.png";
+import {
+  LinkedInShareButton,
+  TwitterShareButton,
+  WhatsAppShareButton,
+} from "../utils/shareWidget";
 
 const IndexPage = () => {
   const data = useStaticQuery(
@@ -21,7 +26,7 @@ const IndexPage = () => {
   );
 
   const { site } = data;
-  
+
   return (
     <>
       <Seo
@@ -31,9 +36,7 @@ const IndexPage = () => {
         slug=""
         type="website"
       />
-      <Layout>
-        <a href={logoPrimary}>hello</a>IndexPage
-      </Layout>
+      <Layout>IndexPage</Layout>
     </>
   );
 };

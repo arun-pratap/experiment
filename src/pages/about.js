@@ -77,53 +77,55 @@ export default function About() {
           </div>
           <div className="row g-4 justify-content-center align-items-center">
             <div className="col-12 col-sm-6 col-lg-4">
-              <Zoom>
               <div className="card border-0 card--about">
-                <img src={rdDevelopment} className="card-img-top p-5" />
-                <div className="card-body">
-                  <h5 className="fs-3 fw-bold ps-3">
-                    Research Driven Development
-                  </h5>
-                </div>
+                <Zoom>
+                  <img src={rdDevelopment} className="card-img-top p-5" />
+                  <div className="card-body">
+                    <h5 className="fs-3 fw-bold ps-3">
+                      Research Driven Development
+                    </h5>
+                  </div>
+                </Zoom>
               </div>
-              </Zoom>
             </div>
 
             <div className="col-12 col-sm-6 col-lg-6">
-              <Zoom>
               <div className="card border-0 card--about">
-                <img src={commitedToGrowth} className="card-img-top p-5" />
-                <div className="card-body">
-                  <h5 className="fs-3 fw-bold ps-3">Commited To Your Growth</h5>
-                </div>
+                <Zoom>
+                  <img src={commitedToGrowth} className="card-img-top p-5" />
+                  <div className="card-body">
+                    <h5 className="fs-3 fw-bold ps-3">
+                      Commited To Your Growth
+                    </h5>
+                  </div>
+                </Zoom>
               </div>
-              </Zoom>
             </div>
 
             <div className="col-12 col-sm-6 col-lg-6">
-              <Zoom>
               <div className="card border-0 card--about">
-                <img src={latestTechnology} className="card-img-top p-5" />
-                <div className="card-body">
-                  <h5 className="fs-3 fw-bold ps-3">
-                    Work With Latest Technologies
-                  </h5>
-                </div>
+                <Zoom>
+                  <img src={latestTechnology} className="card-img-top p-5" />
+                  <div className="card-body">
+                    <h5 className="fs-3 fw-bold ps-3">
+                      Work With Latest Technologies
+                    </h5>
+                  </div>
+                </Zoom>
               </div>
-              </Zoom>
             </div>
 
             <div className="col-12 col-sm-6 col-lg-4">
-              <Zoom>
               <div className="card border-0 card--about">
-                <img src={bncTogether} className="card-img-top p-5" />
-                <div className="card-body">
-                  <h5 className="fs-3 fw-bold ps-3">
-                    Build And Create Together
-                  </h5>
-                </div>
+                <Zoom>
+                  <img src={bncTogether} className="card-img-top p-5" />
+                  <div className="card-body">
+                    <h5 className="fs-3 fw-bold ps-3">
+                      Build And Create Together
+                    </h5>
+                  </div>
+                </Zoom>
               </div>
-              </Zoom>
             </div>
           </div>
         </div>

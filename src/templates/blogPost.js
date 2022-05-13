@@ -7,6 +7,11 @@ import { BlogsList } from "./blogsList";
 import ContactForm from "../components/ContactForm";
 import ContactCall from "../components/ContactCall";
 import Layout from "../components/Layout";
+import {
+  LinkedInShareButton,
+  TwitterShareButton,
+  WhatsAppShareButton,
+} from "../utils/shareWidget";
 
 export default function BlogPost(props) {
   const { data } = props;
@@ -83,7 +88,30 @@ export default function BlogPost(props) {
           <main>
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </main>
-          <footer className="pt-4">
+          <footer>
+            <div className="row pb-3">
+              <div className="col-12">
+                <div className="d-flex">
+                  <div className="me-2">
+                    <LinkedInShareButton pageURL="https://appinventiv.com/blog/how-to-build-an-mvp/" />
+                  </div>
+                  <div className="me-2">
+                    <TwitterShareButton
+                      title="appinventiv blog"
+                      pageURL="https://appinventiv.com/blog/how-to-build-an-mvp/"
+                    />
+                  </div>
+                  <div className="me-2">
+                    <WhatsAppShareButton pageURL="https://appinventiv.com/blog/how-to-build-an-mvp/" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-12">
+                <small className="text-muted font--weight-500">
+                  Share this article
+                </small>
+              </div>
+            </div>
             {/* Author Profile */}
             <div className="row mt-5 mb-3">
               <div className="col-12">
@@ -99,15 +127,13 @@ export default function BlogPost(props) {
                     </div>
                   </div>
                   <div className="col-12 col-md-6 col-lg-6 text-start">
-                    <p>
+                    <div>
                       <span className="fs-6 text-muted font--weight-500">
                         About Author
                       </span>
                       <br />
-                      <h5 className="fs-3 fw-bold mb-2">
-                        Arun Pratap Singh
-                      </h5>
-                      
+                      <h5 className="fs-3 fw-bold mb-2">Arun Pratap Singh</h5>
+
                       <p>
                         Tejas is a Senior Tech Consultant at Simform excelling
                         in mobile and server-side technologies, with extensive
@@ -115,7 +141,7 @@ export default function BlogPost(props) {
                         enterprises. His expertise in understanding tech has
                         helped businesses achieve excellence over the long run.
                       </p>
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -123,13 +149,15 @@ export default function BlogPost(props) {
 
             {/* prev and next */}
             <div className="row mt-4">
-              <div className="col-12 d-flex justify-content-between">
-                <small className="text-uppercase text-muted fw-bold mb-4 border px-2 py-1 cursor--pointer">
-                  prev post
-                </small>
-                <small className="text-uppercase text-muted fw-bold mb-4 border px-2 py-1 cursor--pointer">
-                  next post
-                </small>
+              <div className="col-12 justify-content-between">
+                <div className="d-flex justify-content-between">
+                  <small className="text-muted fw-bold mb-4 border px-2 py-1 cursor--pointer">
+                    Prev Article
+                  </small>
+                  <small className="text-muted fw-bold mb-4 border px-2 py-1 cursor--pointer">
+                    Next Article
+                  </small>
+                </div>
               </div>
             </div>
             {/* Related Articles */}
