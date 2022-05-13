@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 export default function Seo({ title, image, description, slug, type }) {
-  const baseURL ="https://www.appque.in/";
+  const baseURL ="https://www.appque.in";
   const canonicalURL = `https://www.appque.in/${slug}`;
   //  main url of a particular webpage
   const URL = `${baseURL}/${slug}`;

@@ -206,7 +206,6 @@ const Contact = () => {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {
-    let p;
     setIsMenuOpen((prevState) => !prevState);
   };
   return (
@@ -254,21 +253,23 @@ export default function Header() {
         </div>
       </div>
       <Slide right when={isMenuOpen}>
-        <div
-          className="container-fluid nav-header bg-light top-0 pt-5 mt-3 d-block d-lg-none"
-          style={{
-            position: "fixed",
-            height: "100vh",
-            overflowY: "scroll",
-            zIndex: "1000",
-          }}
-        >
-          <div className="row justify-content-end mt-2 h-100">
-            <div className="col-11 col-md-10 px-0">
-              <MobileMenu />
+        {isMenuOpen && (
+          <div
+            className="container-fluid nav-header bg-light top-0 pt-5 mt-3 d-block d-lg-none"
+            style={{
+              position: "fixed",
+              height: "100vh",
+              overflowY: "scroll",
+              zIndex: "1000",
+            }}
+          >
+            <div className="row justify-content-end mt-2 h-100">
+              <div className="col-11 col-md-10 px-0">
+                <MobileMenu />
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </Slide>
     </>
   );

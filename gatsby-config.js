@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AppQue | Web & Mobile App Development Agency`,
+        name: `AppQue - Web & Mobile App Development Agency`,
         short_name: `AppQue`,
         start_url: `/`,
         background_color: `#15151e`,
