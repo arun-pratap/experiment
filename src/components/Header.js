@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Link } from "gatsby";
 import Slide from "react-reveal/Slide";
 import logo from "../images/logo/logo-dark.png";
+import Fade from "react-reveal/Fade";
 
 const navLink = [
   {
@@ -155,10 +156,7 @@ const MobileMenu = () => {
           {nav.isSubNav ? (
             <>
               <div className="d-flex justify-content-between align-items-center pt-3">
-                <a
-                  href={`/${nav.slug}`}
-                  className="fs-5"
-                >
+                <a href={`/${nav.slug}`} className="fs-5">
                   {nav.text}
                 </a>
                 <button className="btn fw-bold">
@@ -177,10 +175,7 @@ const MobileMenu = () => {
             </>
           ) : (
             <div className="d-flex justify-content-between align-items-center pt-3">
-              <a
-                href={`/${nav.slug}`}
-                className="fs-5"
-              >
+              <a href={`/${nav.slug}`} className="fs-5">
                 {nav.text}
               </a>
             </div>
@@ -219,7 +214,12 @@ export default function Header() {
     <>
       <div
         className="container-fluid position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
-        style={{ lineHeight: "2rem", height: "75px",zIndex:"1020",top:"0px" }}
+        style={{
+          lineHeight: "2rem",
+          height: "75px",
+          zIndex: "1020",
+          top: "0px",
+        }}
       >
         <div className="container">
           <div className="row h-100 justify-content-between">
@@ -235,15 +235,15 @@ export default function Header() {
             <div className="col align-self-center d-block d-lg-none">
               {isMenuOpen ? (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary font--weight-500 fs-6"
+                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary fs-6"
                   onClick={handleMenu}
                 >
-                  <i className="bi bi-x fs-3"></i>
-                  <span>close</span>
+                  <i className="bi bi-x fs-4"></i>
+                  <span>&nbsp;Close</span>
                 </button>
               ) : (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm text-light bg--primary font--weight-500 fs-6"
+                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary fs-6"
                   onClick={handleMenu}
                 >
                   <i className="bi bi-list fs-3"></i>
@@ -254,26 +254,23 @@ export default function Header() {
           </div>
         </div>
       </div>
-      {isMenuOpen && (
+      <Slide right when={isMenuOpen}>
         <div
-          className="container-fluid nav-header top-0 pt-5 mt-3 d-block d-lg-none"
+          className="container-fluid nav-header bg-light top-0 pt-5 mt-3 d-block d-lg-none"
           style={{
-            backgroundColor: "#00000073",
             position: "fixed",
             height: "100vh",
             overflowY: "scroll",
             zIndex: "1000",
           }}
         >
-          <Slide right>
-            <div className="row justify-content-end mt-2 h-100">
-              <div className="col-11 col-md-10 px-0">
-                <MobileMenu />
-              </div>
+          <div className="row justify-content-end mt-2 h-100">
+            <div className="col-11 col-md-10 px-0">
+              <MobileMenu />
             </div>
-          </Slide>
+          </div>
         </div>
-      )}
+      </Slide>
     </>
   );
 }

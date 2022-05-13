@@ -77,6 +77,7 @@ export default function About() {
           </div>
           <div className="row g-4 justify-content-center align-items-center">
             <div className="col-12 col-sm-6 col-lg-4">
+              <Zoom>
               <div className="card border-0 card--about">
                 <img src={rdDevelopment} className="card-img-top p-5" />
                 <div className="card-body">
@@ -85,18 +86,22 @@ export default function About() {
                   </h5>
                 </div>
               </div>
+              </Zoom>
             </div>
 
             <div className="col-12 col-sm-6 col-lg-6">
+              <Zoom>
               <div className="card border-0 card--about">
                 <img src={commitedToGrowth} className="card-img-top p-5" />
                 <div className="card-body">
                   <h5 className="fs-3 fw-bold ps-3">Commited To Your Growth</h5>
                 </div>
               </div>
+              </Zoom>
             </div>
 
             <div className="col-12 col-sm-6 col-lg-6">
+              <Zoom>
               <div className="card border-0 card--about">
                 <img src={latestTechnology} className="card-img-top p-5" />
                 <div className="card-body">
@@ -105,9 +110,11 @@ export default function About() {
                   </h5>
                 </div>
               </div>
+              </Zoom>
             </div>
 
             <div className="col-12 col-sm-6 col-lg-4">
+              <Zoom>
               <div className="card border-0 card--about">
                 <img src={bncTogether} className="card-img-top p-5" />
                 <div className="card-body">
@@ -116,6 +123,7 @@ export default function About() {
                   </h5>
                 </div>
               </div>
+              </Zoom>
             </div>
           </div>
         </div>
@@ -142,12 +150,13 @@ export default function About() {
                     businesses. Let's find out if we are the right match for
                     you.
                   </p>
-                  <Link
+
+                  <a
                     href="/career"
                     className="btn btn-lg text-white bg--primary font--weight-500"
                   >
                     Apply Now
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
