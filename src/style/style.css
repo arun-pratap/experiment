@@ -8,7 +8,7 @@ colortheme
 /* rgb(113 138 251 / 22%) */
 :root {
     /*main->#0052f5 alternate->1f69ff #2d6ef0->from appwrite*/
-    --color-primary: #2d6ef0;
+    --color-primary: #1f69ff;
     /* #f37900 #f5a300 👇*/
     --color-secondary: #ffd91a;
     --color-dark: #000000;
@@ -94,12 +94,15 @@ colortheme
     --grey-800: #4c4c4c;
     --grey-900: #2a2a2a;
 }
+/*
+not necessary only if required 
 h1,h2,h3,h4,h5,h6 {
     color:#40404c;
-}
+} 
 p{
     color: var(--grey-600) !important;
-}
+} */
+
 .card--about {
     background: #f2f4fe;
     background: linear-gradient(135deg, rgba(245, 248, 255, 1) 33%, rgba(255, 254, 245, 1) 66%);
