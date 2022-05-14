@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo/logo-primary.png";
+import logo from "../images/logo/logo-primary2.png";
 import { Link } from "gatsby";
 
 const Logo = () => {
