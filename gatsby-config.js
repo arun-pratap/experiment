@@ -14,7 +14,7 @@ module.exports = {
         name: `Web & Mobile App Development Agency`,
         short_name: `AppQue`,
         start_url: `/`,
-        background_color: `#f9fbff`,
+        background_color: `#ffffff`,
         theme_color: `#2d6ef0`,
         display: `standalone`,
         icon: `src/images/icon2.png`,
