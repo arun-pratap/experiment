@@ -11,13 +11,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AppQue - Web & Mobile App Development Agency`,
+        name: `Web & Mobile App Development Agency`,
         short_name: `AppQue`,
         start_url: `/`,
-        background_color: `#2d6ef0`,
+        background_color: `#f9fbff`,
         theme_color: `#2d6ef0`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/icon2.png`,
       },
     },
     `gatsby-transformer-remark`,
