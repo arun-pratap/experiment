@@ -56,7 +56,7 @@ export default function BlogPost(props) {
 
                     <div className="d-flex align-items-center">
                       <i className="bi bi-clock-fill fs-6 pe-2 text-muted"></i>
-                      <small> 8 mins read</small>
+                      <small>~ {data.mdx.timeToRead} mins read</small>
                     </div>
                   </div>
                 </div>
@@ -135,11 +135,10 @@ export default function BlogPost(props) {
                       <h5 className="fs-3 fw-bold mb-2">Arun Pratap Singh</h5>
 
                       <p>
-                        Tejas is a Senior Tech Consultant at Simform excelling
-                        in mobile and server-side technologies, with extensive
-                        experience in working closely with startups and
-                        enterprises. His expertise in understanding tech has
-                        helped businesses achieve excellence over the long run.
+                        Arun Pratap Singh is building SEO friendly web
+                        applications focused on crafting clean and user-friendly
+                        experiences.He is helping businesses and start-ups to
+                        grow with the help of latest technology.
                       </p>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `AppQue | Web & Mobile App Development Agency that drives something`,
-    description:`kkkj`,
+    title: `AppQue | Leading Web & App Development Agency Noida`,
+    description: `AppQue is a leading Web development company in noida that provides website and application development services to Grow Businesses Online.`,
     siteUrl: `https://www.appque.in/`,
   },
   plugins: [
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Web & Mobile App Development Agency`,
+        name: `Leading Web & Application Development Agency in Noida`,
         short_name: `AppQue`,
         start_url: `/`,
         background_color: `#ffffff`,

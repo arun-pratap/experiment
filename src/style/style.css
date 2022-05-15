@@ -322,11 +322,46 @@ li {
 }
 
 
+
 #blog--container p {
     /* fs-5 = 1.25rem */
     /* line-height: 1.55em; */
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
+}
+
+#blog--container ul,
+ol {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    list-style-type: unset;
+    background-color: rgb(235, 241, 255);
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right:18px;
+}
+
+#blog--container ul li {
+    list-style-type: disc !important;
+    
+}
+
+#blog--container ol li {
+    list-style-type: auto;
+    
+}
+
+#blog--container li {
+    font-size: 1.3rem;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 0px;
+}
+
+#blog--container li::marker {
+    color: var(--grey-900);
+    font-weight: 500;
 }
 
 
