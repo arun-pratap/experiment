@@ -59,7 +59,7 @@ const IndexPage = () => {
               </div>
               <div className="col-12 col-md-8 col-xl-5">
                 <Zoom>
-                  <img src={digital} className="img-fluid" />
+                  <img src={digital} className="img-fluid py-5" />
                 </Zoom>
               </div>
             </div>
