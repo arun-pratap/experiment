@@ -35,15 +35,15 @@ const IndexPage = () => {
       />
       <Layout>
         <div
-          className="container-fluid py-5"
-          style={{ backgroundColor: "rgb(235, 241, 255)" }}
+          className="container-fluid py-5 text-white bg--primary"
+
         >
           {/* rgb(249, 251, 255) */}
           <div className="container">
-            <div className="row align-items-center g-5">
+            <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-lg-7">
                 <Fade bottom>
-                  <h1 className="display-1 fw-bold mt-3">
+                  <h1 className="display-2 mt-3 fw-bold">
                     Delivering Digital Experience
                   </h1>
                 </Fade>
@@ -52,14 +52,14 @@ const IndexPage = () => {
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
-                  <button className="btn btn-lg text-white mt-2 font--weight-500 bg--primary">
+                  <button className="btn btn-lg bg-dark text-white mt-2 font--weight-500 bg--primary">
                     Request a proposal
                   </button>
                 </Fade>
               </div>
               <div className="col-12 col-md-8 col-xl-5">
                 <Zoom>
-                  <img src={digital} className="img-fluid py-5" />
+                  <img src={digital} className="img-fluid pt-4 pb-5" />
                 </Zoom>
               </div>
             </div>
