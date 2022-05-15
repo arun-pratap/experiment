@@ -43,12 +43,12 @@ const IndexPage = () => {
             <div className="row align-items-center g-5">
               <div className="col-12 col-lg-7">
                 <Fade bottom>
-                  <h1 className="display-3 fw-bold mt-3">
+                  <h1 className="display-1 fw-bold mt-3">
                     Delivering Digital Experience
                   </h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3" style={{ maxWidth: "600px" }}>
+                  <p className="fs-4 mt-3">
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
