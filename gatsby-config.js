@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `AppQue | Leading Web & App Development Agency Noida`,
-    description: `AppQue is a leading Web development company in noida that provides website and application development services to Grow Businesses Online.`,
+    title: `AppQue | Leading Web and Application Development Agency Noida`,
+    description: `AppQue is a web development company that provides Web Design, Web Development, Ecommerce Develoment, Headless CMS Development services to Grow Businesses Online.`,
     siteUrl: `https://www.appque.in/`,
   },
   plugins: [
