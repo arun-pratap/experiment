@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 import logoPrimary from "../images/logo/logo-primary.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-import digital from "../svgs/undraw-digital.svg";
+import digital from "../svgs/undraw-digital-nomad.svg";
 
 const IndexPage = () => {
   const data = useStaticQuery(
@@ -39,11 +39,11 @@ const IndexPage = () => {
           style={{ backgroundColor: "rgb(235, 241, 255)" }}
         >
           {/* rgb(249, 251, 255) */}
-          <div className="container py-5">
+          <div className="container">
             <div className="row align-items-center g-5">
               <div className="col-12 col-lg-7">
                 <Fade bottom>
-                  <h1 className="display-1 fw-bold mt-3">
+                  <h1 className="display-3 fw-bold mt-3">
                     Delivering Digital Experience
                   </h1>
                 </Fade>
