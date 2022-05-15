@@ -6,6 +6,7 @@ import logoPrimary from "../images/logo/logo-primary.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import digital from "../svgs/undraw-digital-nomad.svg";
+import ContactForm from "../components/ContactForm";
 
 const IndexPage = () => {
   const data = useStaticQuery(
@@ -34,14 +35,11 @@ const IndexPage = () => {
         type="website"
       />
       <Layout>
-        <div
-          className="container-fluid py-5 text-white bg--primary"
-
-        >
+        <div className="container-fluid py-5 bg--primary softbg--gradient-dark">
           {/* rgb(249, 251, 255) */}
-          <div className="container">
+          <div className="container pt-3 pb-5">
             <div className="row justify-content-center align-items-center g-5">
-              <div className="col-12 col-lg-7">
+              <div className="col-12 col-lg-7 text-white">
                 <Fade bottom>
                   <h1 className="display-2 mt-3 fw-bold">
                     Delivering Digital Experience
@@ -52,14 +50,14 @@ const IndexPage = () => {
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
-                  <button className="btn btn-lg bg-dark text-white mt-2 font--weight-500 bg--primary">
+                  <button className="btn btn-lg text-white mt-2 font--weight-500 bg--primary">
                     Request a proposal
                   </button>
                 </Fade>
               </div>
-              <div className="col-12 col-md-8 col-xl-5">
+              <div className="col-12 col-md-8 col-xl-5 text-white">
                 <Zoom>
-                  <img src={digital} className="img-fluid pt-4 pb-5" />
+                  <img src={digital} className="img-fluid" />
                 </Zoom>
               </div>
             </div>
