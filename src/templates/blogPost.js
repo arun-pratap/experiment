@@ -135,10 +135,10 @@ export default function BlogPost(props) {
                       <h5 className="fs-3 fw-bold mb-2">Arun Pratap Singh</h5>
 
                       <p>
-                        Arun Pratap Singh is building SEO friendly web
-                        applications focused on crafting clean and user-friendly
-                        experiences.He is helping businesses and start-ups to
-                        grow with the help of latest technology.
+                        Building SEO friendly web applications focused on
+                        crafting clean and user-friendly experiences. He is
+                        helping businesses and start-ups to grow with the help
+                        of modern cutting edge technology.
                       </p>
                     </div>
                   </div>
