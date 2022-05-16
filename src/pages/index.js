@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import digital from "../svgs/undraw-digital-nomad.svg";
 import ContactForm from "../components/ContactForm";
+import CallToAction from "../components/CallToAction";
 
 const IndexPage = () => {
   const data = useStaticQuery(
@@ -50,10 +51,7 @@ const IndexPage = () => {
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
-                  <button className="d-inline-flex align-items-center btn btn-lg text-white mt-2 px-4 bg--primary">
-                    Request a proposal&nbsp;&nbsp;
-                    <i class="bi bi-arrow-right fs-4"></i>
-                  </button>
+                  <CallToAction btnText="Request a proposal&nbsp;&nbsp;" />
                 </Fade>
               </div>
               <div className="col-12 col-md-7 col-lg-4 col-xl-5 text-white">
@@ -116,10 +114,7 @@ const IndexPage = () => {
                   to increase leads, phone calls, transactions, and qualified
                   website traffic.
                 </p>
-                <button className="d-inline-flex align-items-center btn btn-lg text-white mt-2 px-4 bg--primary">
-                  Request a proposal&nbsp;&nbsp;
-                  <i class="bi bi-arrow-right fs-4"></i>
-                </button>
+                <CallToAction btnText="Request a proposal&nbsp;&nbsp;" />
               </div>
             </div>
           </div>

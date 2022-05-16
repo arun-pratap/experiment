@@ -26,6 +26,7 @@ import productDevelopment from "../svgs/development.svg";
 import automateDeployment from "../svgs/deployment.svg";
 import optimimizePerformance from "../svgs/performance.svg";
 import Layout from "../components/Layout";
+import CallToAction from './../components/CallToAction';
 
 /* @TODO
   1. Cover Page with contact Form or just cta
@@ -158,9 +159,7 @@ export default function PWADevelopment() {
                   works like a native mobile app and deliver fast &amp; smooth
                   browsing experiences
                 </p>
-                <button className="btn btn-lg text-white mt-2 font--weight-500 bg--primary">
-                  Request a proposal
-                </button>
+                <CallToAction btnText="Request a proposal&nbsp;&nbsp;" />
               </Fade>
             </div>
             <div className="col-12 col-md-8 col-xl-5 mx-auto text-center">
