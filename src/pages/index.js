@@ -64,32 +64,25 @@ const IndexPage = () => {
         </div>
 
         <div className="container-fluid py-5">
-          <div className="container py-4">
+          <div className="container py-5">
             <div className="row g-3 justify-content-center align-items-center">
               <div className="col-12">
-                <h2 className="display-4 fw-bold text-capitalize text-start">
-                  Our tech marketing service help your business grow online
-                  leads, call, and revenue.
+                <h2 className="display-4 fw-bold text-start text-capitalize ">
+                  Our tech-driven services help your business build trust,
+                  credibility and engage visitors.
                 </h2>
               </div>
               <div className="col-12">
-                <p className="fs-4 mb-4">
-                  Combining our technology platform and our expert online
-                  marketing team gives you an unfair advantage over your
-                  competition. As a leader in SEO, PPC, social, marketplaces,
-                  and web design services, our digital marketing agency prides
-                  itself on driving qualified traffic, converting visitors, and
-                  using cutting-edge technology measuring effectiveness to
-                  deliver real results for our clients.
+                <p className="fs-4 mb-4 text-secondary">
+                  Combining our team and modern cutting-edge teachnology keeps
+                  you one step ahead from your competition. Our web development
+                  services help you create impact that drive success. We deliver
+                  measurable and effective results for your business.
                 </p>
-                <p className="fs-4 mb-4">
-                  Combining our technology platform and our expert online
-                  marketing team gives you an unfair advantage over your
-                  competition. As a leader in SEO, PPC, social, marketplaces,
-                  and web design services, our digital marketing agency prides
-                  itself on driving qualified traffic, converting visitors, and
-                  using cutting-edge technology measuring effectiveness to
-                  deliver real results for our clients.
+                <p className="fs-4 mb-4 text-secondary">
+                  We are not just talking. We have the results to 
+                  <a href="#"> show</a>. Get in touch with us today and learn what makes
+                  appQue different from others web development agency.
                 </p>
               </div>
             </div>
@@ -100,7 +93,7 @@ const IndexPage = () => {
           className="container-fluid py-5"
           style={{ backgroundColor: "rgb(235, 241, 255)" }}
         >
-          <div className="container py-4">
+          <div className="container py-5">
             <div className="row g-3 justify-content-center">
               <div className="col-12 col-lg-8">
                 <h2 className="display-4 fw-bold text-capitalize text-sm-center">
@@ -108,7 +101,7 @@ const IndexPage = () => {
                 </h2>
               </div>
               <div className="col-12 col-lg-8 text-sm-center">
-                <p className="fs-4 mb-4 text-sm-center">
+                <p className="fs-4 mb-4 text-sm-center text-secondary">
                   Our digital growth team have put otgether thousands of
                   seccessfuldigital marketing campaigns for businesses looking
                   to increase leads, phone calls, transactions, and qualified
