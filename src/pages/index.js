@@ -68,7 +68,10 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="container-fluid py-5" style={{backgroundColor:"#0f0f0f",color:"#b3b3b3"}}>
+        <div
+          className="container-fluid py-5"
+          style={{ backgroundColor: "#0f0f0f", color: "#b3b3b3" }}
+        >
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6 col-xl-7">
@@ -76,24 +79,30 @@ const IndexPage = () => {
                   Our tech-driven services help your business build trust,
                   credibility and engage visitors.
                 </h2>
-                <p className="fs-4 mb-4">
-                  Combining our team's experience in web development services
-                  and modern cutting-edge technology keeps you one step ahead of
-                  your competition. Our web development services help you create
-                  an impact that drives success. We deliver measurable and
-                  effective results for your business.
-                </p>
-                <p className="fs-4">
-                  We have the experience and demonstrated&nbsp;
-                  <a href="#">results</a> to show you how we can help with your
-                  web development project. Contact us today to schedule a free
-                  consultation.
-                </p>
+                <Fade bottom>
+                  <p className="fs-4 mb-4">
+                    Combining our team's experience in web development services
+                    and modern cutting-edge technology keeps you one step ahead
+                    of your competition. Our web development services help you
+                    create an impact that drives success. We deliver measurable
+                    and effective results for your business.
+                  </p>
+                </Fade>
+                <Fade bottom>
+                  <p className="fs-4">
+                    We have the experience and demonstrated&nbsp;
+                    <a href="#">results</a> to show you how we can help with
+                    your web development project. Contact us today to schedule a
+                    free consultation.
+                  </p>
+                </Fade>
               </div>
               <div className="col-12 col-md-5 col-lg-5 d-none d-md-block text-center">
                 <div className="tech-background-video"></div>
                 <div>
-                  <img src={pexelsGrowth} alt="..." className="img-fluid" />
+                  <Zoom>
+                    <img src={pexelsGrowth} alt="..." className="img-fluid" />
+                  </Zoom>
                 </div>
               </div>
             </div>
@@ -110,18 +119,22 @@ const IndexPage = () => {
                 <h2 className="display-4 mb-4 fw-bold text-start">
                   Ready to grow with us? Get your free proposal today
                 </h2>
-                <p className="fs-4 mb-4 text-secondary">
-                  Our team closely analyzes the successful strategies of your
-                  competitors. We combine this knowledge with our expertise and
-                  create a success plan for your business that unlocks more
-                  possibilities and engagements.
-                </p>
-                <CallToAction btnText="Request a proposal&nbsp;&nbsp;" />
+                <Fade bottom>
+                  <p className="fs-4 mb-4 text-secondary">
+                    Our team closely analyzes the successful strategies of your
+                    competitors. We combine this knowledge with our expertise
+                    and create a success plan for your business that unlocks
+                    more possibilities and engagements.
+                  </p>
+                  <CallToAction btnText="Request a proposal&nbsp;&nbsp;" />
+                </Fade>
               </div>
 
               <div className="col-12 col-md-5 col-lg-5 d-none d-md-block text-center">
                 <div className="rtg">
-                  <img src={pexelsWomen} alt="..." className="img-fluid" />
+                  <Zoom>
+                    <img src={pexelsWomen} alt="..." className="img-fluid" />
+                  </Zoom>
                 </div>
               </div>
             </div>
