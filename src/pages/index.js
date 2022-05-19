@@ -10,10 +10,35 @@ import digitalNomad from "../svgs/undraw-digital-nomad.svg";
 import results from "../svgs/undraw-results.svg";
 import pexelsGrowth from "../images/pexelsShape.jpg";
 import pexelsWomen from "../images/pexelsWomen.jpg";
+import Card from "../components/Card";
+
+import fasterLoad from "../svgs/faster-load.svg";
+import seoEnabled from "../svgs/seo-enabled.svg";
+import responsiveWeb from "../svgs/responsive.svg";
 
 // bg #101010
 // color #b3b3b3 !important
 
+const features = [
+  {
+    title: " Faster Loading",
+    para: "A website that loads quickly can provide a competitive edge over other businesses whose websites take a long time to download. We use the right technology to deliver fast, reliable performance.",
+    img: fasterLoad,
+    imgAlt: "Faster Loading",
+  },
+  {
+    title: "SEO Enabled",
+    para: " A website optimized for search engine helps your business to improve search visibility on Google. We use a practical approach to help you optimize your website for search engines.",
+    img: seoEnabled,
+    imgAlt: "Seo Enabled",
+  },
+  {
+    title: "Responsive Web",
+    para: " Responsive Website improves the user experience and provides a better experience on mobiles. We utilize grids to make a responsive website, ensuring that it looks great on any device.",
+    img: responsiveWeb,
+    imgAlt: "Responsive Web",
+  },
+];
 const IndexPage = () => {
   const data = useStaticQuery(
     graphql`
@@ -42,7 +67,7 @@ const IndexPage = () => {
       />
       <Layout>
         {/* Cover Page */}
-        <div className="container-fluid py-5 bg--primary softbg--gradient-light">
+        <div className="container-fluid py-5 softbg--gradient-light">
           <div className="container py-4">
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-10 col-lg-8 col-xl-7">
@@ -69,8 +94,8 @@ const IndexPage = () => {
         </div>
 
         <div
-          className="container-fluid py-5"
-          style={{ backgroundColor: "#0f0f0f", color: "#b3b3b3" }}
+          className="container-fluid py-5 softbg--gradient-dark"
+          style={{ color: "#b3b3b3" }}
         >
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
@@ -105,6 +130,20 @@ const IndexPage = () => {
                   </Zoom>
                 </div>
               </div>
+            </div>
+            <div className="row g-5 mt-5 justify-content-center text-white">
+              {features.map((feature) => (
+                <div className="col-12 col-lg-10 col-xl-4">
+                  <Fade bottom key={feature.title}>
+                    <Card
+                      title={feature.title}
+                      para={feature.para}
+                      img={feature.img}
+                      alt={feature.imgAlt}
+                    />
+                  </Fade>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -142,42 +181,16 @@ const IndexPage = () => {
         </div>
 
         {/* @TODO
-        - Cover Page
-        - Hook headline
-        - Contact Form
+        - Cover Page done
+        - Hook headline done
+        - Contact Form done
         - Satisfied Customers [ 2 to 3 ] (optional)
-        - 4 to 6 Features with icon, heading and paragraph
+        - 4 to 6 Features with icon, heading and paragraph done
         - Services Listed heading, para and link to individual service page
         - Talk in Numbers what we can help to establish (optional)
         - large highlighted contact form with two column => 1:heading, paragraph,cta 2:image
 
         */}
-        <div className="container-fluid py-5">
-          <div className="container py-5">
-            <div className="row g-5">
-              <div className="col-12 col-md-6">
-                <h2 className="display-4 mb-4 fw-bold text-start">
-                  What we can do for you?
-                </h2>
-                <p className="fs-4 mb-4 text-secondary">
-                  Our strength lies in the comprehensive suite of services we
-                  offer to our clients. From full-stack development to just
-                  consultancy- you demand, we deliver.
-                </p>
-              </div>
-              <div classname="col-12 col-md-6">
-                <h2 className="display-4 mb-4 fw-bold text-start">
-                  What we can do for you?
-                </h2>
-                <p className="fs-4 mb-4 text-secondary">
-                  Our strength lies in the full range of services we offer to
-                  our clients. From full-stack development to just consultancy,
-                  we can handle all your needs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </Layout>
     </>
   );
