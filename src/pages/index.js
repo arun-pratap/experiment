@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import digitalNomad from "../svgs/undraw-digital-nomad.svg";
 import results from "../svgs/undraw-results.svg";
-import pexelsGrowth from "../images/pexelsShape.jpg";
+import unsplashTech from "../images/unsplash-techp.jpg";
 import pexelsWomen from "../images/pexelsWomen.jpg";
 import Card from "../components/Card";
 
@@ -68,7 +68,7 @@ const IndexPage = () => {
       <Layout>
         {/* Cover Page */}
         <div className="container-fluid py-5 softbg--gradient-light">
-          <div className="container py-4">
+          <div className="container pb-4">
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-10 col-lg-8 col-xl-7">
                 <Fade bottom>
@@ -123,15 +123,14 @@ const IndexPage = () => {
                 </Fade>
               </div>
               <div className="col-12 col-md-5 col-lg-5 d-none d-md-block text-center">
-                <div className="tech-background-video"></div>
-                <div>
+                <div className="mb-4">
                   <Zoom>
-                    <img src={pexelsGrowth} alt="..." className="img-fluid" />
+                    <img src={unsplashTech} alt="..." className="img-fluid" />
                   </Zoom>
                 </div>
               </div>
             </div>
-            <div className="row g-5 mt-5 justify-content-center text-white">
+            <div className="row g-5 mt-3 justify-content-center text-white">
               {features.map((feature) => (
                 <div className="col-12 col-lg-10 col-xl-4">
                   <Fade bottom key={feature.title}>
@@ -175,6 +174,39 @@ const IndexPage = () => {
                     <img src={pexelsWomen} alt="..." className="img-fluid" />
                   </Zoom>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid py-5">
+          <div className="container py-5">
+            <div className="row g-5 justify-content-center">
+              <div className="col">
+                
+                <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
+                  <div
+                    style={{ width: "75px", height: "75px" }}
+                    className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
+                  >
+                    <img
+                      src={seoEnabled}
+                      alt="..."
+                      width="28px"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="card-body">
+                    <h5 className="display-6 mt-1 mb-3 fw-bold">Services to Provide</h5>
+                    <p className="fs-4" style={{ color: "var(--grey-500)" }}>
+                    Being a top-notch mobile app development company in USA, we deliver an exquisite experience with our powerful mobile apps iOS Android Ionic React Native
+                    </p>
+                    <CallToAction others={{
+                      href:"/car"
+                    }}/>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>

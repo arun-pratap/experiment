@@ -219,7 +219,7 @@ hr {
 
 .softbg--gradient-dark {
     background: rgba(2, 12, 39, 1);
-    background: linear-gradient(135deg, rgb(2 12 39) 33%, rgba(1, 5, 15, 1) 66%);
+    background: linear-gradient(135deg, rgb(2 12 39) 33%, rgba(1, 7, 24, 1) 66%);
 
 
 }
@@ -330,8 +330,9 @@ li {
 }
 
 .services--card:hover {
+    cursor: pointer;
     background-color: #ffffff05 !important;
-    transform: translateY(-15px);
+    transform: translateY(-13px);
     transition: transform 0.3s, background-color 0.3s;
 }
 

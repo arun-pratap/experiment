@@ -95,7 +95,7 @@ const DesktopMenu = () => {
         <li key={nav.text} className="pe-5" onMouseLeave={hide}>
           <a
             href={`/${nav.slug}`}
-            className="font--size-para font--weight-500 fs-6 py-1"
+            className="fs-5 py-1 font--weight-500"
             onMouseEnter={show}
           >
             {nav.text}
@@ -114,10 +114,10 @@ const DesktopMenu = () => {
             >
               <ul className="my-4 px-4 border border-1 rounded bg-light bg-gradient">
                 {nav.subNav.map((subNav) => (
-                  <li key={subNav.text} className="py-1">
+                  <li key={subNav.text} className="py-1 font--weight-500">
                     <a
                       href={`/${subNav.slug}`}
-                      className="fs-6 font--weight-500"
+                      className="fs-5"
                     >
                       {subNav.text}
                     </a>
@@ -196,7 +196,7 @@ const MobileMenu = () => {
 const Contact = () => {
   return (
     <div className="d-block text-end">
-      <button className="btn fw-bold text-light bg--primary py-2">
+      <button className="btn fs-5 text-light py-2  font--weight-500 bg--primary">
         Contact Us
       </button>
     </div>
@@ -213,7 +213,7 @@ export default function Header() {
       <div
         className="container-fluid position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
         style={{
-          lineHeight: "2rem",
+          lineHeight: "2.55rem",
           height: "75px",
           zIndex: "1020",
           top: "0px",
