@@ -219,7 +219,7 @@ hr {
 
 .softbg--gradient-dark {
     background: rgba(2, 12, 39, 1);
-    background: linear-gradient(135deg, rgb(2 12 39) 33%, rgba(1, 7, 24, 1) 66%);
+    background:linear-gradient(135deg, #041639 33%, #041239 66%);
 
 
 }
