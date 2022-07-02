@@ -3,7 +3,6 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 import ContactForm from "../components/ContactForm";
-import ContactCall from "../components/ContactCall";
 
 import chat from "../svgs/chat.svg";
 import ui from "../svgs/ui.svg";
@@ -24,9 +23,9 @@ import productDesigning from "../svgs/designing.svg";
 import productDevelopment from "../svgs/development.svg";
 import automateDeployment from "../svgs/deployment.svg";
 import optimimizePerformance from "../svgs/performance.svg";
-import Layout from './../components/Layout';
+import Layout from "./../components/Layout";
 
-import CallToAction from './../components/CallToAction';
+import CallToAction from "./../components/CallToAction";
 /* @TODO
   1. Cover Page with contact Form or just cta
   <show branded testimonial if any>
@@ -67,20 +66,20 @@ const offers = [
   {
     iconImage: chat,
     iconAlt: "Strategy and Consultation",
-    heading: "Headless E-commerce Strategy and Consultation",
+    heading: "Headless Strategy and Consultation",
     // Our team will help your business to
     para: "Increase revenue and get more traffic with strategic planning that matches your customer expectations and your business requirements",
   },
   {
     iconImage: ui,
     iconAlt: "Website Design and Development",
-    heading: "Headless E-commerce Design and Development",
+    heading: "Headless Design and Development",
     para: "Drive more conversions and establish a unique brand voice with conversion-focused, visually stunning templates.",
   },
   {
     iconImage: cart,
     iconAlt: "Cart Development",
-    heading: "Custom Shopping Cart Development",
+    heading: "Custom Cart Development",
     para: "Reduce cart abandonment and deliver a great user experience with features like quick checkout and custom discounts.",
   },
   {
@@ -149,7 +148,7 @@ export default function HeadlessEcommerceDevelopment() {
                 Ecommerce Website Development
               </span>
               <Fade bottom>
-                <h1 className="display-3 fw-bold mt-3">
+                <h1 className="display-3 fw-bold mt-3 heading--light">
                   Headless Ecommerce Development Services&nbsp;
                   <span className="text--gradient-blue">
                     To Expand Userbase
@@ -157,7 +156,7 @@ export default function HeadlessEcommerceDevelopment() {
                 </h1>
               </Fade>
               <Fade bottom>
-                <p className="fs-5 mt-3">
+                <p className="fs-4 mt-3 text--light">
                   Helping businesses to build secure, fast and flexible
                   e-commerce store to drive more traffic and revenue
                 </p>
@@ -193,10 +192,10 @@ export default function HeadlessEcommerceDevelopment() {
                   <small>Headless Ecommerce Development</small>
                 </span>
                 <Fade bottom>
-                  <h2 className="display-6 fw-bold mt-3">{help.heading}</h2>
+                  <h2 className="display-5 fw-bold mt-3 heading--dark">{help.heading}</h2>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-5 mt-3">{help.para}</p>
+                  <p className="fs-4 mt-3 text--dark">{help.para}</p>
                 </Fade>
               </div>
               <div className="col-12 col-lg-5 col-xl-6 text-center position-relative">
@@ -235,12 +234,11 @@ export default function HeadlessEcommerceDevelopment() {
                     </div>
                     <div className="card-body">
                       <h5
-                        className="fs-3 mt-1 mb-3 fw-bold"
-                        style={{ color: "var(--grey-300)" }}
+                        className="display-6 mt-1 mb-3 fw-bold heading--light"
                       >
                         {offer.heading}
                       </h5>
-                      <p className="fs-5" style={{ color: "var(--grey-500)" }}>
+                      <p className="fs-4 text--light" style={{ color: "var(--grey-500)" }}>
                         {offer.para}
                       </p>
                     </div>
@@ -286,11 +284,11 @@ export default function HeadlessEcommerceDevelopment() {
                     </div>
                     <div className="card-body">
                       <h5
-                        className={`fs-3 mt-1 mb-3 fw-bold step--${index + 1}`}
+                        className={`display-6 mt-1 mb-3 fw-bold heading--dark step--${index + 1}`}
                       >
                         {step.heading}
                       </h5>
-                      <p className="fs-5">{step.para}</p>
+                      <p className="fs-4 text--dark">{step.para}</p>
                     </div>
                   </div>
                 </div>
@@ -390,7 +388,6 @@ export default function HeadlessEcommerceDevelopment() {
         </div>
       </div>
       <ContactForm />
-      <ContactCall />
     </Layout>
   );
 }

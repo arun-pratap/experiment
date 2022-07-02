@@ -1,20 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
-/*
-colortheme
-#6b92e1 ->light,#081020->dark, #f4b625->accent
-*/
-
-/* rgb(113 138 251 / 22%) */
 :root {
-    /*main->#0052f5 alternate->1f69ff #2d6ef0->from appwrite fromhubspot->#5784ff*/
     --color-primary: #2d6ef0;
     /* #f37900 #f5a300 👇*/
     --color-secondary: #ffd91a;
-    --color-dark: #000000;
-    --color-light: #ffffff;
-    --color-black: #15151e;
-    --color-white: #fafafa;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-dark: #15151e;
+    --color-light: #fafafa;
 
     --color-primary-50: #e9ebfe;
     --color-primary-100: #c6ccfd;
@@ -29,60 +22,6 @@ colortheme
     --color-primary-800: #0032d2;
     --color-primary-900: #0018c1;
 
-    --color-complementary-50: #fefde6;
-    --color-complementary-100: #fdf8c0;
-    --color-complementary-200: #fbf396;
-    --color-complementary-300: #faee6c;
-    --color-complementary-400: #f7e948;
-    --color-complementary-500: #f4e41d;
-    --color-complementary-600: #f7d41a;
-    --color-complementary-700: #f6bc0f;
-    --color-complementary-800: #f5a300;
-    --color-complementary-900: #f37900;
-
-    --color-analogous1-50: #dff7fc;
-    --color-analogous1-100: #ace9f9;
-    --color-analogous1-200: #70dbf6;
-    --color-analogous1-300: #00ccf5;
-    --color-analogous1-400: #00c1f7;
-    --color-analogous1-500: #00b5f8;
-    --color-analogous1-600: #00a7ea;
-    --color-analogous1-700: #0094d8;
-    --color-analogous1-800: #0082c5;
-    --color-analogous1-900: #0062a6;
-
-
-    --color-analogous2-50: #f0e6ff --color-analogous2-100: #d5c1ff;
-    --color-analogous2-200: #b898ff;
-    --color-analogous2-300: #986bff;
-    --color-analogous2-400: #7c45ff;
-    --color-analogous2-500: #5914ff;
-    --color-analogous2-600: #480ffd;
-    --color-analogous2-: #2900f5;
-    --color-analogous2-800: #0000f1;
-    --color-analogous2-900: #0000ed;
-
-
-    --color-triadic1-50: #f5e6fe;
-    --color-triadic1-100: #e5bffc;
-    --color-triadic1-200: #d494fb;
-    --color-triadic1-300: #c166fa;
-    --color-triadic1-400: #b33ff8;
-    --color-triadic1-500: #a300f5;
-    --color-triadic1-600: #9009ef;
-    --color-triadic1-700: #730ee8;
-    --color-triadic1-800: #5710e3;
-    --color-triadic1-900: #0012de --color-triadic2-50: #ffe4ea;
-    --color-triadic2-100: #ffbacb;
-    --color-triadic2-200: #fe8da8;
-    --color-triadic2-300: #fc5d85;
-    --color-triadic2-400: #f8366b;
-    --color-triadic2-500: #f50052;
-    --color-triadic2-600: #e40050;
-    --color-triadic2-700: #cf004d;
-    --color-triadic2-800: #bb004b;
-    --color-triadic2-900: #980047;
-
     --grey-50: #fcfcfc;
     --grey-100: #f7f7f7;
     --grey-200: #f2f2f2;
@@ -93,27 +32,6 @@ colortheme
     --grey-700: #6b6b6b;
     --grey-800: #4c4c4c;
     --grey-900: #2a2a2a;
-}
-
-/* not necessary only if required  */
-/*
-h1,h2,h3,h4,h5,h6 {
-    color:#40404c;
-} */
-/* p{
-    color: #36313d !important;
-}  */
-/* not necessary only if required  */
-.card--about {
-    background: #f2f4fe;
-    background: linear-gradient(135deg, rgba(245, 248, 255, 1) 33%, rgba(255, 254, 245, 1) 66%);
-    padding-bottom: 15px;
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.card--about:hover {
-    transform: translateY(-15px);
-    transition: transform 0.3s, background-color 0.3s;
 }
 
 hr {
@@ -130,11 +48,11 @@ hr {
 }
 
 .bg--light {
-    background-color: var(--color-white);
+    background-color: var(--color-light);
 }
 
 .bg--dark {
-    background-color: var(--color-black);
+    background-color: var(--color-dark);
 }
 
 .text--primary {
@@ -145,42 +63,31 @@ hr {
     color: var(--color-secondary);
 }
 
+.heading--light {
+    color: var(--grey-200);
+}
+
 .text--light {
-    color: var(--color-white);
+    color: var(--grey-400);
+}
+
+.heading--dark {
+    color: var(--grey-900);
 }
 
 .text--dark {
-    color: var(--color-black);
-}
-
-.text-grey--darkbg {
-    color: #b3b3b3;
+    color: var(--grey-700);
 }
 
 .cursor--pointer {
     cursor: pointer;
 }
 
-
-
 .font--weight-500 {
     font-weight: 500;
 }
 
-.tech-background-video {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.gradient--heading-blue {
+.heading--gradient-blue {
     color: var(--color-primary);
     background-image: linear-gradient(100deg, var(--color-black), var(--color-primary));
     background-clip: text;
@@ -196,18 +103,29 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
+/* for card icon */
 .bg--gradient-blue {
     background-color: var(--color-primary);
     background-image: linear-gradient(100deg, var(--color-primary-200), var(--color-primary-700));
 }
 
+/* for card icon end */
 
+/* for section background */
 .softbg--gradient-light {
-
     background: rgb(245, 248, 255);
     /* 99% light */
     background: linear-gradient(135deg, rgb(250 251 255) 33%, rgb(255 254 250) 66%);
 }
+
+.softbg--gradient-dark {
+    background: rgba(2, 12, 39, 1);
+    background: linear-gradient(135deg, #041639 33%, #041239 66%);
+}
+
+/* for section background end */
+
+
 
 .bg--about {
     align-items: center;
@@ -217,17 +135,6 @@ hr {
     background-size: cover;
 }
 
-.softbg--gradient-dark {
-    background: rgba(2, 12, 39, 1);
-    background:linear-gradient(135deg, #041639 33%, #041239 66%);
-
-
-}
-
-.softbg--gradient-blue {
-    background: rgb(0, 57, 172);
-    background: linear-gradient(286deg, rgba(0, 57, 172, 1) 33%, rgba(0, 52, 157, 1) 66%);
-}
 
 .border--primary {
     border-color: var(--color-primary) !important;
@@ -317,6 +224,19 @@ li {
 
 .active {
     border-bottom: 2px solid #002489;
+}
+
+/* Cards */
+.card--about {
+    background: #f2f4fe;
+    background: linear-gradient(135deg, rgba(245, 248, 255, 1) 33%, rgba(255, 254, 245, 1) 66%);
+    padding-bottom: 15px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card--about:hover {
+    transform: translateY(-15px);
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .card a {

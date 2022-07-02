@@ -3,9 +3,6 @@ import { Link } from "gatsby";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
-import ContactCall from "../components/ContactCall";
-import ContactForm from "../components/ContactForm";
-
 import developmentTeam from "../svgs/undraw-development.svg";
 
 import rdDevelopment from "../svgs/undraw-research.svg";
@@ -47,10 +44,10 @@ export default function About() {
           <div className="row g-5 justify-content-between align-items-center">
             <div className="col-12 col-lg-7 col-xl-5">
               <Fade bottom>
-                <h3 className="display-6 fw-bold">Your Development Team</h3>
+                <h3 className="display-6 fw-bold heading--dark">Your Development Team</h3>
               </Fade>
               <Fade bottom>
-                <p className="fs-5 mt-3">
+                <p className="fs-4 mt-3 text--dark">
                   Helping businesses &amp; individuals to grow their online
                   presence and bring their targeted audience closer. We deliver
                   business solutions and experiences with the help of modern
@@ -60,7 +57,7 @@ export default function About() {
             </div>
             <div className="col-12 col-lg-5 col-xl-6 text-center position-relative">
               <Zoom>
-                <img src={developmentTeam} className="img-fluid" />
+                <img src={developmentTeam} className="img-fluid"style={{maxWidth:"450px"}} />
               </Zoom>
             </div>
           </div>
@@ -81,7 +78,7 @@ export default function About() {
                 <Zoom>
                   <img src={rdDevelopment} className="card-img-top p-5" />
                   <div className="card-body">
-                    <h5 className="fs-3 fw-bold ps-3">
+                    <h5 className="fs-2 fw-bold ps-3 heading--dark">
                       Research Driven Development
                     </h5>
                   </div>
@@ -94,7 +91,7 @@ export default function About() {
                 <Zoom>
                   <img src={commitedToGrowth} className="card-img-top p-5" />
                   <div className="card-body">
-                    <h5 className="fs-3 fw-bold ps-3">
+                    <h5 className="fs-2 fw-bold ps-3 heading--dark">
                       Commited To Your Growth
                     </h5>
                   </div>
@@ -107,7 +104,7 @@ export default function About() {
                 <Zoom>
                   <img src={latestTechnology} className="card-img-top p-5" />
                   <div className="card-body">
-                    <h5 className="fs-3 fw-bold ps-3">
+                    <h5 className="fs-2 fw-bold ps-3 heading--dark">
                       Work With Latest Technologies
                     </h5>
                   </div>
@@ -120,7 +117,7 @@ export default function About() {
                 <Zoom>
                   <img src={bncTogether} className="card-img-top p-5" />
                   <div className="card-body">
-                    <h5 className="fs-3 fw-bold ps-3">
+                    <h5 className="fs-2 fw-bold ps-3 heading--dark">
                       Build And Create Together
                     </h5>
                   </div>
@@ -140,14 +137,14 @@ export default function About() {
             <div className="col-12 col-lg-5 col-xl-6">
               <h2 className="display-4 text-center fw-bold">Ready To Grow?</h2>
             </div>
-            <div className="col-12 col-lg-6 col-xl-5">
+            <div className="col-12 col-md-10 col-lg-6 col-xl-5">
               <div
                 className="card border-0"
                 style={{ backgroundColor: "rgb(249 251 255)" }}
               >
                 <div className="card-body p-5">
-                  <h5 className="fs-3 fw-bold">Join Our Team</h5>
-                  <p className="fs-5">
+                  <h5 className="display-6 fw-bold heading--dark">Join Our Team</h5>
+                  <p className="fs-4 text--dark">
                     Curious about how appQue team impact the growth of
                     businesses. Let's find out if we are the right match for
                     you.
@@ -155,7 +152,7 @@ export default function About() {
 
                   <a
                     href="/career"
-                    className="btn btn-lg text-white bg--primary font--weight-500"
+                    className="btn btn-lg text-white bg--primary font--weight-500 fs-4"
                   >
                     Apply Now
                   </a>

@@ -5,7 +5,6 @@ import image from "../images/1694.jpg";
 import { BlogsList } from "./blogsList";
 
 import ContactForm from "../components/ContactForm";
-import ContactCall from "../components/ContactCall";
 import Layout from "../components/Layout";
 import {
   LinkedInShareButton,
@@ -66,12 +65,13 @@ export default function BlogPost(props) {
             {/* summary and cover image */}
             <div className="col-12">
               <p className="mt-2">
-                Summary:Breadcrumbs are a subtle element of a website that helps
+                <em>Summary: Breadcrumbs are a subtle element of a website that helps
                 improve usability and navigation. They’re a utility that often
                 receives little acknowledgment; however, breadcrumbs can have a
                 large impact and provide a plethora of benefits, such as
                 lowering bounce rate, increasing conversions, and improving user
                 satisfaction.
+                </em>
               </p>
             </div>
             <div className="col-12">
@@ -214,7 +214,6 @@ export default function BlogPost(props) {
         </article>
       </div>
       <ContactForm />
-      <ContactCall />
     </Layout>
   );
 }
