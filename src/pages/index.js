@@ -72,12 +72,12 @@ const IndexPage = () => {
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-10 col-lg-8 col-xl-7">
                 <Fade bottom>
-                  <h1 className="display-2 mt-3 fw-bold">
+                  <h1 className="display-2 mt-3 fw-bold heading--dark">
                     Delivering Digital Experience
                   </h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3">
+                  <p className="fs-4 mt-3 text--dark">
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
@@ -93,19 +93,16 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div
-          className="container-fluid py-5 softbg--gradient-dark"
-          style={{ color: "#b3b3b3" }}
-        >
+        <div className="container-fluid py-5 softbg--gradient-dark">
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6 col-xl-7">
-                <h2 className="display-4 mb-4 fw-bold text-start text-white">
+                <h2 className="display-4 mb-4 fw-bold text-start heading--light">
                   Our tech-driven services help your business build trust,
                   credibility and engage visitors.
                 </h2>
                 <Fade bottom>
-                  <p className="fs-4 mb-4">
+                  <p className="fs-4 mb-4 text--light">
                     Combining our team's experience in web development services
                     and modern cutting-edge technology keeps you one step ahead
                     of your competition. Our web development services help you
@@ -114,7 +111,7 @@ const IndexPage = () => {
                   </p>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4">
+                  <p className="fs-4 text--light">
                     We have the experience and demonstrated&nbsp;
                     <a href="#">results</a> to show you how we can help with
                     your web development project. Contact us today to schedule a
@@ -154,11 +151,11 @@ const IndexPage = () => {
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6">
-                <h2 className="display-4 mb-4 fw-bold text-start">
+                <h2 className="display-4 mb-4 fw-bold text-start heading--dark">
                   Ready to grow with us? Get your free proposal today
                 </h2>
                 <Fade bottom>
-                  <p className="fs-4 mb-4 text-secondary">
+                  <p className="fs-4 mb-4 text--dark">
                     Our team closely analyzes the successful strategies of your
                     competitors. We combine this knowledge with our expertise
                     and create a success plan for your business that unlocks
@@ -183,7 +180,6 @@ const IndexPage = () => {
           <div className="container py-5">
             <div className="row g-5 justify-content-center">
               <div className="col">
-                
                 <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
                   <div
                     style={{ width: "75px", height: "75px" }}
@@ -197,16 +193,21 @@ const IndexPage = () => {
                     />
                   </div>
                   <div className="card-body">
-                    <h5 className="display-6 mt-1 mb-3 fw-bold">Services to Provide</h5>
-                    <p className="fs-4" style={{ color: "var(--grey-500)" }}>
-                    Being a top-notch mobile app development company in USA, we deliver an exquisite experience with our powerful mobile apps iOS Android Ionic React Native
+                    <h5 className="display-6 mt-1 mb-3 fw-bold heading--dark">
+                      Services to Provide
+                    </h5>
+                    <p className="fs-4 text--dark">
+                      Being a top-notch mobile app development company in USA,
+                      we deliver an exquisite experience with our powerful
+                      mobile apps iOS Android Ionic React Native
                     </p>
-                    <CallToAction others={{
-                      href:"/car"
-                    }}/>
+                    <CallToAction
+                      others={{
+                        href: "/car",
+                      }}
+                    />
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>

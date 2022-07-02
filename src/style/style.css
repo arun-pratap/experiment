@@ -1,5 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+body {
+    /* background-color: var(--color-primary-50); */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 :root {
     --color-primary: #2d6ef0;
     /* #f37900 #f5a300 👇*/
