@@ -44,7 +44,9 @@ export default function About() {
           <div className="row g-5 justify-content-between align-items-center">
             <div className="col-12 col-lg-7 col-xl-5">
               <Fade bottom>
-                <h3 className="display-6 fw-bold heading--dark">Your Development Team</h3>
+                <h3 className="display-6 fw-bold heading--dark">
+                  Your Development Team
+                </h3>
               </Fade>
               <Fade bottom>
                 <p className="fs-4 mt-3 text--dark">
@@ -57,7 +59,11 @@ export default function About() {
             </div>
             <div className="col-12 col-lg-5 col-xl-6 text-center position-relative">
               <Zoom>
-                <img src={developmentTeam} className="img-fluid"style={{maxWidth:"450px"}} />
+                <img
+                  src={developmentTeam}
+                  className="img-fluid"
+                  style={{ width: "inherit", maxWidth: "450px" }}
+                />
               </Zoom>
             </div>
           </div>
@@ -143,7 +149,9 @@ export default function About() {
                 style={{ backgroundColor: "rgb(249 251 255)" }}
               >
                 <div className="card-body p-5">
-                  <h5 className="display-6 fw-bold heading--dark">Join Our Team</h5>
+                  <h5 className="display-6 fw-bold heading--dark">
+                    Join Our Team
+                  </h5>
                   <p className="fs-4 text--dark">
                     Curious about how appQue team impact the growth of
                     businesses. Let's find out if we are the right match for
