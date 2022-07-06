@@ -134,7 +134,7 @@ const Quedemy = () => {
           <div className="container pb-5">
             <div
               className="card mt-5 py-3 text-center shadow-lg border-0"
-              style={{ background: "#f9f6fe" }}
+              style={{ background: "transparent" }}
             >
               <div className="row justify-content-center">
                 <div className="col-8 col-sm-5 col-lg-3 col-xl-3 text-center">
