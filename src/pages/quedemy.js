@@ -105,15 +105,15 @@ const Quedemy = () => {
           {/* 1. Cover Page */}
           <div className="container pt-2 pb-4">
             <div className="row justify-content-center align-items-center g-5">
-              <div className="col-12 col-md-12 col-lg-7 col-xl-8">
+              <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start">
                 <Fade bottom>
-                  <h1 className="display-2 mt-3 fw-bold heading--dark">
+                  <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--dark">
                     {/* Delivering Digital Experience */}
                     Become Industry Ready Full Stack Developer
                   </h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3 text--dark">
+                  <p className="fs-4 mt-3 text-center text-md-start text--dark">
                     4-month intensive job ready training program. Industry
                     defined curriculum that helps you crack your dream job in
                     top companies upto 25 LPA.
@@ -178,7 +178,7 @@ const Quedemy = () => {
             </div>
             <div className="row g-4">
               {whatWillYouLearn.map((learn) => (
-                <div className="col-12 col-sm-6 col-lg-6">
+                <div className="col-12 col-lg-6">
                   
                     <CardQ
                       title={learn.title}
