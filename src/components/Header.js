@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import { Link } from "gatsby";
 import Slide from "react-reveal/Slide";
-import logo from "../images/logo/logo-dark.png";
+import phone from "../svgs/phone.svg";
 import Fade from "react-reveal/Fade";
+
+import logo from "../images/logo/logo-dark.png";
 
 const navLink = [
   {
@@ -115,10 +117,7 @@ const DesktopMenu = () => {
               <ul className="my-4 px-4 border border-1 rounded bg-light bg-gradient">
                 {nav.subNav.map((subNav) => (
                   <li key={subNav.text} className="py-1 font--weight-500">
-                    <a
-                      href={`/${subNav.slug}`}
-                      className="fs-5"
-                    >
+                    <a href={`/${subNav.slug}`} className="fs-5">
                       {subNav.text}
                     </a>
                   </li>

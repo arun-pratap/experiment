@@ -4,14 +4,14 @@ import { MDXProvider } from "@mdx-js/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
 
-import Header from "./Header";
+import Header from "./HeaderQ";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <div style={{ height: "75px" }}></div>
+      {/* <div style={{ height: "75px" }}></div> */}
       {children}
       <Footer />
     </>
