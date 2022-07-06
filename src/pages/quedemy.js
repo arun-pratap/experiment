@@ -10,11 +10,18 @@ import digitalNomad from "../svgs/undraw_digital_nomad_re_w8uy (2).svg";
 import results from "../svgs/undraw-results.svg";
 import unsplashTech from "../images/unsplash-techp.jpg";
 import pexelsWomen from "../images/pexelsWomen.jpg";
+import CardQ from "../components/CardQ";
 import Card from "../components/Card";
 
 import fasterLoad from "../svgs/faster-load.svg";
 import seoEnabled from "../svgs/seo-enabled.svg";
 import responsiveWeb from "../svgs/responsive.svg";
+
+import fundamentals from "../svgs/fundamentalsQ.svg";
+import buildApps from "../svgs/build_appsQ.svg";
+import dsAlgo from "../svgs/ds_algoQ.svg";
+import interviewPrep from "../svgs/interviewQ.svg";
+
 
 // bg #101010
 // color #b3b3b3 !important
@@ -37,6 +44,33 @@ const features = [
     para: " Responsive Website improves the user experience and provides a better experience on mobiles. We utilize grids to make a responsive website, ensuring that it looks great on any device.",
     img: responsiveWeb,
     imgAlt: "Responsive Web",
+  },
+];
+
+const whatWillYouLearn = [
+  {
+    title: "Programming fundamentals",
+    para: "basic of programming like variable,types, conditional statements loop, array, string and more",
+    img: fundamentals,
+    imgAlt: "Fundamentals",
+  },
+  {
+    title: " Data structures and algorithms",
+    para: "  big O notation, arrays, linked lists, stacks, queues, searching, sorting and string manipulation.",
+    img: dsAlgo,
+    imgAlt: "DS and Algo",
+  },
+  {
+    title: " Build Apps from scratch",
+    para: "build apps and webpages from scratch using HTML, CSS, Javascript, Node.js and React.js",
+    img: buildApps,
+    imgAlt: "Build Apps",
+  },
+  {
+    title: " Interview preparation",
+    para: "improving your portfolio,resume and soft skills and conduct mock interviews or tests.",
+    img: interviewPrep,
+    imgAlt: "Interview Prep",
   },
 ];
 
@@ -130,49 +164,31 @@ const Quedemy = () => {
               </div>
             </div>
           </div>
-
-          {/* 3. */}
-          <div className="container py-4">
+        </div>
+        {/* 3. */}
+        <div
+          className="container-fluid py-5"
+          style={{ backgroundColor: "#040109" }}
+        >
+          <div className="container pt-4 pb-5">
             <div className="row">
-              <h2 className="display-4 fw-bold heading--dark">What will you learn</h2>
+              <h2 className="display-4 mb-5 fw-bold heading--light">
+                What will you learn
+              </h2>
             </div>
             <div className="row g-4">
-              <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
-                <div className="card">
-                  image
-                  <br />
-                  Programming Basics
-                  <br />
-                  Paragraph
+              {whatWillYouLearn.map((learn) => (
+                <div className="col-12 col-sm-6 col-lg-6">
+                  
+                    <CardQ
+                      title={learn.title}
+                      para={learn.para}
+                      img={learn.img}
+                      alt={learn.imgAlt}
+                    />
+                  
                 </div>
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
-                <div className="card">
-                  image
-                  <br />
-                  Programming Basics
-                  <br />
-                  Paragraph
-                </div>
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
-                <div className="card">
-                  image
-                  <br />
-                  Programming Basics
-                  <br />
-                  Paragraph
-                </div>
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3 col-xl-3">
-                <div className="card">
-                  image
-                  <br />
-                  Programming Basics
-                  <br />
-                  Paragraph
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
