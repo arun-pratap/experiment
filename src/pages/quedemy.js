@@ -22,7 +22,6 @@ import buildApps from "../svgs/build_appsQ.svg";
 import dsAlgo from "../svgs/ds_algoQ.svg";
 import interviewPrep from "../svgs/interviewQ.svg";
 
-
 // bg #101010
 // color #b3b3b3 !important
 
@@ -109,7 +108,11 @@ const Quedemy = () => {
                 <Fade bottom>
                   <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--dark">
                     {/* Delivering Digital Experience */}
-                    Become Industry Ready Full Stack Developer
+                    Become{" "}
+                    <span style={{ color: "#4f15ac" }}>
+                      Industry Ready
+                    </span>{" "}
+                    Full Stack Developer
                   </h1>
                 </Fade>
                 <Fade bottom>
@@ -179,14 +182,12 @@ const Quedemy = () => {
             <div className="row g-4">
               {whatWillYouLearn.map((learn) => (
                 <div className="col-12 col-lg-6">
-                  
-                    <CardQ
-                      title={learn.title}
-                      para={learn.para}
-                      img={learn.img}
-                      alt={learn.imgAlt}
-                    />
-                  
+                  <CardQ
+                    title={learn.title}
+                    para={learn.para}
+                    img={learn.img}
+                    alt={learn.imgAlt}
+                  />
                 </div>
               ))}
             </div>
