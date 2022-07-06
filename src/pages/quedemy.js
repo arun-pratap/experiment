@@ -172,7 +172,7 @@ const Quedemy = () => {
         >
           <div className="container pt-4 pb-5">
             <div className="row">
-              <h2 className="display-4 mb-5 fw-bold heading--light">
+              <h2 className="display-3 mb-5 fw-bold heading--light">
                 What will you learn
               </h2>
             </div>
