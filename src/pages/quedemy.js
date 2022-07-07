@@ -392,27 +392,28 @@ const Quedemy = () => {
         </div>
 
         <div className="container-fluid position-relative">
-          <div className="row">
-            <div className="col text-center">
-              <div
-                className=" position-fixed"
-                style={{
-                  zIndex: "1000",
-                  left: "2%",
-                  right: "2%",
-                  bottom: "2%",
-                }}
-              >
-                <CallToActionQ
-                  btnText="Book Now&nbsp;"
-                  btnSubTxt=" and Get 90% Scholarship&nbsp;"
-                />
+          <div className="container">
+            <div className="row">
+              <div className="col text-center">
+                <div
+                  className=" position-fixed px-2"
+                  style={{
+                    zIndex: "1000",
+                    left: "2%",
+                    right: "2%",
+                    bottom: "2%",
+                  }}
+                >
+                  <CallToActionQ
+                    btnText="Book Now"
+                    btnSubTxt=" and Get 90% Scholarship&nbsp;"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
         {/* Extra */}
-       
       </Layout>
     </>
   );
