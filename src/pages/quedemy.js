@@ -171,7 +171,7 @@ const Quedemy = () => {
         {/* 3. */}
         <div
           className="container-fluid py-5"
-          style={{ backgroundColor: "#040109" }}
+          style={{ backgroundColor: "#110425" }}
         >
           <div className="container pt-4 pb-5">
             <div className="row">
