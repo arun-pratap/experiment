@@ -99,7 +99,7 @@ const syllabi = [
     ],
   },
   {
-    title: "Frontend Development I",
+    title: "Frontend Development Part I",
     bulletPoint: [
       "Semantic HTML",
       "Forms and Validation",
@@ -116,7 +116,7 @@ const syllabi = [
     ],
   },
   {
-    title: "Frontend Development II",
+    title: "Frontend Development Part II",
     bulletPoint: [
       "JSX",
       "Components",
@@ -362,7 +362,7 @@ const Quedemy = () => {
                     >
                       {syllab.title}
                     </h5>
-                    <ul>
+                    <ul style={{ paddingLeft: "0.25rem" }}>
                       {syllab.bulletPoint.map((point) => (
                         <li
                           key={point}
@@ -372,7 +372,7 @@ const Quedemy = () => {
                             style={{
                               color: "greenyellow",
                               color: "#e32fff",
-                              color:"#bc2fff"
+                              color: "#bc2fff",
                             }}
                           >
                             <i class="bi bi-check-circle-fill"></i>
