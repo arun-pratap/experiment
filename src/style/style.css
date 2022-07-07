@@ -351,3 +351,7 @@ ol {
 /* Sweet Gradient 
 linear-gradient(37deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%)) 
 */
+
+.rounded-3{
+    border-radius: 40px !important;
+}

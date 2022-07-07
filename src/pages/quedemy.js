@@ -176,7 +176,7 @@ const Quedemy = () => {
         type="website"
       />
       <Layout>
-        <div className="container-fluid py-5 softbg--gradient-light">
+        <div className="container-fluid py-5 softbg--gradient-light border border-secondary border-bottom-1">
           {/* 1. Cover Page */}
           <div className="container pt-2 pb-4">
             <div className="row justify-content-center align-items-center g-5">
@@ -213,34 +213,38 @@ const Quedemy = () => {
           </div>
 
           <div className="container pb-4">
-            <div
-              className="card mt-4 py-3 text-center shadow border-0 rounded-3"
-              style={{ background: "transparent" }}
-            >
-              <div className="row justify-content-center">
-                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                  <div className="card-body">
-                    <h5 className="card-title fs-4">Next Batch</h5>
-                    <p className="card-text fs-5">July 15, 2022</p>
-                  </div>
-                </div>
-                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                  <div className="card-body">
-                    <h5 className="card-title fs-4">Duration</h5>
-                    <p className="card-text fs-5">4 months</p>
-                  </div>
-                </div>
-                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                  <div className="card-body">
-                    <h5 className="card-title fs-4">Mode</h5>
-                    <p className="card-text fs-5">Online</p>
-                  </div>
-                </div>
+            <div className="row justify-content-center">
+              <div className="col-11 col-sm-11 col-lg-10">
+                <div
+                  className="card mt-4 py-3 text-center shadow-lg border-0 rounded-3"
+                  style={{ background: "#fffefa00" }}
+                >
+                  <div className="row justify-content-center">
+                    <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
+                      <div className="card-body">
+                        <h5 className="card-title fs-4">Next Batch</h5>
+                        <p className="card-text fs-5">July 15, 2022</p>
+                      </div>
+                    </div>
+                    <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
+                      <div className="card-body">
+                        <h5 className="card-title fs-4">Duration</h5>
+                        <p className="card-text fs-5">4 months</p>
+                      </div>
+                    </div>
+                    <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
+                      <div className="card-body">
+                        <h5 className="card-title fs-4">Mode</h5>
+                        <p className="card-text fs-5">Online</p>
+                      </div>
+                    </div>
 
-                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                  <div className="card-body">
-                    <h5 className="card-title fs-4">Projects</h5>
-                    <p className="card-text fs-5">15+</p>
+                    <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
+                      <div className="card-body">
+                        <h5 className="card-title fs-4">Projects</h5>
+                        <p className="card-text fs-5">15+</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -250,7 +254,7 @@ const Quedemy = () => {
 
         {/* 2. What will you learn */}
         <div
-          className="container-fluid py-5"
+          className="container-fluid py-5 border border-secondary border-bottom-1"
           style={{ backgroundColor: "#110425" }}
         >
           <div className="container py-4">
@@ -275,7 +279,7 @@ const Quedemy = () => {
         </div>
 
         {/* 4. Meet your instructor */}
-        <div className="container-fluid py-5 softbg--gradient-light">
+        <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
           <div className="container py-4">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--dark">
@@ -289,7 +293,7 @@ const Quedemy = () => {
                     <div>
                       <img
                         src={arun}
-                        className="rounded-circle me-3 mb-1 border border-3"
+                        className="rounded-circle me-3 mb-1 border border-2"
                         alt=".."
                         width="75px"
                       />
@@ -318,7 +322,7 @@ const Quedemy = () => {
                     <div>
                       <img
                         src={rahul}
-                        className="rounded-circle me-3 mb-1 border border-3"
+                        className="rounded-circle me-3 mb-1 border border-2"
                         alt=".."
                         width="75px"
                       />
@@ -345,7 +349,7 @@ const Quedemy = () => {
         </div>
 
         {/* Syllabus */}
-        <div className="container-fluid py-5">
+        <div className="container-fluid py-5 border border-secondary border-bottom-1">
           <div className="container py-4">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--light">
@@ -356,7 +360,7 @@ const Quedemy = () => {
               {syllabi.map((syllab) => (
                 <div key={syllab.title} className="col-12 col-md-6">
                   <div
-                    className="card px-3 py-3 h-100 shadow-sm border-0 rounded-3 services--card"
+                    className="card p-5 h-100 shadow-sm border-0 rounded-3 services--card"
                     style={{ backgroundColor: "#1b0e2f" }}
                   >
                     <h5
@@ -391,10 +395,11 @@ const Quedemy = () => {
           </div>
         </div>
 
-        <div className="container-fluid position-relative">
+        {/* fixed CTA only visible on xs and sm mobile screen */}
+        <div className="container-fluid position-relative border border-secondary border-bottom-1">
           <div className="container">
             <div className="row">
-              <div className="col text-center">
+              <div className="col d-block d-sm-block d-md-none text-center">
                 <div
                   className=" position-fixed px-2"
                   style={{
