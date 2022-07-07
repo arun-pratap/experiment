@@ -23,7 +23,7 @@ export default function CardQ({ title, para, img, imgAlt }) {
         >
           {title}
         </h5>
-        <p className="fs-4 text--light">{para}</p>
+        <p className="fs-5 text--light">{para}</p>
       </div>
     </div>
   );

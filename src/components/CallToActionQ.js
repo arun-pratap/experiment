@@ -4,7 +4,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
   return (
     <button
       {...others}
-      className="d-inline-flex align-items-center btn btn-lg text-white mt-2 px-4 fs-5 rounded-3"
+      className="d-inline-flex align-items-center btn btn-lg text-white mt-2 px-4 fs-4 rounded-3"
       style={{
         paddingTop: "1.1rem",
         paddingBottom: "1.25rem",

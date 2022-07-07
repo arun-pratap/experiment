@@ -176,8 +176,8 @@ const Quedemy = () => {
         type="website"
       />
       <Layout>
+        {/* 1. Cover Page */}
         <div className="container-fluid py-5 softbg--gradient-light border border-secondary border-bottom-1">
-          {/* 1. Cover Page */}
           <div className="container pt-2 pb-4">
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start">
@@ -192,14 +192,14 @@ const Quedemy = () => {
                   </h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3 text-center text-md-start text--dark">
+                  <p className="fs-5 mt-3 text-center text-md-start text--dark">
                     4 months* intensive job ready training program. Industry
                     defined curriculum that helps you crack your dream job in
                     top companies upto 25 LPA.
                     {/* linear-gradient(277deg, #ef1237, hsl(337deg 87% 44%)) */}
                   </p>
                   <CallToActionQ
-                    btnText="Book Now&nbsp;"
+                    btnText="Book Now"
                     btnSubTxt=" and Get 90% Scholarship&nbsp;"
                   />
                 </Fade>
@@ -214,34 +214,34 @@ const Quedemy = () => {
 
           <div className="container pb-4">
             <div className="row justify-content-center">
-              <div className="col-11 col-sm-11 col-lg-10">
+              <div className="col-12 col-sm-11 col-lg-10">
                 <div
-                  className="card mt-4 py-3 text-center shadow-lg border-0 rounded-3"
+                  className="card mt-4 p-5 py-4 text-center shadow-lg border-0 rounded-3"
                   style={{ background: "#fffefa00" }}
                 >
                   <div className="row justify-content-center">
                     <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                       <div className="card-body">
-                        <h5 className="card-title fs-4">Next Batch</h5>
+                        <h5 className="card-title fs-5 fw-bold">Next Batch</h5>
                         <p className="card-text fs-5">July 15, 2022</p>
                       </div>
                     </div>
                     <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                       <div className="card-body">
-                        <h5 className="card-title fs-4">Duration</h5>
+                        <h5 className="card-title fs-5 fw-bold">Duration</h5>
                         <p className="card-text fs-5">4 months</p>
                       </div>
                     </div>
                     <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                       <div className="card-body">
-                        <h5 className="card-title fs-4">Mode</h5>
+                        <h5 className="card-title fs-5 fw-bold">Mode</h5>
                         <p className="card-text fs-5">Online</p>
                       </div>
                     </div>
 
                     <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                       <div className="card-body">
-                        <h5 className="card-title fs-4">Projects</h5>
+                        <h5 className="card-title fs-5 fw-bold">Projects</h5>
                         <p className="card-text fs-5">15+</p>
                       </div>
                     </div>
@@ -260,7 +260,7 @@ const Quedemy = () => {
           <div className="container py-4">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--light">
-                What will you learn
+                What Will You Learn
               </h2>
             </div>
             <div className="row g-4">
@@ -373,7 +373,7 @@ const Quedemy = () => {
                       {syllab.bulletPoint.map((point) => (
                         <li
                           key={point}
-                          className="fs-4 text--light list--custom"
+                          className="fs-5 text--light list--custom"
                         >
                           <span
                             style={{
