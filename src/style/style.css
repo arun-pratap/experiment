@@ -260,7 +260,7 @@ li {
 .services--card:hover {
     cursor: pointer;
     background-color: #ffffff05 !important;
-    transform: translateY(-13px);
+    transform: translateY(-10px);
     transition: transform 0.3s, background-color 0.3s;
 }
 
