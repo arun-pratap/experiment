@@ -4,7 +4,7 @@ import React from "react";
 // this card is for home page ONLY
 export default function CardQ({ title, para, img, imgAlt }) {
   return (
-    <div className="card px-1 py-2 h-100 border-0 shadow services--card" style={{backgroundColor:"#ffffff0f !important"}}>
+    <div className="card px-1 py-2 h-100 border-0 shadow-lg rounded-3 services--card" style={{backgroundColor:"#ffffff0f !important"}}>
       <div
         className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center"
         style={{

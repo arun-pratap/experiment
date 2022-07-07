@@ -2,6 +2,7 @@
 
 body {
     /* background-color: var(--color-primary-50); */
+    background-color: #110425;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -341,3 +342,12 @@ ol {
     background-color: red;
     z-index: -1;
 } */
+
+.list--custom::before {
+    content: " ";
+    display: inline-block;
+}
+
+/* Sweet Gradient 
+linear-gradient(37deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%)) 
+*/

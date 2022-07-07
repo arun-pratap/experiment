@@ -58,22 +58,94 @@ const whatWillYouLearn = [
     imgAlt: "Programming Fundamentals",
   },
   {
-    title: "Data Structures and Algorithms",
-    para: "You will learn about big-O notation, arrays, linked lists, stacks, queues, searching, sorting, and string manipulation.",
-    img: dsAlgo,
-    imgAlt: "Data Structures and Algorithms",
-  },
-  {
     title: "Build Apps from Scratch",
     para: "You will build apps and webpages from scratch using HTML, CSS, Javascript, Node.js, and React.js",
     img: buildApps,
     imgAlt: "Build Apps from Scratch",
   },
   {
+    title: "Data Structures and Algorithms",
+    para: "You will learn about big-O notation, arrays, linked lists, stacks, queues, searching, sorting, and string manipulation",
+    img: dsAlgo,
+    imgAlt: "Data Structures and Algorithms",
+  },
+  {
     title: "Interview Preparation",
-    para: "You will work on your portfolio, resume, soft skills and attend mock interviews or tests.",
+    para: "You will work on your portfolio, resume, soft skills and attend mock interviews or tests",
     img: interviewPrep,
     imgAlt: "Interview preparation",
+  },
+];
+
+const syllabi = [
+  {
+    title: "Programming Fundamentals",
+    bulletPoint: [
+      "Basic Syntax",
+      "Data Types",
+      "Variables",
+      "Conditions",
+      "Loops",
+      "Functions",
+    ],
+  },
+  {
+    title: "Web Developer Essentials",
+    bulletPoint: [
+      "How Browser Works",
+      "HTTP/HTTPS",
+      "DNS and Its Working",
+      "Git and Deployment",
+    ],
+  },
+  {
+    title: "Frontend Development I",
+    bulletPoint: [
+      "Semantic HTML",
+      "Forms and Validation",
+      "Display and Box Model",
+      "CSS Flex Box",
+      "Positioning and Floats",
+      "Responsive Design",
+      "CSS Media Queries",
+      "DOM Manipulation",
+      "Fetch API",
+      "Event Delegation",
+      "DOM traversal",
+      "ES6+ and modular JavaScript",
+    ],
+  },
+  {
+    title: "Frontend Development II",
+    bulletPoint: [
+      "JSX",
+      "Components",
+      "Props vs State",
+      "Conditional Rendering",
+      "Functional and Class Components",
+      "Component Life Cycle",
+      "List and Keys",
+      "Composition and Inheritance",
+      "React Hooks",
+      "Higher Order Component",
+      "Error Boundaries",
+      "React Forms",
+      "React Router and API Calls",
+    ],
+  },
+  {
+    title: "Backend Development",
+    bulletPoint: [
+      "Node.js",
+      "OS Concepts",
+      "Linux Command",
+      "Network, Security and Protocols",
+      "Proxy,Caching and Load Balancer",
+      "Web Server",
+      "CI/CD Tools",
+      "Container and Infrastructure",
+      "Design Pattern",
+    ],
   },
 ];
 
@@ -121,7 +193,7 @@ const Quedemy = () => {
                 </Fade>
                 <Fade bottom>
                   <p className="fs-4 mt-3 text-center text-md-start text--dark">
-                    4 months intensive job ready training program. Industry
+                    4 months* intensive job ready training program. Industry
                     defined curriculum that helps you crack your dream job in
                     top companies upto 25 LPA.
                     {/* linear-gradient(277deg, #ef1237, hsl(337deg 87% 44%)) */}
@@ -139,7 +211,7 @@ const Quedemy = () => {
 
           <div className="container pb-4">
             <div
-              className="card mt-4 py-3 text-center shadow border-0"
+              className="card mt-4 py-3 text-center shadow border-0 rounded-3"
               style={{ background: "transparent" }}
             >
               <div className="row justify-content-center">
@@ -199,11 +271,6 @@ const Quedemy = () => {
           </div>
         </div>
 
-        {/* 3. Syllabus */}
-        <div className="container-fluid">
-          <div className="container"></div>
-        </div>
-
         {/* 4. Meet your instructor */}
         <div className="container-fluid py-5 softbg--gradient-light">
           <div className="container py-4">
@@ -214,7 +281,7 @@ const Quedemy = () => {
             </div>
             <div className="row g-3">
               <div className="col-12 col-md-6 col-lg-5 col-xl-4">
-                <div className="card p-4 pb-3">
+                <div className="card p-4 pb-3 rounded-3">
                   <div className="d-flex align-items-center">
                     <div>
                       <img
@@ -234,16 +301,16 @@ const Quedemy = () => {
                       >
                         Founder, AppQue
                       </p>
-                      <a href="">
+                      {/* <a href="">
                         <i class="bi bi-linkedin"></i>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="col-12 col-md-6 col-lg-5 col-xl-4">
-                <div className="card p-4 pb-3">
+                <div className="card p-4 pb-3 rounded-3">
                   <div className="d-flex align-items-center">
                     <div>
                       <img
@@ -263,9 +330,9 @@ const Quedemy = () => {
                       >
                         QA Engineer, Informatica
                       </p>
-                      <a href="">
+                      {/* <a href="">
                         <i class="bi bi-linkedin"></i>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -274,55 +341,99 @@ const Quedemy = () => {
           </div>
         </div>
 
-        <div className="container-fluid py-5 softbg--gradient-dark">
-          <div className="container py-5">
-            <div className="row g-5 justify-content-between align-items-center">
-              <div className="col-12 col-md-7 col-lg-6 col-xl-7">
-                <h2 className="display-4 mb-4 fw-bold text-start heading--light">
-                  Our tech-driven services help your business build trust,
-                  credibility and engage visitors.
-                </h2>
-                <Fade bottom>
-                  <p className="fs-4 mb-4 text--light">
-                    Combining our team's experience in web development services
-                    and modern cutting-edge technology keeps you one step ahead
-                    of your competition. Our web development services help you
-                    create an impact that drives success. We deliver measurable
-                    and effective results for your business.
-                  </p>
-                </Fade>
-                <Fade bottom>
-                  <p className="fs-4 text--light">
-                    We have the experience and demonstrated&nbsp;
-                    <a href="#">results</a> to show you how we can help with
-                    your web development project. Contact us today to schedule a
-                    free consultation.
-                  </p>
-                </Fade>
-              </div>
-              <div className="col-12 col-md-5 col-lg-5 d-none d-md-block text-center">
-                <div className="mb-4">
-                  <Zoom>
-                    <img src={unsplashTech} alt="..." className="img-fluid" />
-                  </Zoom>
-                </div>
-              </div>
+        {/* Syllabus */}
+        <div className="container-fluid py-5">
+          <div className="container py-4">
+            <div className="row">
+              <h2 className="display-3 mb-5 fw-bold heading--light">
+                Course Syllabus
+              </h2>
             </div>
-            <div className="row g-5 mt-3 justify-content-center text-white">
-              {features.map((feature) => (
-                <div className="col-12 col-lg-10 col-xl-4">
-                  <Fade bottom key={feature.title}>
-                    <Card
-                      title={feature.title}
-                      para={feature.para}
-                      img={feature.img}
-                      alt={feature.imgAlt}
-                    />
-                  </Fade>
+            <div className="row g-4">
+              {syllabi.map((syllab) => (
+                <div key={syllab.title} className="col-12 col-md-6">
+                  <div
+                    className="card px-3 py-3 h-100 shadow-sm border-0 rounded-3 services--card"
+                    style={{ backgroundColor: "#1b0e2f" }}
+                  >
+                    <h5
+                      className="display-6 mt-1 mb-3 heading--light"
+                      style={{ fontWeight: "500" }}
+                    >
+                      {syllab.title}
+                    </h5>
+                    <ul>
+                      {syllab.bulletPoint.map((point) => (
+                        <li
+                          key={point}
+                          className="fs-4 text--light list--custom"
+                        >
+                          <span
+                            style={{
+                              color: "greenyellow",
+                              color: "#e32fff",
+                              color:"#bc2fff"
+                            }}
+                          >
+                            <i class="bi bi-check-circle-fill"></i>
+                          </span>
+                          &nbsp; &nbsp;{point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Extra */}
+        <div className="row g-5 justify-content-between align-items-center">
+          <div className="col-12 col-md-7 col-lg-6 col-xl-7">
+            <h2 className="display-4 mb-4 fw-bold text-start heading--light">
+              Our tech-driven services help your business build trust,
+              credibility and engage visitors.
+            </h2>
+            <Fade bottom>
+              <p className="fs-4 mb-4 text--light">
+                Combining our team's experience in web development services and
+                modern cutting-edge technology keeps you one step ahead of your
+                competition. Our web development services help you create an
+                impact that drives success. We deliver measurable and effective
+                results for your business.
+              </p>
+            </Fade>
+            <Fade bottom>
+              <p className="fs-4 text--light">
+                We have the experience and demonstrated&nbsp;
+                <a href="#">results</a> to show you how we can help with your
+                web development project. Contact us today to schedule a free
+                consultation.
+              </p>
+            </Fade>
+          </div>
+          <div className="col-12 col-md-5 col-lg-5 d-none d-md-block text-center">
+            <div className="mb-4">
+              <Zoom>
+                <img src={unsplashTech} alt="..." className="img-fluid" />
+              </Zoom>
+            </div>
+          </div>
+        </div>
+        <div className="row g-5 mt-3 justify-content-center text-white">
+          {features.map((feature) => (
+            <div className="col-12 col-lg-10 col-xl-4">
+              <Fade bottom key={feature.title}>
+                <Card
+                  title={feature.title}
+                  para={feature.para}
+                  img={feature.img}
+                  alt={feature.imgAlt}
+                />
+              </Fade>
+            </div>
+          ))}
         </div>
       </Layout>
     </>
