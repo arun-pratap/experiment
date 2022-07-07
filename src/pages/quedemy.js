@@ -400,7 +400,7 @@ const Quedemy = () => {
                   zIndex: "1000",
                   left: "2%",
                   right: "2%",
-                  bottom: "1%",
+                  bottom: "3%",
                 }}
               >
                 <CallToActionQ

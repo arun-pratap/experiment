@@ -12,9 +12,9 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
         background: "linear-gradient(37deg, #e8304f, #eb6547)",
         background: "linear-gradient(164deg, #4f15ac, #e61997)",
         background:
-          "linear-gradient(297deg, hsl(263deg 78% 55%), hsl(336deg 80% 60%))",
-        background:
-          "linear-gradient(37deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%))",
+          "linear-gradient(330deg, hsl(263deg 78% 55%), hsl(336deg 80% 60%))",
+        // background:
+        //   "linear-gradient(330deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%))",
         fontWeight: "500",
       }}
     >
