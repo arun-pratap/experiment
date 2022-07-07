@@ -198,7 +198,10 @@ const Quedemy = () => {
                     top companies upto 25 LPA.
                     {/* linear-gradient(277deg, #ef1237, hsl(337deg 87% 44%)) */}
                   </p>
-                  <CallToActionQ btnText="Book Now and Get 90% Scholarship &nbsp;" />
+                  <CallToActionQ
+                    btnText="Book Now&nbsp;"
+                    btnSubTxt=" and Get 90% Scholarship&nbsp;"
+                  />
                 </Fade>
               </div>
               <div className="col-8 col-md-7 col-lg-5 col-xl-4 text-white">
@@ -388,6 +391,26 @@ const Quedemy = () => {
           </div>
         </div>
 
+        <div className="container-fluid position-relative">
+          <div className="row">
+            <div className="col text-center">
+              <div
+                className=" position-fixed"
+                style={{
+                  zIndex: "1000",
+                  left: "2%",
+                  right: "2%",
+                  bottom: "1%",
+                }}
+              >
+                <CallToActionQ
+                  btnText="Book Now&nbsp;"
+                  btnSubTxt=" and Get 90% Scholarship&nbsp;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         {/* Extra */}
         <div className="row g-5 justify-content-between align-items-center">
           <div className="col-12 col-md-7 col-lg-6 col-xl-7">
