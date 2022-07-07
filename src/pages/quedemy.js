@@ -134,30 +134,31 @@ const Quedemy = () => {
           </div>
 
           {/* 2.  */}
-          <div className="container pb-5">
+          <div className="container pb-4">
             <div
-              className="card mt-5 py-3 text-center shadow-lg border-0"
+              className="card mt-4 py-3 text-center shadow border-0"
               style={{ background: "transparent" }}
             >
               <div className="row justify-content-center">
-                <div className="col-8 col-sm-5 col-lg-3 col-xl-3 text-center">
-                  <div className="card-body">
-                    <h5 className="card-title fs-4">Placement Guarantee</h5>
-                    <p className="card-text fs-5">Upto 25 LPA</p>
-                  </div>
-                </div>
-                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                  <div className="card-body">
-                    <h5 className="card-title fs-4">Online</h5>
-                    <p className="card-text fs-5">4 months</p>
-                  </div>
-                </div>
                 <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                   <div className="card-body">
                     <h5 className="card-title fs-4">Next Batch</h5>
                     <p className="card-text fs-5">July 15, 2022</p>
                   </div>
                 </div>
+                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
+                  <div className="card-body">
+                    <h5 className="card-title fs-4">Duration</h5>
+                    <p className="card-text fs-5">4 months</p>
+                  </div>
+                </div>
+                <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
+                  <div className="card-body">
+                    <h5 className="card-title fs-4">Mode</h5>
+                    <p className="card-text fs-5">Online</p>
+                  </div>
+                </div>
+
                 <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                   <div className="card-body">
                     <h5 className="card-title fs-4">Projects</h5>
@@ -168,12 +169,13 @@ const Quedemy = () => {
             </div>
           </div>
         </div>
+
         {/* 3. */}
         <div
           className="container-fluid py-5"
           style={{ backgroundColor: "#110425" }}
         >
-          <div className="container pt-4 pb-5">
+          <div className="container py-4">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--light">
                 What will you learn
