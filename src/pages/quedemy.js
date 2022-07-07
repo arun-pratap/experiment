@@ -178,7 +178,7 @@ const Quedemy = () => {
       <Layout>
         {/* 1. Cover Page */}
         <div className="container-fluid py-5 softbg--gradient-light border border-secondary border-bottom-1">
-          <div className="container pt-2 pb-4">
+          <div className="container px-2 pt-2 pb-4">
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start">
                 <Fade bottom>
@@ -212,7 +212,7 @@ const Quedemy = () => {
             </div>
           </div>
 
-          <div className="container pb-4">
+          <div className="container pb-4 px-2">
             <div className="row justify-content-center">
               <div className="col-12 col-sm-11 col-lg-10">
                 <div
@@ -257,7 +257,7 @@ const Quedemy = () => {
           className="container-fluid py-5 border border-secondary border-bottom-1"
           style={{ backgroundColor: "#110425" }}
         >
-          <div className="container py-4">
+          <div className="container py-4 px-2">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--light">
                 What Will You Learn
@@ -280,7 +280,7 @@ const Quedemy = () => {
 
         {/* 4. Meet your instructor */}
         <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
-          <div className="container py-4">
+          <div className="container px-2 py-4">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--dark">
                 Meet Your Instructors
@@ -350,7 +350,7 @@ const Quedemy = () => {
 
         {/* Syllabus */}
         <div className="container-fluid py-5 border border-secondary border-bottom-1">
-          <div className="container py-4">
+          <div className="container py-4 px-2">
             <div className="row">
               <h2 className="display-3 mb-5 fw-bold heading--light">
                 Course Syllabus
@@ -364,7 +364,7 @@ const Quedemy = () => {
                     style={{ backgroundColor: "#1b0e2f" }}
                   >
                     <h5
-                      className="display-6 mt-1 mb-3 heading--light"
+                      className="fs-2 mt-1 mb-3 heading--light"
                       style={{ fontWeight: "500" }}
                     >
                       {syllab.title}
@@ -373,7 +373,7 @@ const Quedemy = () => {
                       {syllab.bulletPoint.map((point) => (
                         <li
                           key={point}
-                          className="fs-5 text--light list--custom"
+                          className="fs-5 text--light"
                         >
                           <span
                             style={{
@@ -397,7 +397,7 @@ const Quedemy = () => {
 
         {/* fixed CTA only visible on xs and sm mobile screen */}
         <div className="container-fluid position-relative border border-secondary border-bottom-1">
-          <div className="container">
+          <div className="container px-2">
             <div className="row">
               <div className="col d-block d-sm-block d-md-none text-center">
                 <div
