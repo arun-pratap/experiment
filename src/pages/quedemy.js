@@ -400,7 +400,7 @@ const Quedemy = () => {
                   zIndex: "1000",
                   left: "2%",
                   right: "2%",
-                  bottom: "3%",
+                  bottom: "2%",
                 }}
               >
                 <CallToActionQ
@@ -412,52 +412,7 @@ const Quedemy = () => {
           </div>
         </div>
         {/* Extra */}
-        <div className="row g-5 justify-content-between align-items-center">
-          <div className="col-12 col-md-7 col-lg-6 col-xl-7">
-            <h2 className="display-4 mb-4 fw-bold text-start heading--light">
-              Our tech-driven services help your business build trust,
-              credibility and engage visitors.
-            </h2>
-            <Fade bottom>
-              <p className="fs-4 mb-4 text--light">
-                Combining our team's experience in web development services and
-                modern cutting-edge technology keeps you one step ahead of your
-                competition. Our web development services help you create an
-                impact that drives success. We deliver measurable and effective
-                results for your business.
-              </p>
-            </Fade>
-            <Fade bottom>
-              <p className="fs-4 text--light">
-                We have the experience and demonstrated&nbsp;
-                <a href="#">results</a> to show you how we can help with your
-                web development project. Contact us today to schedule a free
-                consultation.
-              </p>
-            </Fade>
-          </div>
-          <div className="col-12 col-md-5 col-lg-5 d-none d-md-block text-center">
-            <div className="mb-4">
-              <Zoom>
-                <img src={unsplashTech} alt="..." className="img-fluid" />
-              </Zoom>
-            </div>
-          </div>
-        </div>
-        <div className="row g-5 mt-3 justify-content-center text-white">
-          {features.map((feature) => (
-            <div className="col-12 col-lg-10 col-xl-4">
-              <Fade bottom key={feature.title}>
-                <Card
-                  title={feature.title}
-                  para={feature.para}
-                  img={feature.img}
-                  alt={feature.imgAlt}
-                />
-              </Fade>
-            </div>
-          ))}
-        </div>
+       
       </Layout>
     </>
   );
