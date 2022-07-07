@@ -288,7 +288,7 @@ const Quedemy = () => {
             </div>
             <div className="row g-3">
               <div className="col-12 col-md-6 col-lg-5 col-xl-4">
-                <div className="card p-4 pb-3 rounded-3">
+                <div className="card p-3 pb-2 rounded-3">
                   <div className="d-flex align-items-center">
                     <div>
                       <img
@@ -299,7 +299,7 @@ const Quedemy = () => {
                       />
                     </div>
                     <div>
-                      <h5 className="fs-4 fw-bold heading--dark mb-1">
+                      <h5 className="fs-4 heading--dark mb-1">
                         Arun Pratap Singh
                       </h5>
                       <p
@@ -317,7 +317,7 @@ const Quedemy = () => {
               </div>
 
               <div className="col-12 col-md-6 col-lg-5 col-xl-4">
-                <div className="card p-4 pb-3 rounded-3">
+                <div className="card p-3 pb-2 rounded-3">
                   <div className="d-flex align-items-center">
                     <div>
                       <img
@@ -328,9 +328,7 @@ const Quedemy = () => {
                       />
                     </div>
                     <div>
-                      <h5 className="fs-4 fw-bold heading--dark mb-1">
-                        Rahul Kumar
-                      </h5>
+                      <h5 className="fs-4 heading--dark mb-1">Rahul Kumar</h5>
                       <p
                         className="fs-6 text-secondary mb-1"
                         style={{ fontWeight: "500" }}
@@ -360,7 +358,7 @@ const Quedemy = () => {
               {syllabi.map((syllab) => (
                 <div key={syllab.title} className="col-12 col-md-6">
                   <div
-                    className="card p-5 h-100 shadow-sm border-0 rounded-3 services--card"
+                    className="card py-5 px-4 h-100 shadow-sm border-0 rounded-3 services--card"
                     style={{ backgroundColor: "#1b0e2f" }}
                   >
                     <h5
@@ -371,10 +369,7 @@ const Quedemy = () => {
                     </h5>
                     <ul style={{ paddingLeft: "0.25rem" }}>
                       {syllab.bulletPoint.map((point) => (
-                        <li
-                          key={point}
-                          className="fs-5 text--light"
-                        >
+                        <li key={point} className="fs-5 text--light">
                           <span
                             style={{
                               color: "greenyellow",
