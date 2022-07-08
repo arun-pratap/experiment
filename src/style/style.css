@@ -3,7 +3,7 @@
 body {
     /* background-color: var(--color-primary-50); */
     background-color: #110425;
-    background-color: #0b0317 !important;
+    background-color: #0d031c !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -255,7 +255,8 @@ li {
 }
 
 .services--card {
-    background-color: #ffffff12 !important;
+    /* #ffffff05 for blue shades */
+    background-color: #ffffff09 !important;
     transition: transform 0.3s, background-color 0.3s;
 }
 
@@ -355,4 +356,8 @@ linear-gradient(37deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%))
 
 .rounded-3 {
     border-radius: 40px !important;
+}
+
+.border-secondary {
+    border-color: #f2f2f208;
 }

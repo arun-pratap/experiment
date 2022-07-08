@@ -149,6 +149,14 @@ const syllabi = [
   },
 ];
 
+const keyBenefits = [
+  {
+    title: "",
+    para: "",
+    image: "",
+  },
+];
+
 const Quedemy = () => {
   const data = useStaticQuery(
     graphql`
@@ -375,8 +383,7 @@ const Quedemy = () => {
                             <span
                               style={{
                                 color: "greenyellow",
-                                color: "#e32fff",
-                                color: "#bc2fff",
+                                color: "#8b5ed4",
                               }}
                             >
                               <i class="bi bi-check-circle-fill"></i>
@@ -387,6 +394,28 @@ const Quedemy = () => {
                       </ul>
                     </div>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        {/* key features */}
+        <div className="container-fluid py-5 border border-secondary border-bottom-1">
+          <div className="container py-4 px-2">
+            <div className="row">
+              <h2 className="display-3 mb-5 fw-bold heading--light">
+                Key Features
+              </h2>
+            </div>
+            <div className="row g-4">
+              {keyBenefits.map((learn) => (
+                <div className="col-12 col-lg-6">
+                  <CardQ
+                    title={learn.title}
+                    para={learn.para}
+                    img={learn.img}
+                    alt={learn.imgAlt}
+                  />
                 </div>
               ))}
             </div>
