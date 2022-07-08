@@ -4,6 +4,7 @@ body {
     /* background-color: var(--color-primary-50); */
     background-color: #110425;
     background-color: #0d031c !important;
+    background-color: #0b0217 !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -256,7 +257,7 @@ li {
 
 .services--card {
     /* #ffffff05 for blue shades */
-    /* background-color: #ffffff0f !important; */
+    background-color: #ffffff14 !important;
     transition: transform 0.3s, background-color 0.3s;
 }
 

@@ -369,11 +369,7 @@ const Quedemy = () => {
         </div>
 
         {/* 2. What will you learn */}
-        <div
-          className="container-fluid py-5 border border-secondary border-bottom-1"
-          style={{ backgroundColor: "#0b0317" }}
-          // #110425
-        >
+        <div className="container-fluid py-5 border border-secondary border-bottom-1">
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
               <h2 className="display-3 mb-5 fw-bold text-center heading--light">
@@ -480,10 +476,7 @@ const Quedemy = () => {
             <div className="row g-4">
               {syllabi.map((syllab) => (
                 <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
-                  <div
-                    className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card"
-                    style={{ backgroundColor: "#1b0e2f" }}
-                  >
+                  <div className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card">
                     <div className="card-body">
                       <h5
                         className="fs-2 mt-1 mb-3 heading--light"
