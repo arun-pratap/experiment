@@ -297,7 +297,7 @@ const Quedemy = () => {
                 What Will You Learn
               </h2>
             </div>
-            <div className="row g-5">
+            <div className="row g-4">
               {whatWillYouLearn.map((learn) => (
                 <div className="col-12 col-lg-6">
                   <CardQ
@@ -318,7 +318,7 @@ const Quedemy = () => {
         {/* 4. Meet your instructor */}
         <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
           <div className="container px-2 py-4">
-            <div className="row">
+            <div className="row g-4">
               <h2 className="display-3 mb-5 fw-bold heading--dark">
                 Meet Your Instructors
               </h2>
@@ -391,7 +391,7 @@ const Quedemy = () => {
                 Course Syllabus
               </h2>
             </div>
-            <div className="row g-5">
+            <div className="row g-4">
               {syllabi.map((syllab) => (
                 <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
                   <div
@@ -436,7 +436,7 @@ const Quedemy = () => {
                 Key Features
               </h2>
             </div>
-            <div className="row g-5">
+            <div className="row g-4">
               {keyBenefits.map((learn) => (
                 <div className="col-12 col-lg-6">
                   <CardQ
