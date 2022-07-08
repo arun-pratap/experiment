@@ -255,7 +255,8 @@ const Quedemy = () => {
         {/* 2. What will you learn */}
         <div
           className="container-fluid py-5 border border-secondary border-bottom-1"
-          style={{ backgroundColor: "#110425" }}
+          style={{ backgroundColor: "#0b0317" }}
+          // #110425
         >
           <div className="container py-4 px-2">
             <div className="row">
