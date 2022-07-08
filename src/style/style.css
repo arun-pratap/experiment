@@ -256,7 +256,7 @@ li {
 
 .services--card {
     /* #ffffff05 for blue shades */
-    background-color: #ffffff0f !important;
+    /* background-color: #ffffff0f !important; */
     transition: transform 0.3s, background-color 0.3s;
 }
 

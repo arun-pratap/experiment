@@ -151,9 +151,34 @@ const syllabi = [
 
 const keyBenefits = [
   {
-    title: "",
-    para: "",
-    image: "",
+    title: "Coding Session",
+    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    img: dsAlgo,
+  },
+  {
+    title: "Doubt Session",
+    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    img: dsAlgo,
+  },
+  {
+    title: "Hands-on Learning",
+    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    img: dsAlgo,
+  },
+  {
+    title: "Build Potfoilo",
+    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    img: dsAlgo,
+  },
+  {
+    title: "Career Assitance",
+    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    img: dsAlgo,
+  },
+  {
+    title: "Get Certified",
+    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    img: dsAlgo,
   },
 ];
 
@@ -272,7 +297,7 @@ const Quedemy = () => {
                 What Will You Learn
               </h2>
             </div>
-            <div className="row g-4">
+            <div className="row g-5">
               {whatWillYouLearn.map((learn) => (
                 <div className="col-12 col-lg-6">
                   <CardQ
@@ -280,6 +305,9 @@ const Quedemy = () => {
                     para={learn.para}
                     img={learn.img}
                     alt={learn.imgAlt}
+                    cardBgColor="#ffffff0f !important"
+                    headingColor="heading--light"
+                    txtColor="text--light"
                   />
                 </div>
               ))}
@@ -363,7 +391,7 @@ const Quedemy = () => {
                 Course Syllabus
               </h2>
             </div>
-            <div className="row g-4">
+            <div className="row g-5">
               {syllabi.map((syllab) => (
                 <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
                   <div
@@ -399,15 +427,16 @@ const Quedemy = () => {
             </div>
           </div>
         </div>
+
         {/* key features */}
-        <div className="container-fluid py-5 border border-secondary border-bottom-1">
+        <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
           <div className="container py-4 px-2">
             <div className="row">
-              <h2 className="display-3 mb-5 fw-bold heading--light">
+              <h2 className="display-3 mb-5 fw-bold heading--dark">
                 Key Features
               </h2>
             </div>
-            <div className="row g-4">
+            <div className="row g-5">
               {keyBenefits.map((learn) => (
                 <div className="col-12 col-lg-6">
                   <CardQ
@@ -415,6 +444,9 @@ const Quedemy = () => {
                     para={learn.para}
                     img={learn.img}
                     alt={learn.imgAlt}
+                    cardBgColor="#fff"
+                    headingColor="heading--dark"
+                    txtColor="text--dark"
                   />
                 </div>
               ))}

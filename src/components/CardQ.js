@@ -2,11 +2,13 @@ import React from "react";
 
 // style {cardBg,cardShadow,titleColor, paraColor}
 // this card is for home page ONLY
-export default function CardQ({ title, para, img, imgAlt }) {
+export default function CardQ(props) {
+  const { title, para, img, imgAlt, cardBgColor, headingColor, txtColor } =
+    props;
   return (
     <div
       className="card p-4 h-100 border-0 shadow-lg rounded-3 services--card"
-      style={{ backgroundColor: "#ffffff0f !important" }}
+      style={{ backgroundColor: `${cardBgColor}` }}
     >
       <div
         className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center"
@@ -21,14 +23,12 @@ export default function CardQ({ title, para, img, imgAlt }) {
       </div>
       <div className="card-body">
         <h5
-          className="fs-2 mt-1 mb-3 heading--light"
+          className={`fs-2 mt-1 mb-3 ${headingColor}`}
           style={{ fontWeight: "500" }}
         >
           {title}
         </h5>
-        <p className="fs-5 text--light" >
-          {para}
-        </p>
+        <p className={`fs-5 ${txtColor}`}>{para}</p>
       </div>
     </div>
   );
