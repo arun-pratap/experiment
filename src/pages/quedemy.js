@@ -339,6 +339,35 @@ const Quedemy = () => {
           </div>
         </div>
 
+        {/* key features */}
+        <div
+          className="container-fluid py-5 border border-secondary border-bottom-1"
+          style={{ backgroundColor: "#f6f1fd" }}
+        >
+          <div className="container py-4 px-2">
+            <div className="row justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
+                Key Features
+              </h2>
+            </div>
+            <div className="row g-4">
+              {keyBenefits.map((learn) => (
+                <div className="col-12 col-lg-6">
+                  <CardQ
+                    title={learn.title}
+                    para={learn.para}
+                    img={learn.img}
+                    alt={learn.imgAlt}
+                    cardBgColor="#fff"
+                    headingColor="heading--dark"
+                    txtColor="text--dark"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* 2. What will you learn */}
         <div
           className="container-fluid py-5 border border-secondary border-bottom-1"
@@ -362,32 +391,6 @@ const Quedemy = () => {
                     cardBgColor="#ffffff0f !important"
                     headingColor="heading--light"
                     txtColor="text--light"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* key features */}
-        <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
-          <div className="container py-4 px-2">
-            <div className="row justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
-                Key Features
-              </h2>
-            </div>
-            <div className="row g-4">
-              {keyBenefits.map((learn) => (
-                <div className="col-12 col-lg-6">
-                  <CardQ
-                    title={learn.title}
-                    para={learn.para}
-                    img={learn.img}
-                    alt={learn.imgAlt}
-                    cardBgColor="#fff"
-                    headingColor="heading--dark"
-                    txtColor="text--dark"
                   />
                 </div>
               ))}
@@ -519,7 +522,7 @@ const Quedemy = () => {
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
               <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
-                Technology You Will Learn Hands-on
+                Technologies You Will Learn Hands-on
               </h2>
             </div>
             <div className="row justify-content-center">
