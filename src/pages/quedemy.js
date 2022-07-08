@@ -26,6 +26,17 @@ import buildApps from "../svgs/build_appsQ.svg";
 import dsAlgo from "../svgs/ds_algoQ.svg";
 import interviewPrep from "../svgs/interviewQ.svg";
 
+import API from "../images/technology/png/API.png";
+import mongoDB from "../images/technology/png/mongoDB.png";
+
+import html5 from "../images/technology/svg/html-5.svg";
+import css from "../images/technology/svg/css.svg";
+import git from "../images/technology/svg/git.svg";
+import bootstrap from "../images/technology/svg/bootstrap.svg";
+import js from "../images/technology/svg/javascript.svg";
+import react from "../images/technology/svg/react.svg";
+import node from "../images/technology/svg/nodejs.svg";
+import docker from "../images/technology/svg/docker.svg";
 // bg #101010
 // color #b3b3b3 !important
 
@@ -182,6 +193,49 @@ const keyBenefits = [
   },
 ];
 
+const technologies = [
+  {
+    img: git,
+    subTxt: "Git",
+  },
+  {
+    img: css,
+    subTxt: "CSS",
+  },
+  {
+    img: js,
+    subTxt: "Javascript",
+  },
+  {
+    img: bootstrap,
+    subTxt: "Bootstrap",
+  },
+  {
+    img: API,
+    subTxt: "RestAPI",
+  },
+  {
+    img: mongoDB,
+    subTxt: "MongoDB",
+  },
+  {
+    img: react,
+    subTxt: "ReactJS",
+  },
+  {
+    img: node,
+    subTxt: "NodeJS",
+  },
+  {
+    img: docker,
+    subTxt: "Docker",
+  },
+  {
+    img: html5,
+    subTxt: "HTML",
+  },
+];
+
 const Quedemy = () => {
   const data = useStaticQuery(
     graphql`
@@ -292,8 +346,8 @@ const Quedemy = () => {
           // #110425
         >
           <div className="container py-4 px-2">
-            <div className="row">
-              <h2 className="display-3 mb-5 fw-bold heading--light">
+            <div className="row justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
                 What Will You Learn
               </h2>
             </div>
@@ -315,11 +369,85 @@ const Quedemy = () => {
           </div>
         </div>
 
-        {/* 4. Meet your instructor */}
+        {/* key features */}
         <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
-          <div className="container px-2 py-4">
+          <div className="container py-4 px-2">
+            <div className="row justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
+                Key Features
+              </h2>
+            </div>
             <div className="row g-4">
-              <h2 className="display-3 mb-5 fw-bold heading--dark">
+              {keyBenefits.map((learn) => (
+                <div className="col-12 col-lg-6">
+                  <CardQ
+                    title={learn.title}
+                    para={learn.para}
+                    img={learn.img}
+                    alt={learn.imgAlt}
+                    cardBgColor="#fff"
+                    headingColor="heading--dark"
+                    txtColor="text--dark"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Syllabus */}
+        <div className="container-fluid py-5 border border-secondary border-bottom-1">
+          <div className="container py-4 px-2">
+            <div className="row justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
+                Course Syllabus
+              </h2>
+            </div>
+            <div className="row g-4">
+              {syllabi.map((syllab) => (
+                <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
+                  <div
+                    className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card"
+                    style={{ backgroundColor: "#1b0e2f" }}
+                  >
+                    <div className="card-body">
+                      <h5
+                        className="fs-2 mt-1 mb-3 heading--light"
+                        style={{ fontWeight: "500" }}
+                      >
+                        {syllab.title}
+                      </h5>
+                      <ul style={{ paddingLeft: "0.25rem" }}>
+                        {syllab.bulletPoint.map((point) => (
+                          <li key={point} className="fs-5 text--light">
+                            <span
+                              style={{
+                                color: "greenyellow",
+                                color: "#8b5ed4",
+                              }}
+                            >
+                              <i class="bi bi-check-circle-fill"></i>
+                            </span>
+                            &nbsp; &nbsp;{point}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* 4. Meet your instructor */}
+        <div
+          className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light"
+          style={{ backgroundColor: "#4f15ac" }}
+        >
+          <div className="container px-2 py-4">
+            <div className="row g-4 justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
                 Meet Your Instructors
               </h2>
             </div>
@@ -383,73 +511,49 @@ const Quedemy = () => {
           </div>
         </div>
 
-        {/* Syllabus */}
-        <div className="container-fluid py-5 border border-secondary border-bottom-1">
+        {/* Technology master hands-on */}
+        <div
+          className="container-fluid py-5 border border-secondary border-bottom-1"
+          style={{ backgroundColor: "#f6f1fd" }}
+        >
           <div className="container py-4 px-2">
-            <div className="row">
-              <h2 className="display-3 mb-5 fw-bold heading--light">
-                Course Syllabus
+            <div className="row justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
+                Technology You Will Learn Hands-on
               </h2>
             </div>
-            <div className="row g-4">
-              {syllabi.map((syllab) => (
-                <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
-                  <div
-                    className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card"
-                    style={{ backgroundColor: "#1b0e2f" }}
-                  >
-                    <div className="card-body">
-                      <h5
-                        className="fs-2 mt-1 mb-3 heading--light"
-                        style={{ fontWeight: "500" }}
-                      >
-                        {syllab.title}
-                      </h5>
-                      <ul style={{ paddingLeft: "0.25rem" }}>
-                        {syllab.bulletPoint.map((point) => (
-                          <li key={point} className="fs-5 text--light">
-                            <span
-                              style={{
-                                color: "greenyellow",
-                                color: "#8b5ed4",
-                              }}
-                            >
-                              <i class="bi bi-check-circle-fill"></i>
-                            </span>
-                            &nbsp; &nbsp;{point}
-                          </li>
-                        ))}
-                      </ul>
+            <div className="row justify-content-center">
+              <div className="col-12 col-md-11 col-lg-8">
+                <div className="card p-4 pb-3 rounded-3 shadow-lg border-0 softbg--gradient-color">
+                  <div className="card-body">
+                    <div className="row g-4 justify-content-center">
+                      {technologies.map((tech) => (
+                        <div className="col-5 col-sm-4 col-md-3">
+                          <div
+                            className="card p-2 h-100 border-0 text-center"
+                            style={{
+                              backgroundColor: "#fafbff !important",
+                              borderRadius: "30px",
+                            }}
+                          >
+                            <img
+                              src={tech.img}
+                              className="mt-1"
+                              width="55"
+                              style={{ alignSelf: "center" }}
+                            />
+                            <div className="card-body p-0">
+                              <p className="fs-6 mb-1 fw-bold text--dark">
+                                <small>{tech.subTxt}</small>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* key features */}
-        <div className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light">
-          <div className="container py-4 px-2">
-            <div className="row">
-              <h2 className="display-3 mb-5 fw-bold heading--dark">
-                Key Features
-              </h2>
-            </div>
-            <div className="row g-4">
-              {keyBenefits.map((learn) => (
-                <div className="col-12 col-lg-6">
-                  <CardQ
-                    title={learn.title}
-                    para={learn.para}
-                    img={learn.img}
-                    alt={learn.imgAlt}
-                    cardBgColor="#fff"
-                    headingColor="heading--dark"
-                    txtColor="text--dark"
-                  />
-                </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
