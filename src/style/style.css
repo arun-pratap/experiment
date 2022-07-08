@@ -256,7 +256,7 @@ li {
 
 .services--card {
     /* #ffffff05 for blue shades */
-    background-color: #ffffff09 !important;
+    background-color: #ffffff0f !important;
     transition: transform 0.3s, background-color 0.3s;
 }
 
@@ -359,5 +359,5 @@ linear-gradient(37deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%))
 }
 
 .border-secondary {
-    border-color: #f2f2f208;
+    border-color: #f2f2f208 !important;
 }
