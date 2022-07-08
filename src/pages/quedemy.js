@@ -398,51 +398,6 @@ const Quedemy = () => {
           </div>
         </div>
 
-        {/* Syllabus */}
-        <div className="container-fluid py-5 border border-secondary border-bottom-1">
-          <div className="container py-4 px-2">
-            <div className="row justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
-                Course Syllabus
-              </h2>
-            </div>
-            <div className="row g-4">
-              {syllabi.map((syllab) => (
-                <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
-                  <div
-                    className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card"
-                    style={{ backgroundColor: "#1b0e2f" }}
-                  >
-                    <div className="card-body">
-                      <h5
-                        className="fs-2 mt-1 mb-3 heading--light"
-                        style={{ fontWeight: "500" }}
-                      >
-                        {syllab.title}
-                      </h5>
-                      <ul style={{ paddingLeft: "0.25rem" }}>
-                        {syllab.bulletPoint.map((point) => (
-                          <li key={point} className="fs-5 text--light">
-                            <span
-                              style={{
-                                color: "greenyellow",
-                                color: "#8b5ed4",
-                              }}
-                            >
-                              <i class="bi bi-check-circle-fill"></i>
-                            </span>
-                            &nbsp; &nbsp;{point}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* 4. Meet your instructor */}
         <div
           className="container-fluid py-5 border border-secondary border-bottom-1 softbg--gradient-light"
@@ -510,6 +465,51 @@ const Quedemy = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Syllabus */}
+        <div className="container-fluid py-5 border border-secondary border-bottom-1">
+          <div className="container py-4 px-2">
+            <div className="row justify-content-center">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
+                Course Syllabus
+              </h2>
+            </div>
+            <div className="row g-4">
+              {syllabi.map((syllab) => (
+                <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
+                  <div
+                    className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card"
+                    style={{ backgroundColor: "#1b0e2f" }}
+                  >
+                    <div className="card-body">
+                      <h5
+                        className="fs-2 mt-1 mb-3 heading--light"
+                        style={{ fontWeight: "500" }}
+                      >
+                        {syllab.title}
+                      </h5>
+                      <ul style={{ paddingLeft: "0.25rem" }}>
+                        {syllab.bulletPoint.map((point) => (
+                          <li key={point} className="fs-5 text--light">
+                            <span
+                              style={{
+                                color: "greenyellow",
+                                color: "#8b5ed4",
+                              }}
+                            >
+                              <i class="bi bi-check-circle-fill"></i>
+                            </span>
+                            &nbsp; &nbsp;{point}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
