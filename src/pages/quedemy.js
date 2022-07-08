@@ -356,33 +356,35 @@ const Quedemy = () => {
             </div>
             <div className="row g-4">
               {syllabi.map((syllab) => (
-                <div key={syllab.title} className="col-12 col-md-6">
+                <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
                   <div
-                    className="card py-5 px-4 h-100 shadow-sm border-0 rounded-3 services--card"
+                    className="card p-4 h-100 shadow-sm border-0 rounded-3 services--card"
                     style={{ backgroundColor: "#1b0e2f" }}
                   >
-                    <h5
-                      className="fs-2 mt-1 mb-3 heading--light"
-                      style={{ fontWeight: "500" }}
-                    >
-                      {syllab.title}
-                    </h5>
-                    <ul style={{ paddingLeft: "0.25rem" }}>
-                      {syllab.bulletPoint.map((point) => (
-                        <li key={point} className="fs-5 text--light">
-                          <span
-                            style={{
-                              color: "greenyellow",
-                              color: "#e32fff",
-                              color: "#bc2fff",
-                            }}
-                          >
-                            <i class="bi bi-check-circle-fill"></i>
-                          </span>
-                          &nbsp; &nbsp;{point}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="card-body">
+                      <h5
+                        className="fs-2 mt-1 mb-3 heading--light"
+                        style={{ fontWeight: "500" }}
+                      >
+                        {syllab.title}
+                      </h5>
+                      <ul style={{ paddingLeft: "0.25rem" }}>
+                        {syllab.bulletPoint.map((point) => (
+                          <li key={point} className="fs-5 text--light">
+                            <span
+                              style={{
+                                color: "greenyellow",
+                                color: "#e32fff",
+                                color: "#bc2fff",
+                              }}
+                            >
+                              <i class="bi bi-check-circle-fill"></i>
+                            </span>
+                            &nbsp; &nbsp;{point}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               ))}
