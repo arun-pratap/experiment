@@ -4,8 +4,9 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
   return (
     <button
       {...others}
-      className="d-inline-flex align-items-center btn btn-lg text-white mt-2 px-4 fs-4 rounded-3"
+      className="d-inline-flex align-items-center btn btn-lg text-white mt-2 px-4 fs-4 rounded-2"
       style={{
+        boxShadow: "0 0.25rem 2rem #e6428c8c !important",
         paddingTop: "1.1rem",
         paddingBottom: "1.25rem",
         background: "#af30e8",
@@ -26,3 +27,5 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
     </button>
   );
 }
+
+// 0 0.25rem 2rem hwb(333deg 26% 10% / 55%) !important
