@@ -346,7 +346,7 @@ const Quedemy = () => {
         >
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <div className="col-10 col-md-8 col-lg-12">
+              <div className="col-11 col-md-8 col-lg-12">
                 <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
                   Key Features
                 </h2>
@@ -374,7 +374,7 @@ const Quedemy = () => {
         <div className="container-fluid py-5 border border-secondary border-bottom-1">
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <div className="col-10 col-md-8 col-lg-12">
+              <div className="col-11 col-md-8 col-lg-12">
                 <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--light">
                   What Will You Learn
                 </h2>
@@ -405,7 +405,7 @@ const Quedemy = () => {
         >
           <div className="container px-2 py-4">
             <div className="row g-4 justify-content-center">
-              <div className="col-10 col-md-8 col-lg-12">
+              <div className="col-11 col-md-8 col-lg-12">
                 <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
                   Meet Your Instructors
                 </h2>
@@ -475,7 +475,7 @@ const Quedemy = () => {
         <div className="container-fluid py-5 border border-secondary border-bottom-1">
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <div className="col-10 col-md-8 col-lg-12">
+              <div className="col-11 col-md-8 col-lg-12">
                 <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--light">
                   Course Syllabus
                 </h2>
@@ -522,7 +522,7 @@ const Quedemy = () => {
         >
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <div className="col-10 col-md-8 col-lg-12">
+              <div className="col-11 col-md-8 col-lg-12">
                 <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
                   Technologies You Will Learn Hands-on
                 </h2>
