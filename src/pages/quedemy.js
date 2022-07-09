@@ -495,7 +495,8 @@ const Quedemy = () => {
                             <span
                               style={{
                                 color: "greenyellow",
-                                color: "#8b5ed4",
+                                color:"#a475f0",
+                                color:"#75d1f0"
                               }}
                             >
                               <i class="bi bi-check-circle-fill"></i>

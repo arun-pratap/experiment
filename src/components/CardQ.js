@@ -16,7 +16,7 @@ export default function CardQ(props) {
           width: "70px",
           height: "70px",
           background: "linear-gradient(100deg, #c3a4f488, #5916c599)",
-          background: "#a475f0",
+          background: "#75d1f0",
           borderRadius:"18px"
         }}
       >
