@@ -346,13 +346,15 @@ const Quedemy = () => {
         >
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
-                Key Features
-              </h2>
+              <div className="col-10 col-md-8 col-lg-12">
+                <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
+                  Key Features
+                </h2>
+              </div>
             </div>
             <div className="row g-4">
               {keyBenefits.map((learn) => (
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-md-6 col-xl-4">
                   <CardQ
                     title={learn.title}
                     para={learn.para}
@@ -372,9 +374,11 @@ const Quedemy = () => {
         <div className="container-fluid py-5 border border-secondary border-bottom-1">
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
-                What Will You Learn
-              </h2>
+              <div className="col-10 col-md-8 col-lg-12">
+                <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--light">
+                  What Will You Learn
+                </h2>
+              </div>
             </div>
             <div className="row g-4">
               {whatWillYouLearn.map((learn) => (
@@ -401,9 +405,11 @@ const Quedemy = () => {
         >
           <div className="container px-2 py-4">
             <div className="row g-4 justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
-                Meet Your Instructors
-              </h2>
+              <div className="col-10 col-md-8 col-lg-12">
+                <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
+                  Meet Your Instructors
+                </h2>
+              </div>
             </div>
             <div className="row g-3">
               <div className="col-12 col-md-6 col-lg-5 col-xl-4">
@@ -469,9 +475,11 @@ const Quedemy = () => {
         <div className="container-fluid py-5 border border-secondary border-bottom-1">
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
-                Course Syllabus
-              </h2>
+              <div className="col-10 col-md-8 col-lg-12">
+                <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--light">
+                  Course Syllabus
+                </h2>
+              </div>
             </div>
             <div className="row g-4">
               {syllabi.map((syllab) => (
@@ -514,9 +522,11 @@ const Quedemy = () => {
         >
           <div className="container py-4 px-2">
             <div className="row justify-content-center">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
-                Technologies You Will Learn Hands-on
-              </h2>
+              <div className="col-10 col-md-8 col-lg-12">
+                <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
+                  Technologies You Will Learn Hands-on
+                </h2>
+              </div>
             </div>
             <div className="row justify-content-center">
               <div className="col-12 col-md-11 col-lg-8">
