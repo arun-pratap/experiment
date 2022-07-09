@@ -388,7 +388,7 @@ const Quedemy = () => {
                     para={learn.para}
                     img={learn.img}
                     alt={learn.imgAlt}
-                    cardBgColor="#ffffff0f !important"
+                    cardBgColor={`#1f0844 !important`}
                     headingColor="heading--light"
                     txtColor="text--light"
                   />

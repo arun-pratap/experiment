@@ -7,7 +7,7 @@ export default function CardQ(props) {
     props;
   return (
     <div
-      className="card p-4 h-100 border-0 shadow-lg rounded-3 services--card"
+      className="p-4 h-100 border-0 shadow-lg rounded-3 services--card"
       style={{ backgroundColor: `${cardBgColor}` }}
     >
       <div
