@@ -15,7 +15,7 @@ module.exports = {
         short_name: `AppQue`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4f15ac`,
+        theme_color: `#2d6ef0`,
         // 2d6ef0
         display: `standalone`,
         icon: `src/images/icon2.png`,
