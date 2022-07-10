@@ -4,7 +4,7 @@ import { MDXProvider } from "@mdx-js/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
 
-import Header from "./HeaderQ";
+import Header from "./Header";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
