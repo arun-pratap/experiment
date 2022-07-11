@@ -38,30 +38,34 @@ const navLink = [
       },
     ],
   },
+  {
+    text: "Career",
+    slug: "career",
+  },
 
-  {
-    text: "Training",
-    slug: "training",
-    isSubNav: true,
-    subNav: [
-      {
-        text: "Frontend Engineering",
-        slug: "frontend",
-      },
-      {
-        text: "Backend Engineering",
-        slug: "backend",
-      },
-      {
-        text: "Data Structures and Algorithms",
-        slug: "dsalgo",
-      },
-    ],
-  },
-  {
-    text: "Resources",
-    slug: "resources",
-  },
+  // {
+  //   text: "Training",
+  //   slug: "training",
+  //   isSubNav: true,
+  //   subNav: [
+  //     {
+  //       text: "Frontend Engineering",
+  //       slug: "frontend",
+  //     },
+  //     {
+  //       text: "Backend Engineering",
+  //       slug: "backend",
+  //     },
+  //     {
+  //       text: "Data Structures and Algorithms",
+  //       slug: "dsalgo",
+  //     },
+  //   ],
+  // },
+  // {
+  //   text: "Resources",
+  //   slug: "resources",
+  // },
 ];
 
 const Logo = () => {
@@ -92,7 +96,7 @@ const DesktopMenu = () => {
   };
 
   return (
-    <ul className="d-flex py-3 m-0">
+    <ul className="d-flex py-3 m-0 justify-content-start">
       {navLink.map((nav) => (
         <li key={nav.text} className="pe-5" onMouseLeave={hide}>
           <a
@@ -223,7 +227,7 @@ export default function Header() {
             <div className="col align-self-center">
               <Logo />
             </div>
-            <div className="col align-self-center d-none d-lg-block">
+            <div className="col-md-8 align-self-center d-none d-lg-block">
               <DesktopMenu />
             </div>
             <div className="col align-self-center d-none d-lg-block">

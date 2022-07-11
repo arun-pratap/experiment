@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      {/* <div style={{ height: "75px" }}></div> */}
+      <div style={{ height: "75px" }}></div>
       {children}
       <Footer />
     </>
