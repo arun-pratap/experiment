@@ -2,7 +2,7 @@ import banner from "../assets/banner-white.png";
 
 export default function OfferBanner() {
   const whatsAppURL =
-    "//api.whatsapp.com/send/?phone=+918505903150&text=दवाई या पर्चे की फोटो खींच कर भेजें";
+    "//api.whatsapp.com/send/?phone=+919193497332&text=दवाई या पर्चे की फोटो खींच कर भेजें";
 
   return (
     <div className="container-fluid px-0">
