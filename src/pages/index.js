@@ -16,6 +16,13 @@ import fasterLoad from "../svgs/faster-load.svg";
 import seoEnabled from "../svgs/seo-enabled.svg";
 import responsiveWeb from "../svgs/responsive.svg";
 
+
+import chat from "../svgs/chat.svg";
+import ui from "../svgs/ui.svg";
+import cart from "../svgs/cart.svg";
+import cms from "../svgs/cms.svg";
+import integration from "../svgs/integration.svg";
+import erp from "../svgs/erp.svg";
 // bg #101010
 // color #b3b3b3 !important
 
@@ -39,6 +46,41 @@ const features = [
     imgAlt: "Responsive Web",
   },
 ];
+
+const offers = [
+  {
+    iconImage: chat,
+    iconAlt: "Strategy and Consultation",
+    heading: "Web Development",
+    // Our team will help your business to
+    para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+  },
+  {
+    iconImage: ui,
+    iconAlt: "Website Design and Development",
+    heading: "Frontend Development",
+    para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+  },
+  {
+    iconImage: cart,
+    iconAlt: "Cart Development",
+    heading: "Ecommerce Development",
+    para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+  },
+  {
+    iconImage: cms,
+    iconAlt: "Headless CMS Development",
+    heading: "Headless Development",
+    para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+  },
+  {
+    iconImage: integration,
+    iconAlt: "Integration",
+    heading: "Progressive Web App",
+    para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+  },
+];
+
 const IndexPage = () => {
   const data = useStaticQuery(
     graphql`
@@ -176,42 +218,46 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="container-fluid py-5">
-          <div className="container py-5">
-            <div className="row g-5 justify-content-center">
-              <div className="col">
-                <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
-                  <div
-                    style={{ width: "75px", height: "75px" }}
-                    className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
-                  >
-                    <img
-                      src={seoEnabled}
-                      alt="..."
-                      width="28px"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="card-body">
-                    <h5 className="display-6 mt-1 mb-3 fw-bold heading--dark">
-                      Services to Provide
-                    </h5>
-                    <p className="fs-4 text--dark">
-                      Being a top-notch mobile app development company in USA,
-                      we deliver an exquisite experience with our powerful
-                      mobile apps iOS Android Ionic React Native
-                    </p>
-                    <CallToAction
-                      others={{
-                        href: "/car",
-                      }}
-                    />
+        <div className="container-fluid py-5 text-white softbg--gradient-dark">
+        <div className="container py-5">
+          <div className="row">
+            <h2 className="display-4 mb-4 pb-5 text-center underline font--weight-500">
+              Our Offerings
+            </h2>
+          </div>
+          <div className="row g-5">
+            {offers.map((offer) => (
+              <Fade key={offer.heading} bottom>
+                <div className="col-12 col-md-6 col-xl-4">
+                  <div className="card p-4 h-100 border-0 shadow services--card">
+                    <div
+                      style={{ width: "65px", height: "65px" }}
+                      className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
+                    >
+                      <img
+                        src={offer.iconImage}
+                        alt={offer.iconAlt}
+                        width="28px"
+                        className="img-fluid"
+                      />
+                    </div>
+                    <div className="card-body">
+                      <h5
+                        className="display-6 mt-1 mb-3 fw-bold heading--light"
+                      >
+                        {offer.heading}
+                      </h5>
+                      <p className="fs-4 text--light">
+                        {offer.para}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </Fade>
+            ))}
           </div>
         </div>
+      </div>
 
         {/* @TODO
         - Cover Page done
