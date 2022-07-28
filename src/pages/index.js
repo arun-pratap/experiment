@@ -16,13 +16,19 @@ import fasterLoad from "../svgs/faster-load.svg";
 import seoEnabled from "../svgs/seo-enabled.svg";
 import responsiveWeb from "../svgs/responsive.svg";
 
-
 import chat from "../svgs/chat.svg";
 import ui from "../svgs/ui.svg";
 import cart from "../svgs/cart.svg";
 import cms from "../svgs/cms.svg";
 import integration from "../svgs/integration.svg";
 import erp from "../svgs/erp.svg";
+
+import strategicDiscovery from "../svgs/discovery.svg";
+import productDesigning from "../svgs/designing.svg";
+import productDevelopment from "../svgs/development.svg";
+import automateDeployment from "../svgs/deployment.svg";
+import optimimizePerformance from "../svgs/performance.svg";
+import ContactForm from "../components/ContactForm";
 // bg #101010
 // color #b3b3b3 !important
 
@@ -51,33 +57,71 @@ const offers = [
   {
     iconImage: chat,
     iconAlt: "Strategy and Consultation",
-    heading: "Web Development",
+    heading: "Web Application Development",
     // Our team will help your business to
     para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+    link: "web-application-development",
   },
   {
     iconImage: ui,
     iconAlt: "Website Design and Development",
     heading: "Frontend Development",
     para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+    link: "frontend-development",
   },
   {
     iconImage: cart,
     iconAlt: "Cart Development",
     heading: "Ecommerce Development",
     para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+    link: "ecommerce-development",
   },
   {
     iconImage: cms,
     iconAlt: "Headless CMS Development",
     heading: "Headless Development",
     para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+    link: "headless-ecommerce-development",
   },
   {
     iconImage: integration,
     iconAlt: "Integration",
-    heading: "Progressive Web App",
+    heading: "Progressive Web Application",
     para: "Secure, fast and flexible e-commerce store to drive more traffic and revenue",
+    link: "pwa-development",
+  },
+];
+
+const howWeDo = [
+  {
+    iconImage: strategicDiscovery,
+    iconAlt: "Strategic Discovery",
+    heading: "Strategic Discovery",
+    para: "Collect information about your business, target market, competitors, customer and align your business goals to deliver great value to your customer.",
+  },
+  {
+    iconImage: productDesigning,
+    iconAlt: "Designing",
+    heading: "Website Designing",
+    para: "Refine unique values of your business. We create a roadmap and design a great UX to establish a strong brand voice and drive more conversions.",
+  },
+  {
+    iconImage: productDevelopment,
+    iconAlt: "Development",
+    heading: "Website Development",
+    para: "Highly skilled teams to deploy your business rapidly. We deliver smooth, fast and flexible ecommerce experience on any device.",
+  },
+  {
+    iconImage: automateDeployment,
+    iconAlt: "Deployment",
+    heading: "Automate Deployment",
+    para: "Our experts help you launch your eCommerce store successfully. We provide fast, easy, secure and hassle-free deployment.",
+  },
+  {
+    iconImage: optimimizePerformance,
+    iconAlt: "Performance",
+    heading: "Boost Performance",
+    para: "Check necessary performance parameters of your ecommerce and optimize it. It ensures a smooth browsing experience.",
   },
 ];
 
@@ -219,45 +263,93 @@ const IndexPage = () => {
         </div>
 
         <div className="container-fluid py-5 text-white softbg--gradient-dark">
-        <div className="container py-5">
-          <div className="row">
-            <h2 className="display-4 mb-4 pb-5 text-center underline font--weight-500">
-              Our Offerings
-            </h2>
-          </div>
-          <div className="row g-5">
-            {offers.map((offer) => (
-              <Fade key={offer.heading} bottom>
-                <div className="col-12 col-md-6 col-xl-4">
-                  <div className="card p-4 h-100 border-0 shadow services--card">
-                    <div
-                      style={{ width: "65px", height: "65px" }}
-                      className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
-                    >
-                      <img
-                        src={offer.iconImage}
-                        alt={offer.iconAlt}
-                        width="28px"
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="card-body">
-                      <h5
-                        className="display-6 mt-1 mb-3 fw-bold heading--light"
+          <div className="container py-5">
+            <div className="row">
+              <h2 className="display-4 mb-4 pb-5 text-center underline font--weight-500">
+                Our Offerings
+              </h2>
+            </div>
+            <div className="row g-5">
+              {offers.map((offer) => (
+                <Fade key={offer.heading} bottom>
+                  <div className="col-12 col-md-6 col-xl-4">
+                    <div className="card p-4 h-100 border-0 shadow services--card">
+                      <div
+                        style={{ width: "65px", height: "65px" }}
+                        className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
                       >
-                        {offer.heading}
-                      </h5>
-                      <p className="fs-4 text--light">
-                        {offer.para}
-                      </p>
+                        <img
+                          src={offer.iconImage}
+                          alt={offer.iconAlt}
+                          width="28px"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <h5 className="fs-2 mt-1 mb-2 heading--light">
+                          {offer.heading}
+                        </h5>
+                        <p className="fs-4 text--light">{offer.para}</p>
+                        <a
+                          href={`/${offer.link}`}
+                          className="d-inline-flex align-items-center btn btn-primary px-4 pb-2 fs-5"
+                          style={{
+                            // backgroundColor: "var(--color-primary)",
+                            fontWeight: "400",
+                          }}
+                        >
+                          Learn More&nbsp;
+                          <i className="bi bi-arrow-right fs-4"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Fade>
-            ))}
+                </Fade>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+
+        <div className="container-fluid py-5 softbg--gradient-light">
+          <div className="container py-5">
+            <div className="row">
+              <h2 className="display-4 mb-4 pb-5 text-center fw-bold underline">
+                How We Do It
+              </h2>
+            </div>
+            <div className="row g-5">
+              {howWeDo.map((step, index) => (
+                <Fade key={step.heading} bottom>
+                  <div className="col-12 col-md-6 col-xl-4">
+                    <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
+                      <div
+                        style={{ width: "65px", height: "65px" }}
+                        className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
+                      >
+                        <img
+                          src={step.iconImage}
+                          alt={step.iconAlt}
+                          width="28px"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <h5
+                          className={`display-6 mt-1 mb-3 fw-bold heading--dark step--${
+                            index + 1
+                          }`}
+                        >
+                          {step.heading}
+                        </h5>
+                        <p className="fs-4 text--dark">{step.para}</p>
+                      </div>
+                    </div>
+                  </div>
+                </Fade>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* @TODO
         - Cover Page done
@@ -270,6 +362,7 @@ const IndexPage = () => {
         - large highlighted contact form with two column => 1:heading, paragraph,cta 2:image
 
         */}
+        <ContactForm />
       </Layout>
     </>
   );

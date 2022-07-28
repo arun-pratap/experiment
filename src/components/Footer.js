@@ -45,7 +45,7 @@ export default function Footer() {
   return (
     <div
       className="container-fluid nav-header pt-5 pb-4 softbg--gradient-light"
-      style={{ borderTop: "1px solid #c8d5f3" }}
+      style={{ borderTop: "1px solid #c8d5f3",background:"#ccdbff" }}
     >
       <div className="container">
         {/* Logo* and address or addresses if any */}

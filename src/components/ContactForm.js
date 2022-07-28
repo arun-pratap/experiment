@@ -11,7 +11,7 @@ export default function ContactForm() {
           <div className="row justify-content-center align-items-start  g-5 pt-2 pb-5 ">
             <div className=" col-6 col-xl-5 d-none d-lg-block">
               <h2 className="display-4 mb-5 fw-bold text-center">
-                How Can We Help You?
+                We Can Help You.
               </h2>
               <img src={contactImage} className="img-fluid" alt="contact" />
             </div>

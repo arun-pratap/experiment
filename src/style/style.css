@@ -1,9 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
-body {
-
-
-}
+body {}
 
 :root {
     --color-primary: #2d6ef0;
@@ -118,9 +115,9 @@ hr {
 
 /* for section background */
 .softbg--gradient-light {
-    background: rgb(245, 248, 255);
     /* 99% light */
     background: linear-gradient(135deg, rgb(250 251 255) 33%, rgb(255 254 250) 66%);
+    background: rgb(245, 248, 255);
 }
 
 .softbg--gradient-dark {
@@ -354,4 +351,15 @@ linear-gradient(37deg, hsl(263deg 78% 58%), hsl(152deg 80% 40%))
 
 .border-secondary {
     border-color: #f2f2f208 !important;
+}
+
+/*overriden bootstrap css */
+.btn-outline-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
 }
