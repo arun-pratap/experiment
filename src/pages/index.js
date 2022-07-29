@@ -199,7 +199,7 @@ const IndexPage = () => {
                 <Fade bottom>
                   <p className="fs-4 text--light">
                     We have the experience and demonstrated&nbsp;
-                    <a href="#">results</a> to show you how we can help with
+                    results to show you how we can help with
                     your web development project. Contact us today to schedule a
                     free consultation.
                   </p>

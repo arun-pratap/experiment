@@ -18,7 +18,7 @@ export default function ContactForm() {
             <div className="col-12 col-lg-6 col-xl-5">
               <div className="row g-2">
                 <h2 className="display-4 fw-bold text-center d-lg-none mb-4">
-                  How Can We Help You?
+                  We Can Help You.
                 </h2>
                 <div className="col-12">
                   <div className="mb-3">
@@ -66,15 +66,18 @@ export default function ContactForm() {
                     <select className="form-select fs-5">
                       <option defaultValue="none">Select Budget</option>
                       <option className="font--weight-500">
-                        ₹10000-₹15000
+                        less than ₹ 10000
                       </option>
                       <option className="font--weight-500">
-                        ₹15000-₹30000
+                        ₹ 10000 - ₹ 15000
                       </option>
                       <option className="font--weight-500">
-                        ₹30000-₹50000
+                        ₹ 15000 - ₹ 30000
                       </option>
-                      <option className="font--weight-500">&gt;₹50000</option>
+                      <option className="font--weight-500">
+                        ₹ 30000 - ₹ 50000
+                      </option>
+                      <option className="font--weight-500">&gt; ₹ 50000</option>
                     </select>
                   </div>
                 </div>
@@ -113,7 +116,7 @@ export default function ContactForm() {
           <div className="row justify-content-center pt-5 pb-5">
             <div className="col-12 text-center">
               <h2 className="fw-bold display-4 heading--light">
-                Would you prefer to talk to someone ?
+                Would You Prefer To Talk To Someone ?
               </h2>
             </div>
             <div className="col-12 text-center mt-5">
@@ -126,8 +129,10 @@ export default function ContactForm() {
                     <span>
                       <i className="bi bi-telephone-fill display-5 pe-3"></i>
                     </span>
-                    <div className="text-start">
-                      <span className="fs-6 d-block">SPEAK WITH US:</span>
+                    <div className="text-center">
+                      <span className="fs-6 d-block fw-bold">
+                        SPEAK WITH US:
+                      </span>
                       <span className="fs-3 fw-bold d-block">783-820-0710</span>
                     </div>
                   </div>

@@ -13,7 +13,7 @@ const navLink = [
   },
   {
     text: "Services",
-    slug: "services",
+    slug: "",
     isSubNav: true,
     subNav: [
       {
@@ -79,7 +79,7 @@ const Logo = () => {
 };
 
 const DesktopMenu = () => {
-  const [isHovered, setIsHovered] = useState(true);
+  const [isHovered, setIsHovered] = useState("");
   const [currentNode, setCurrentNode] = useState("");
 
   const show = (e) => {

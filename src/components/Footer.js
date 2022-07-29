@@ -15,37 +15,90 @@ const Logo = () => {
 const footerNav = [
   {
     heading: "About",
-    subnavs: ["our company", "how we work", "careers"],
+    subnavs: [
+      {
+        title: "our company",
+        link: "about",
+      },
+      // {
+      //   title: "how we work",
+      //   link: "ecommerce-development",
+      // },
+      {
+        title: "careers",
+        link: "ecommerce-development",
+      },
+    ],
   },
   {
     heading: "Services",
     subnavs: [
-      "E-commerce Development",
-      "Front-end Development",
-      "Web Appliaction Development",
-      "Progressive Web Application Development",
-      "Headeless E-commerce Development",
+      {
+        title: "E-commerce Development",
+        link: "ecommerce-development",
+      },
+      {
+        title: "Front-end Development",
+        link: "frontend-development",
+      },
+      {
+        title: "Web Appliaction Development",
+        link: "web-application-development",
+      },
+      {
+        title: "Progressive Web Application Development",
+        link: "pwa-development",
+      },
+      {
+        title: "Headeless E-commerce Development",
+        link: "headless-ecommerce-development",
+      },
     ],
   },
   {
     heading: "Training",
     subnavs: [
-      "Frontend Engineering",
-      "Backend Engineering",
-      "Full-Stack Engineering",
+      {
+        title: "Frontend Engineering",
+        link: "",
+      },
+      {
+        title: "Backend Engineering",
+        link: "",
+      },
+      {
+        title: "Full-Stack Engineering",
+        link: "",
+      },
     ],
   },
-  {
-    heading: "Resources",
-    subnavs: ["Blog", "Guides", "E-books"],
-  },
+  // {
+  //   heading: "Resources",
+  //   subnavs: [
+  //     {
+  //       title: "Blog",
+  //       link: "",
+  //     },
+  //     {
+  //       title: "Guides",
+  //       link: "",
+  //     },
+  //     {
+  //       title: "E-books",
+  //       link: "",
+  //     },
+  //   ],
+  // },
 ];
 
 export default function Footer() {
   return (
     <div
       className="container-fluid nav-header pt-5 pb-4 softbg--gradient-light"
-      style={{ borderTop: "1px solid #c8d5f3",background:"#ccdbff" }}
+      style={{
+        borderTop: "1px solid #c8d5f3",
+        background: "#ccdbff",
+      }}
     >
       <div className="container">
         {/* Logo* and address or addresses if any */}
@@ -91,9 +144,12 @@ export default function Footer() {
 
               <div className="row">
                 {nav.subnavs.map((subnav) => (
-                  <div key={subnav} className="col-12 mb-1">
-                    <a key={subnav} href="/" className="fs-6 text-capitalize">
-                      {subnav}
+                  <div key={subnav?.title} className="col-12 mb-1">
+                    <a
+                      href={`/${subnav?.link}`}
+                      className="fs-6 text-capitalize"
+                    >
+                      {subnav?.title}
                     </a>
                   </div>
                 ))}
