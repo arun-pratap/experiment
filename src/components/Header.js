@@ -5,6 +5,7 @@ import phone from "../svgs/phone.svg";
 import Fade from "react-reveal/Fade";
 
 import logo from "../images/logo/logo-dark.png";
+import ContactForm from "./ContactForm";
 
 const navLink = [
   {
@@ -187,11 +188,24 @@ const MobileMenu = () => {
       ))}
       <li className="py-1 pt-4">
         <div className="d-block text-start">
-          <button className="btn btn-lg fw-bold text-light bg--primary my-2">
+          <button
+            className="btn btn-lg fw-bold text-light bg--primary my-2"
+            data-bs-toogle="modal"
+            data-bs-target="contact-form"
+          >
             Contact Us
           </button>
         </div>
       </li>
+      <div
+        className="modal fade"
+        id="contact-form"
+        tabIndex={-1}
+        aria-labelledby="contactFormModal"
+        aria-hidden="true"
+      >
+        <ContactForm />
+      </div>
     </ul>
   );
 };

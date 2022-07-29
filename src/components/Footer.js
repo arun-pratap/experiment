@@ -126,7 +126,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr />
+        {/* <hr /> */}
         {/* navigation in footer */}
         <div className="row">
           {footerNav.map((nav) => (
@@ -164,7 +164,7 @@ export default function Footer() {
         3. @copyright, sitemap, Social links alone */}
         <div className="row  justify-content-between">
           <div className="col-10 col-sm-8  text-start">
-            <p className="fs-6 fw-normal ">
+            <p className="fs-6 fw-normal text-secondary">
               Best Web Design and Web Application Development Company in Noida,
               India
             </p>
