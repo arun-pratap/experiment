@@ -26,7 +26,7 @@ const footerNav = [
       // },
       {
         title: "careers",
-        link: "ecommerce-development",
+        link: "/forms.gle/mYbBzSs1fcuSCaZA9",
       },
     ],
   },

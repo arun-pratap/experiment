@@ -41,7 +41,7 @@ const navLink = [
   },
   {
     text: "Career",
-    slug: "career",
+    slug: "/forms.gle/mYbBzSs1fcuSCaZA9",
   },
 
   // {
