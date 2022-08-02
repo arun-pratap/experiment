@@ -188,13 +188,14 @@ const MobileMenu = () => {
       ))}
       <li className="py-1 pt-4">
         <div className="d-block text-start">
-          <button
+          <a
+            href="//forms.gle/pZtE6q4QVr6XneuD6"
             className="btn btn-lg fw-bold text-light bg--primary my-2"
             data-bs-toogle="modal"
             data-bs-target="contact-form"
           >
             Contact Us
-          </button>
+          </a>
         </div>
       </li>
       <div
@@ -213,9 +214,9 @@ const MobileMenu = () => {
 const Contact = () => {
   return (
     <div className="d-block text-end">
-      <button className="btn fs-5 text-light py-2  font--weight-500 bg--primary">
+      <a href="//forms.gle/pZtE6q4QVr6XneuD6" className="btn fs-5 text-light py-2  font--weight-500 bg--primary">
         Contact Us
-      </button>
+      </a>
     </div>
   );
 };
