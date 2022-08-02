@@ -60,15 +60,15 @@ const footerNav = [
     subnavs: [
       {
         title: "Frontend Engineering",
-        link: "",
+        link: "/quedemy.netlify.app/full-stack-developer-program/",
       },
       {
         title: "Backend Engineering",
-        link: "",
+        link: "/quedemy.netlify.app/full-stack-developer-program/",
       },
       {
         title: "Full-Stack Engineering",
-        link: "",
+        link: "/quedemy.netlify.app/full-stack-developer-program/",
       },
     ],
   },
