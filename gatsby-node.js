@@ -57,11 +57,11 @@ async function makeBlogPostFromMdx({ graphql, actions }) {
   //   console.log(blogPosts);
    blogPosts.forEach((blogPost, index) => {
     createPage({
-      path: `/blog/${blogPost.node.frontmatter.slug}`,
+      path: `/blog/${blogPost.node.slug}`,
       component: blogPostTemplatePath,
       context: {
         //unique Identifier
-        slug: blogPost.node.slug,
+        slug: blogPost.node.frontmatter.slug,
       },
     });
   });

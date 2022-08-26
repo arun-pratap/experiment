@@ -66,11 +66,11 @@ export default function BlogPost(props) {
             <div className="col-12">
               <p className="mt-2">
                 <em>Summary: Breadcrumbs are a subtle element of a website that helps
-                improve usability and navigation. They’re a utility that often
-                receives little acknowledgment; however, breadcrumbs can have a
-                large impact and provide a plethora of benefits, such as
-                lowering bounce rate, increasing conversions, and improving user
-                satisfaction.
+                  improve usability and navigation. They’re a utility that often
+                  receives little acknowledgment; however, breadcrumbs can have a
+                  large impact and provide a plethora of benefits, such as
+                  lowering bounce rate, increasing conversions, and improving user
+                  satisfaction.
                 </em>
               </p>
             </div>
