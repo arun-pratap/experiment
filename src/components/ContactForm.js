@@ -115,7 +115,7 @@ export default function ContactForm() {
           {/* Contact Call */}
           <div className="row justify-content-center pt-5 pb-5">
             <div className="col-12 text-center">
-              <h2 className="fw-bold display-4 heading--light">
+              <h2 className="fw-bold display-5 heading--dark">
                 Would You Prefer To Talk To Someone ?
               </h2>
             </div>

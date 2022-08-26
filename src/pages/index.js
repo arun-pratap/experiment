@@ -163,7 +163,7 @@ const IndexPage = () => {
                   </h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3 text--dark">
+                  <p className="fs-5 mt-3 text--dark">
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
@@ -183,12 +183,12 @@ const IndexPage = () => {
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6 col-xl-7">
-                <h2 className="display-4 mb-4 fw-bold text-start heading--light">
+                <h2 className="display-4 mb-4 fw-bold text-start heading--dark">
                   Our tech-driven services help your business build trust,
                   credibility and engage visitors.
                 </h2>
                 <Fade bottom>
-                  <p className="fs-4 mb-4 text--light">
+                  <p className="fs-5 mb-4 text--dark">
                     Combining our team's experience in web development services
                     and modern cutting-edge technology keeps you one step ahead
                     of your competition. Our web development services help you
@@ -197,7 +197,7 @@ const IndexPage = () => {
                   </p>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 text--light">
+                  <p className="fs-5 text--dark">
                     We have the experience and demonstrated&nbsp;
                     results to show you how we can help with
                     your web development project. Contact us today to schedule a
@@ -241,7 +241,7 @@ const IndexPage = () => {
                   Ready to grow with us? Get your free proposal today
                 </h2>
                 <Fade bottom>
-                  <p className="fs-4 mb-4 text--dark">
+                  <p className="fs-5 mb-4 text--dark">
                     Our team closely analyzes the successful strategies of your
                     competitors. We combine this knowledge with our expertise
                     and create a success plan for your business that unlocks
@@ -265,7 +265,7 @@ const IndexPage = () => {
         <div className="container-fluid py-5 text-white softbg--gradient-dark">
           <div className="container py-5">
             <div className="row">
-              <h2 className="display-4 mb-4 pb-5 text-center underline font--weight-500">
+              <h2 className="display-4 mb-4 pb-5 text-center underline fw-bold">
                 Our Offerings
               </h2>
             </div>
@@ -286,20 +286,17 @@ const IndexPage = () => {
                         />
                       </div>
                       <div className="card-body">
-                        <h5 className="fs-2 mt-1 mb-2 heading--light">
+                        <h5 className="fs-2 mt-1 mb-2 heading--dark fw-bold">
                           {offer.heading}
                         </h5>
-                        <p className="fs-4 text--light">{offer.para}</p>
+                        <p className="fs-5 text--dark">{offer.para}</p>
                         <a
                           href={`/${offer.link}`}
-                          className="d-inline-flex align-items-center btn btn-primary px-4 pb-2 fs-5"
-                          style={{
-                            // backgroundColor: "var(--color-primary)",
-                            fontWeight: "400",
-                          }}
+                          className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw-bold text-uppercase"
+                          style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
                         >
-                          Learn More&nbsp;
-                          <i className="bi bi-arrow-right fs-4"></i>
+                          Learn More &nbsp;
+                          <i className="bi bi-arrow-right fs-6"></i>
                         </a>
                       </div>
                     </div>
@@ -329,19 +326,19 @@ const IndexPage = () => {
                         <img
                           src={step.iconImage}
                           alt={step.iconAlt}
-                          width="28px"
+                          width="25px"
                           className="img-fluid"
                         />
                       </div>
                       <div className="card-body">
                         <h5
-                          className={`display-6 mt-1 mb-3 fw-bold heading--dark step--${
+                          className={`fs-2 mt-1 mb-3 fw-bold heading--dark step--${
                             index + 1
                           }`}
                         >
                           {step.heading}
                         </h5>
-                        <p className="fs-4 text--dark">{step.para}</p>
+                        <p className="fs-5 text--dark">{step.para}</p>
                       </div>
                     </div>
                   </div>

@@ -25,7 +25,7 @@ export function CoverPageVariant1({
           {inlineSpan}
         </span>
       </h1>
-      <p className="mb-4 mx-auto fs-5">
+      <p className="mb-4 mx-auto fs-6">
         {paragraph}
       </p>
       <button

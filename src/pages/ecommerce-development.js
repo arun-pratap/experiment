@@ -145,7 +145,7 @@ const EcommerceDevelopment = () => {
           <div className="row justify-content-between align-items-center g-5">
             <div className="col-12 col-xl-7">
               <Fade bottom>
-                <h1 className="display-3 fw-bold mt-3 heading--light">
+                <h1 className="display-3 fw-bold mt-3 heading--dark">
                   Ecommerce Website Development Services To&nbsp;
                   <span className="text--gradient-blue">
                     Drive More Traffic
@@ -153,7 +153,7 @@ const EcommerceDevelopment = () => {
                 </h1>
               </Fade>
               <Fade bottom>
-                <p className="fs-4 mt-3 text--light">
+                <p className="fs-5 mt-3 text--dark">
                   Helping businesses build secure, fast and flexible e-commerce
                   store to drive more traffic and revenue.
                 </p>
@@ -189,10 +189,10 @@ const EcommerceDevelopment = () => {
                   <small>Ecommerce Website Development</small>
                 </span>
                 <Fade bottom>
-                  <h2 className="display-5 fw-bold mt-3 heading--dark">{help.heading}</h2>
+                  <h2 className="display-6 fw-bold mt-3 heading--dark">{help.heading}</h2>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3 text--dark">{help.para}</p>
+                  <p className="fs-5 mt-3 text--dark">{help.para}</p>
                 </Fade>
               </div>
               <div className="col-10 col-md-8 col-lg-5 mx-auto text-center position-relative">

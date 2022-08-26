@@ -97,12 +97,12 @@ const DesktopMenu = () => {
   };
 
   return (
-    <ul className="d-flex py-3 m-0 justify-content-start">
+    <ul className="d-flex py-3 m-0 justify-content-end">
       {navLink.map((nav) => (
-        <li key={nav.text} className="pe-5" onMouseLeave={hide}>
+        <li key={nav.text} className="px-4" onMouseLeave={hide}>
           <a
             href={`/${nav.slug}`}
-            className="fs-5 py-1 font--weight-500"
+            className="fs-6 text-uppercase py-1 fw-bold"
             onMouseEnter={show}
           >
             {nav.text}
@@ -121,8 +121,8 @@ const DesktopMenu = () => {
             >
               <ul className="my-4 px-4 border border-1 rounded bg-light bg-gradient">
                 {nav.subNav.map((subNav) => (
-                  <li key={subNav.text} className="py-1 font--weight-500">
-                    <a href={`/${subNav.slug}`} className="fs-5">
+                  <li key={subNav.text} className="py-1">
+                    <a href={`/${subNav.slug}`} className="fs-6">
                       {subNav.text}
                     </a>
                   </li>
@@ -160,7 +160,7 @@ const MobileMenu = () => {
           {nav.isSubNav ? (
             <>
               <div className="d-flex justify-content-between align-items-center pt-3">
-                <a href={`/${nav.slug}`} className="fs-5">
+                <a href={`/${nav.slug}`} className="fs-6 text-uppercase fw-bold">
                   {nav.text}
                 </a>
                 <button className="btn fw-bold">
@@ -179,7 +179,7 @@ const MobileMenu = () => {
             </>
           ) : (
             <div className="d-flex justify-content-between align-items-center pt-3">
-              <a href={`/${nav.slug}`} className="fs-5">
+              <a href={`/${nav.slug}`} className="fs-6 text-uppercase fw-bold">
                 {nav.text}
               </a>
             </div>
@@ -190,7 +190,7 @@ const MobileMenu = () => {
         <div className="d-block text-start">
           <a
             href="//forms.gle/pZtE6q4QVr6XneuD6"
-            className="btn btn-lg fw-bold text-light bg--primary my-2"
+            className="btn fw-bold text-uppercase text-light btn-primary py-2 fs-6"
             data-bs-toogle="modal"
             data-bs-target="contact-form"
           >
@@ -214,8 +214,8 @@ const MobileMenu = () => {
 const Contact = () => {
   return (
     <div className="d-block text-end">
-      <a href="//forms.gle/pZtE6q4QVr6XneuD6" className="btn fs-5 text-light py-2  font--weight-500 bg--primary">
-        Contact Us
+      <a href="//forms.gle/pZtE6q4QVr6XneuD6" className="btn fs-6 text-light py-2 text-uppercase fw-bold btn-primary">
+        Get Free Quote
       </a>
     </div>
   );
@@ -229,7 +229,7 @@ export default function Header() {
   return (
     <>
       <div
-        className="container-fluid position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
+        className="container-fluid d-flex position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
         style={{
           lineHeight: "2.55rem",
           height: "75px",
@@ -251,7 +251,7 @@ export default function Header() {
             <div className="col align-self-center d-block d-lg-none">
               {isMenuOpen ? (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary fs-6"
+                  className="d-flex align-items-center ms-auto btn btn-sm text-uppercase text-dark bg-light fs-6"
                   onClick={handleMenu}
                 >
                   <i className="bi bi-x fs-4"></i>
@@ -259,11 +259,11 @@ export default function Header() {
                 </button>
               ) : (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm fw-bold text-light bg--primary fs-6"
+                  className="d-flex align-items-center ms-auto btn btn-sm text-uppercase text-dark bg-light fs-6"
                   onClick={handleMenu}
                 >
-                  <i className="bi bi-list fs-3"></i>
-                  <span>&nbsp;Menu</span>
+                  <i className="bi bi-list fs-1"></i>
+                  {/* <span>&nbsp;Menu</span> */}
                 </button>
               )}
             </div>
