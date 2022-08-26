@@ -160,7 +160,7 @@ const IndexPage = () => {
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-10 col-lg-8 col-xl-7">
                 <Fade bottom>
-                  <h1 className="display-2 mt-3 fw--700">
+                  <h1 className="display-1 mt-3 fw--700">
                     Delivering Digital Experience
                   </h1>
                 </Fade>
@@ -185,7 +185,7 @@ const IndexPage = () => {
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6 col-xl-7">
-                <h2 className="display-5 mb-4 text-start fw--700">
+                <h2 className="display-3 mb-4 text-start fw--700">
                   Our tech-driven services help your business build trust,
                   credibility and engage visitors.
                 </h2>
@@ -238,7 +238,7 @@ const IndexPage = () => {
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6">
-                <h2 className="display-4 mb-4 text-start fw--700">
+                <h2 className="display-3 mb-4 text-start fw--700">
                   Ready to grow with us? Get your free proposal today
                 </h2>
                 <Fade bottom>
@@ -266,7 +266,7 @@ const IndexPage = () => {
         <div className="container-fluid py-5 text-white softbg--gradient-dark">
           <div className="container py-5">
             <div className="row">
-              <h2 className="display-4 mb-4 pb-5 text-center underline fw--700">
+              <h2 className="display-3 mb-4 pb-5 text-center underline fw--700">
                 Our Offerings
               </h2>
             </div>
@@ -289,7 +289,7 @@ const IndexPage = () => {
         <div className="container-fluid py-5 softbg--gradient-light">
           <div className="container py-5">
             <div className="row">
-              <h2 className="display-4 mb-4 pb-5 text-center underline fw--700">
+              <h2 className="display-3 mb-4 pb-5 text-center underline fw--700">
                 How We Do It
               </h2>
             </div>
