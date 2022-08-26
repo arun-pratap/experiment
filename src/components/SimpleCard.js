@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ title, para, img, imgAlt }) {
   return (
-    <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
+    <div className="card p-3 pb-3 h-100 border-0 shadow services--card">
       <div
         style={{ width: "68px", height: "68px" }}
         className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
