@@ -99,7 +99,7 @@ export default function ContactForm() {
 
                 <div className="col-12 text-end">
                   <button
-                    className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-5 fw--700 text-uppercase"
+                    className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw--600 text-uppercase"
                     style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
                     type="submit"
                   >
@@ -124,14 +124,14 @@ export default function ContactForm() {
               <Zoom>
                 <a
                   href="tel:7838200710"
-                  className=" btn btn-lg py-3 px-4 bg--primary text-light"
+                  className=" btn btn-lg py-3 px-3 bg--primary text-light"
                 >
                   <div className="d-flex align-items-center">
                     <span>
-                      <i className="bi bi-telephone-fill display-6 pe-3"></i>
+                      <i className="bi bi-telephone-fill display-6 pe-2"></i>
                     </span>
                     <div className="text-center">
-                      <span className="fs-5 d-block fw-bold">
+                      <span className="fs-6 d-block fw-bold">
                         SPEAK WITH US:
                       </span>
                       <span className="fs-5 fw-bold d-block">783-820-0710</span>

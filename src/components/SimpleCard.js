@@ -10,7 +10,7 @@ export default function Card({ title, para, img, imgAlt }) {
         <img src={img} alt={imgAlt} width="28px" className="img-fluid" />
       </div>
       <div className="card-body">
-        <h5 className="fs-2 mt-1 mb-3 fw--700">{title}</h5>
+        <h5 className="fs-1 mt-1 mb-3 fw--700">{title}</h5>
         <p className="fs-5 text--dark">
           {para}
         </p>

@@ -16,7 +16,7 @@ export default function Card({ title, para, img, imgAlt, step }) {
             </div>
             <div className="card-body">
                 <h5
-                    className={`fs-2 mt-1 mb-3 fw--700 step--${step + 1
+                    className={`fs-1 mt-1 mb-3 fw--700 step--${step + 1
                         }`}
                 >
                     {title}
