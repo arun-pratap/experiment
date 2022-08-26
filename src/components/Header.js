@@ -4,7 +4,7 @@ import Slide from "react-reveal/Slide";
 import phone from "../svgs/phone.svg";
 import Fade from "react-reveal/Fade";
 
-import logo from "../images/logo/logo-dark.png";
+import logo from "../images/logo/logo-primary2.png";
 import ContactForm from "./ContactForm";
 
 const navLink = [
@@ -73,7 +73,7 @@ const Logo = () => {
   return (
     <div className="d-block text-start">
       <a href="/" className="fs-3 font--weight-500 m-0">
-        <img src={logo} alt="logo" height={70} />
+        <img src={logo} alt="logo" height={78} />
       </a>
     </div>
   );
@@ -97,7 +97,7 @@ const DesktopMenu = () => {
   };
 
   return (
-    <ul className="d-flex py-3 m-0 justify-content-end">
+    <ul className="d-flex align-items-center py-3 m-0 justify-content-end">
       {navLink.map((nav) => (
         <li key={nav.text} className="px-4" onMouseLeave={hide}>
           <a
@@ -229,10 +229,10 @@ export default function Header() {
   return (
     <>
       <div
-        className="container-fluid d-flex position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
+        className="container-fluid d-flex align-items-center position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
         style={{
-          lineHeight: "2.55rem",
-          height: "75px",
+          // lineHeight: "2.55rem",
+          // height: "75px",
           zIndex: "1020",
           top: "0px",
         }}
@@ -251,7 +251,7 @@ export default function Header() {
             <div className="col align-self-center d-block d-lg-none">
               {isMenuOpen ? (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm text-uppercase text-dark bg-light fs-6"
+                  className="d-flex align-items-center ms-auto btn btn-sm text-uppercase text-dark fs-6"
                   onClick={handleMenu}
                 >
                   <i className="bi bi-x fs-4"></i>
@@ -259,7 +259,7 @@ export default function Header() {
                 </button>
               ) : (
                 <button
-                  className="d-flex align-items-center ms-auto btn btn-sm text-uppercase text-dark bg-light fs-6"
+                  className="d-flex align-items-center ms-auto btn btn-sm text-uppercase text-dark fs-6"
                   onClick={handleMenu}
                 >
                   <i className="bi bi-list fs-1"></i>
