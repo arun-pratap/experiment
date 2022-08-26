@@ -10,7 +10,9 @@ import digitalNomad from "../svgs/undraw-digital-nomad.svg";
 import results from "../svgs/undraw-results.svg";
 import unsplashTech from "../images/unsplash-techp.jpg";
 import pexelsWomen from "../images/pexelsWomen.jpg";
-import Card from "../components/Card";
+import Card from "../components/SimpleCard";
+import CardWithLink from "../components/CardWithLink";
+import StepCard from "../components/StepCard";
 
 import fasterLoad from "../svgs/faster-load.svg";
 import seoEnabled from "../svgs/seo-enabled.svg";
@@ -153,12 +155,12 @@ const IndexPage = () => {
       />
       <Layout>
         {/* Cover Page */}
-        <div className="container-fluid py-5 softbg--gradient-light">
+        <div className="container-fluid py-5 bg--light-gradient">
           <div className="container pb-4">
             <div className="row justify-content-center align-items-center g-5">
               <div className="col-12 col-md-10 col-lg-8 col-xl-7">
                 <Fade bottom>
-                  <h1 className="display-2 mt-3 fw-bold heading--dark">
+                  <h1 className="display-2 mt-3 fw--700">
                     Delivering Digital Experience
                   </h1>
                 </Fade>
@@ -183,7 +185,7 @@ const IndexPage = () => {
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6 col-xl-7">
-                <h2 className="display-4 mb-4 fw-bold text-start heading--dark">
+                <h2 className="display-5 mb-4 text-start fw--700">
                   Our tech-driven services help your business build trust,
                   credibility and engage visitors.
                 </h2>
@@ -231,13 +233,12 @@ const IndexPage = () => {
         </div>
 
         <div
-          className="container-fluid py-5"
-          style={{ backgroundColor: "rgb(235, 241, 255)" }}
+          className="container-fluid py-5 bg--light-gradient"
         >
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6">
-                <h2 className="display-4 mb-4 fw-bold text-start heading--dark">
+                <h2 className="display-5 mb-4 text-start fw--700">
                   Ready to grow with us? Get your free proposal today
                 </h2>
                 <Fade bottom>
@@ -265,7 +266,7 @@ const IndexPage = () => {
         <div className="container-fluid py-5 text-white softbg--gradient-dark">
           <div className="container py-5">
             <div className="row">
-              <h2 className="display-4 mb-4 pb-5 text-center underline fw-bold">
+              <h2 className="display-5 mb-4 pb-5 text-center underline fw--700">
                 Our Offerings
               </h2>
             </div>
@@ -273,33 +274,11 @@ const IndexPage = () => {
               {offers.map((offer) => (
                 <Fade key={offer.heading} bottom>
                   <div className="col-12 col-md-6 col-xl-4">
-                    <div className="card p-4 h-100 border-0 shadow services--card">
-                      <div
-                        style={{ width: "65px", height: "65px" }}
-                        className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
-                      >
-                        <img
-                          src={offer.iconImage}
-                          alt={offer.iconAlt}
-                          width="28px"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="card-body">
-                        <h5 className="fs-2 mt-1 mb-2 heading--dark fw-bold">
-                          {offer.heading}
-                        </h5>
-                        <p className="fs-5 text--dark">{offer.para}</p>
-                        <a
-                          href={`/${offer.link}`}
-                          className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw-bold text-uppercase"
-                          style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
-                        >
-                          Learn More &nbsp;
-                          <i className="bi bi-arrow-right fs-6"></i>
-                        </a>
-                      </div>
-                    </div>
+                    <CardWithLink title={offer.heading}
+                      para={offer.para}
+                      img={offer.iconImage}
+                      imgAlt={offer.iconAlt}
+                      link={offer.link} />
                   </div>
                 </Fade>
               ))}
@@ -310,7 +289,7 @@ const IndexPage = () => {
         <div className="container-fluid py-5 softbg--gradient-light">
           <div className="container py-5">
             <div className="row">
-              <h2 className="display-4 mb-4 pb-5 text-center fw-bold underline">
+              <h2 className="display-5 mb-4 pb-5 text-center underline fw--700">
                 How We Do It
               </h2>
             </div>
@@ -318,29 +297,13 @@ const IndexPage = () => {
               {howWeDo.map((step, index) => (
                 <Fade key={step.heading} bottom>
                   <div className="col-12 col-md-6 col-xl-4">
-                    <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
-                      <div
-                        style={{ width: "65px", height: "65px" }}
-                        className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
-                      >
-                        <img
-                          src={step.iconImage}
-                          alt={step.iconAlt}
-                          width="25px"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="card-body">
-                        <h5
-                          className={`fs-2 mt-1 mb-3 fw-bold heading--dark step--${
-                            index + 1
-                          }`}
-                        >
-                          {step.heading}
-                        </h5>
-                        <p className="fs-5 text--dark">{step.para}</p>
-                      </div>
-                    </div>
+                    <StepCard title={step.heading}
+                    para={step.para}
+                    img={step.iconImage}
+                    alt={step.iconAlt}
+                    step={index}
+                    />
+                    
                   </div>
                 </Fade>
               ))}

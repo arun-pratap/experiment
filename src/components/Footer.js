@@ -94,15 +94,15 @@ const footerNav = [
 export default function Footer() {
   return (
     <div
-      className="container-fluid nav-header pt-5 pb-4 softbg--gradient-light"
+      className="container-fluid nav-header pt-2 footerbg--dark"
       style={{
         borderTop: "1px solid #c8d5f3",
-        background: "#ccdbff",
+        // background: "#ccdbff",
       }}
     >
-      <div className="container">
+      <div className="container py-5">
         {/* Logo* and address or addresses if any */}
-        <div className="row g-4 pt-2">
+        <div className="row g-4 pt-5">
           <div className="col-12 col-md-6 col-xl-4">
             <div className="mb-2">
               <Logo />
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
           {/* Addresses */}
           <div className="col-12 col-md-6 col-xl-4">
-            <h5 className="text--primary">Noida</h5>
+            <h5 className="text-white fw--600">Noida</h5>
             <p className="fs-6">
               A-16, 2nd Floor, Sector 9 <br />
               Noida Uttar Pradesh 201301, India
@@ -128,16 +128,16 @@ export default function Footer() {
         </div>
         {/* <hr /> */}
         {/* navigation in footer */}
-        <div className="row">
+        <div className="row pb-5">
           {footerNav.map((nav) => (
             <div
               key={nav.heading}
               className="col-12 col-md-6 col-xl-4 py-3 pe-5"
             >
               <div className="d-flex align-items-center justify-content-between">
-                <p className="mb-2 text-capitalize fs-5 font--weight-500 text--primary">
+                <h5 className="mb-2 text-uppercase text-white fw--600">
                   {nav.heading}
-                </p>
+                </h5>
                 <i className="bi bi-plus-lg d-none"></i>
                 <i className="bi bi-x-lg d-none"></i>
               </div>
@@ -157,26 +157,31 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <hr className=" mb-4" />
-        {/* 3 wrapped column  
+
+      </div>
+      <hr />
+      {/* 3 wrapped column  
         1. company type and badge if any
         2.  terms condition and privacy policy link
         3. @copyright, sitemap, Social links alone */}
-        <div className="row  justify-content-between">
-          <div className="col-10 col-sm-8  text-start">
-            <p className="fs-6 fw-normal text-secondary">
-              Best Web Design and Web Application Development Company in Noida,
-              India
-            </p>
-          </div>
+      <div className="row  justify-content-between">
+        <div className="col-10 col-sm-8  text-start">
+          <p className="fs-6 fw-normal text-secondary">
+            Best Web Design and Web Application Development Company in Noida,
+            India
+          </p>
+        </div>
 
-          <div className="col-12 col-sm-4 text-start text-sm-end">
-            <p className="fs-6 fw-normal text-secondary">
-              2021-22 &copy; AppQue
-            </p>
-          </div>
+        <div className="col-12 col-sm-4 text-start text-sm-end">
+          <p className="fs-6 fw-normal text-secondary">
+            2021-22 &copy; AppQue
+          </p>
         </div>
       </div>
     </div>
+
+
+
+
   );
 }

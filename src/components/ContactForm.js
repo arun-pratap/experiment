@@ -10,14 +10,14 @@ export default function ContactForm() {
           {/* Contact Form */}
           <div className="row justify-content-center align-items-start  g-5 pt-2 pb-5 ">
             <div className=" col-6 col-xl-5 d-none d-lg-block">
-              <h2 className="display-4 mb-5 fw-bold text-center">
+              <h2 className="display-5 mb-4 text-center underline fw--700">
                 We Can Help You.
               </h2>
               <img src={contactImage} className="img-fluid" alt="contact" />
             </div>
             <div className="col-12 col-lg-6 col-xl-5">
               <div className="row g-2">
-                <h2 className="display-4 fw-bold text-center d-lg-none mb-4">
+                <h2 className="display-5 mb-4 text-center underline d-lg-none fw--700">
                   We Can Help You.
                 </h2>
                 <div className="col-12">
@@ -99,7 +99,8 @@ export default function ContactForm() {
 
                 <div className="col-12 text-end">
                   <button
-                    className="btn btn-lg fs-5 text-white bg--primary font--weight-500"
+                    className="btn btn-primary text-white mt-2 px-4 fs-6 fw--700 text-uppercase"
+                    style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
                     type="submit"
                   >
                     Submit
@@ -115,7 +116,7 @@ export default function ContactForm() {
           {/* Contact Call */}
           <div className="row justify-content-center pt-5 pb-5">
             <div className="col-12 text-center">
-              <h2 className="fw-bold display-5 heading--dark">
+              <h2 className="fw-bold display-6">
                 Would You Prefer To Talk To Someone ?
               </h2>
             </div>
@@ -123,17 +124,17 @@ export default function ContactForm() {
               <Zoom>
                 <a
                   href="tel:7838200710"
-                  className=" btn btn-lg py-3 bg--primary text-light"
+                  className=" btn btn-lg py-3 px-4 bg--primary text-light"
                 >
                   <div className="d-flex align-items-center">
                     <span>
-                      <i className="bi bi-telephone-fill display-5 pe-3"></i>
+                      <i className="bi bi-telephone-fill display-6 pe-3"></i>
                     </span>
                     <div className="text-center">
                       <span className="fs-6 d-block fw-bold">
                         SPEAK WITH US:
                       </span>
-                      <span className="fs-3 fw-bold d-block">783-820-0710</span>
+                      <span className="fs-6 fw-bold d-block">783-820-0710</span>
                     </div>
                   </div>
                 </a>

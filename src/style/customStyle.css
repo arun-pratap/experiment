@@ -1,0 +1,135 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700|Open+Sans:300,400,600,700");
+
+
+:root {
+    --color-primary: hsl(220, 87%, 56%);
+    /* #f37900 #f5a300 👇*/
+    --color-secondary: #ffd91a;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-dark: #15151e;
+    --color-light: #fafafa;
+
+    --color-primary-50: #e9ebfe;
+    --color-primary-100: #c6ccfd;
+    --color-primary-200: #9eabfb;
+    /* undraw kit color 👇  */
+    --color-primary-300: #718afb;
+    --color-primary-400: #496ef9;
+    /* main color 👇 */
+    --color-primary-500: #0052f5;
+    --color-primary-600: #0049e9;
+    --color-primary-700: #003edc;
+    --color-primary-800: #0032d2;
+    --color-primary-900: #0018c1;
+}
+
+
+/* overridden CSS */
+
+/* overridden CSS end */
+::selection {
+    background-color: hsl(220deg 87% 66%);
+    color: #ffffff;
+}
+
+.fw--600 {
+    font-weight: 600 !important;
+
+}
+
+.fw--700 {
+    font-weight: 700;
+    letter-spacing: 0.03125rem;
+}
+
+.bg--secondary {
+    background: #eef0f6 !important;
+}
+
+.bg--light-gradient {
+    /* 99% light */
+    background: linear-gradient(135deg, rgb(250 251 255) 33%, rgb(255 254 250) 66%);
+    /* background: rgb(255, 254, 250); */
+}
+
+.bg--light {
+    background: #f5f6fa;
+}
+
+.cardbg--light {
+    background-color: #ffffff09;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cardbg--light:hover {
+    background-color: #ffffff09 !important;
+    transform: translateY(-10px);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.iconbg--gradient-light {
+    background: var(--color-primary);
+    background: linear-gradient(100deg, var(--color-primary-200), var(--color-primary-700));
+}
+
+.step--1:after {
+    position: absolute;
+    display: block;
+    content: "1";
+    top: 15px;
+    right: 25px;
+    color: var(--grey-300);
+    font-size: 5.65rem;
+}
+
+.step--2:after {
+    position: absolute;
+    display: block;
+    content: "2";
+    top: 15px;
+    right: 25px;
+    color: var(--grey-300);
+    font-size: 5.65rem;
+}
+
+.step--3:after {
+    position: absolute;
+    display: block;
+    content: "3";
+    top: 15px;
+    right: 25px;
+    color: var(--grey-300);
+    font-size: 5.65rem;
+}
+
+.step--4:after {
+    position: absolute;
+    display: block;
+    content: "4";
+    top: 15px;
+    right: 25px;
+    color: var(--grey-300);
+    font-size: 5.65rem;
+}
+
+.step--5:after {
+    position: absolute;
+    display: block;
+    content: "5";
+    top: 15px;
+    right: 25px;
+    color: var(--grey-300);
+    font-size: 5.65rem;
+}
+
+/*
+.section--heading 
+display-5 mb-4 pb-5 text-center underline fw--700 
+*/
+
+.footerbg--dark {
+    background-color: #16181d;
+    color: #dddddd;
+}
