@@ -193,7 +193,7 @@ export default function PWADevelopment() {
                           <h4 className="display-5 fw-bold mt-3 text-dark">{help.heading}</h4>
                         </Fade>
                         <Fade bottom>
-                          <p className="fs-5 mt-3 text--dark">{help.para}</p>
+                          <p className="fs-5 mt-3">{help.para}</p>
                         </Fade>
                       </div>
                       <div className="col-12 col-lg-5 col-xl-5 text-center position-relative">
