@@ -102,7 +102,7 @@ const DesktopMenu = () => {
         <li key={nav.text} className="px-4" onMouseLeave={hide}>
           <a
             href={`/${nav.slug}`}
-            className="fs-6 text-uppercase py-1 fw-bold"
+            className="fs-6 text-uppercase py-1 fw--700"
             onMouseEnter={show}
           >
             {nav.text}
@@ -119,10 +119,10 @@ const DesktopMenu = () => {
                   : "position-absolute text-dark hide"
               }
             >
-              <ul className="my-4 px-4 border border-1 rounded bg-light bg-gradient">
+              <ul className="my-4 p-4 border border-1 rounded bg-light bg-gradient">
                 {nav.subNav.map((subNav) => (
-                  <li key={subNav.text} className="py-1">
-                    <a href={`/${subNav.slug}`} className="fs-6">
+                  <li key={subNav.text} className="py-2">
+                    <a href={`/${subNav.slug}`} className="fs-6 fw--600">
                       {subNav.text}
                     </a>
                   </li>
@@ -160,17 +160,17 @@ const MobileMenu = () => {
           {nav.isSubNav ? (
             <>
               <div className="d-flex justify-content-between align-items-center pt-3">
-                <a href={`/${nav.slug}`} className="fs-6 text-uppercase fw-bold">
+                <a href={`/${nav.slug}`} className="fs-6 text-uppercase fw--700">
                   {nav.text}
                 </a>
-                <button className="btn fw-bold">
+                <button className="btn fw--700">
                   <i className="bi bi-plus-lg"></i>
                 </button>
               </div>
               <ul className="px-4">
                 {nav.subNav.map((subNav) => (
-                  <li key={subNav.text} className="py-1">
-                    <a href={`/${subNav.slug}`} className="fs-6">
+                  <li key={subNav.text} className="py-2">
+                    <a href={`/${subNav.slug}`} className="fs-6 fw--600">
                       {subNav.text}
                     </a>
                   </li>
@@ -179,7 +179,7 @@ const MobileMenu = () => {
             </>
           ) : (
             <div className="d-flex justify-content-between align-items-center pt-3">
-              <a href={`/${nav.slug}`} className="fs-6 text-uppercase fw-bold">
+              <a href={`/${nav.slug}`} className="fs-6 text-uppercase fw--700">
                 {nav.text}
               </a>
             </div>
@@ -190,7 +190,7 @@ const MobileMenu = () => {
         <div className="d-block text-start">
           <a
             href="//forms.gle/pZtE6q4QVr6XneuD6"
-            className="btn fw-bold text-uppercase text-light btn-primary py-2 fs-6"
+            className="btn btn-primary text-uppercase text-light py-2 fs-6 fw--700"
             data-bs-toogle="modal"
             data-bs-target="contact-form"
           >

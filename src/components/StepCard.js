@@ -24,5 +24,5 @@ export default function Card({ title, para, img, imgAlt, step }) {
                 <p className="fs-5 text--dark">{para}</p>
             </div>
         </div>
-    )
+    );
 }

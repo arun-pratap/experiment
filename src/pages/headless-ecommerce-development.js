@@ -26,6 +26,8 @@ import optimimizePerformance from "../svgs/performance.svg";
 import Layout from "./../components/Layout";
 
 import CallToAction from "./../components/CallToAction";
+import StepCard from "../components/StepCard";
+import SimpleCard from "../components/SimpleCard"
 /* @TODO
   1. Cover Page with contact Form or just cta
   <show branded testimonial if any>
@@ -140,7 +142,7 @@ export default function HeadlessEcommerceDevelopment() {
   return (
     <Layout>
       {/* Cover Page */}
-      <div className="container-fluid py-5 softbg--gradient-dark text-white">
+      <div className="container-fluid py-5 bg--secondary-dark text-white">
         <div className="container py-5">
           <div className="row justify-content-between align-items-center g-5">
             <div className="col-12 col-xl-7">
@@ -148,15 +150,15 @@ export default function HeadlessEcommerceDevelopment() {
                 Ecommerce Website Development
               </span>
               <Fade bottom>
-                <h1 className="display-3 fw-bold mt-3 heading--light">
+                <h1 className="display-1 mt-3 fw--700 text-light">
                   Headless Ecommerce Development Services&nbsp;
-                  <span className="text--gradient-blue">
+                  <span className="text--primary-gradient">
                     To Expand Userbase
                   </span>
                 </h1>
               </Fade>
               <Fade bottom>
-                <p className="fs-4 mt-3 text--light">
+                <p className="fs-5 mt-3 text-light">
                   Helping businesses to build secure, fast and flexible
                   e-commerce store to drive more traffic and revenue
                 </p>
@@ -173,34 +175,34 @@ export default function HeadlessEcommerceDevelopment() {
       </div>
 
       {/* How appQue can help you */}
-      <div className="container-fluid py-5 softbg--gradient-light">
+      <div className="container-fluid py-5 bg--secondary">
         <div className="container py-5">
+
           <div className="row g-5 justify-content-center">
-            <h2 className="display-4 px-5 pb-5 mb-4 text-center fw-bold underline">
+            <h2 className="display-2 mb-4 pb-5 text-center underline fw--700">
               We Can Help You
             </h2>
           </div>
+
           {canHelp.map((help, index) => (
             <div
               key={index}
               className="row justify-content-between align-items-center g-5 mb-5 pb-5"
             >
-              <div
-                className={`col-12 col-lg-7 col-xl-5 order-lg-${help.order}`}
-              >
+              <div className={`col-12 col-lg-7 col-xl-6 order-lg-${help.order}`}>
                 <span className="text--primary fw-bold">
                   <small>Headless Ecommerce Development</small>
                 </span>
                 <Fade bottom>
-                  <h2 className="display-5 fw-bold mt-3 heading--dark">{help.heading}</h2>
+                  <h4 className="display-5 fw-bold mt-3 text-dark">{help.heading}</h4>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-4 mt-3 text--dark">{help.para}</p>
+                  <p className="fs-5 mt-3 text--dark">{help.para}</p>
                 </Fade>
               </div>
-              <div className="col-12 col-lg-5 col-xl-6 text-center position-relative">
+              <div className="col-12 col-lg-5 col-xl-5 text-center position-relative">
                 <Zoom>
-                  <img src={help.imagePicture} className="img-fluid" />
+                  <img src={help.imagePicture} className="img-fluid p-4" />
                 </Zoom>
               </div>
             </div>
@@ -212,7 +214,7 @@ export default function HeadlessEcommerceDevelopment() {
       <div className="container-fluid py-5 text-white softbg--gradient-dark">
         <div className="container py-5">
           <div className="row">
-            <h2 className="display-4 mb-4 pb-5 text-center underline font--weight-500">
+            <h2 className="display-2 mb-4 pb-5 text-center underline fw--700">
               Our Offerings
             </h2>
           </div>
@@ -220,29 +222,10 @@ export default function HeadlessEcommerceDevelopment() {
             {offers.map((offer) => (
               <Fade key={offer.heading} bottom>
                 <div className="col-12 col-md-6 col-xl-4">
-                  <div className="card p-4 h-100 border-0 shadow services--card">
-                    <div
-                      style={{ width: "65px", height: "65px" }}
-                      className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
-                    >
-                      <img
-                        src={offer.iconImage}
-                        alt={offer.iconAlt}
-                        width="28px"
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="card-body">
-                      <h5
-                        className="display-6 mt-1 mb-3 fw-bold heading--light"
-                      >
-                        {offer.heading}
-                      </h5>
-                      <p className="fs-4 text--light" style={{ color: "var(--grey-500)" }}>
-                        {offer.para}
-                      </p>
-                    </div>
-                  </div>
+                  <SimpleCard title={offer.heading}
+                    para={offer.para}
+                    img={offer.iconImage}
+                    imgAlt={offer.iconAlt} />
                 </div>
               </Fade>
             ))}
@@ -262,7 +245,7 @@ export default function HeadlessEcommerceDevelopment() {
       <div className="container-fluid py-5 softbg--gradient-light">
         <div className="container py-5">
           <div className="row">
-            <h2 className="display-4 mb-4 pb-5 text-center fw-bold underline">
+            <h2 className="display-2 mb-4 pb-5 text-center underline fw--700">
               How We Do It
             </h2>
           </div>
@@ -270,27 +253,13 @@ export default function HeadlessEcommerceDevelopment() {
             {howWeDo.map((step, index) => (
               <Fade key={step.heading} bottom>
                 <div className="col-12 col-md-6 col-xl-4">
-                  <div className="card p-4 pb-3 h-100 border-0 shadow services--card">
-                    <div
-                      style={{ width: "65px", height: "65px" }}
-                      className="d-flex ms-3 mt-3 p-3 rounded-circle justify-content-center bg--gradient-blue"
-                    >
-                      <img
-                        src={step.iconImage}
-                        alt={step.iconAlt}
-                        width="28px"
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="card-body">
-                      <h5
-                        className={`display-6 mt-1 mb-3 fw-bold heading--dark step--${index + 1}`}
-                      >
-                        {step.heading}
-                      </h5>
-                      <p className="fs-4 text--dark">{step.para}</p>
-                    </div>
-                  </div>
+                  <StepCard title={step.heading}
+                    para={step.para}
+                    img={step.iconImage}
+                    alt={step.iconAlt}
+                    step={index}
+                  />
+
                 </div>
               </Fade>
             ))}
@@ -301,92 +270,7 @@ export default function HeadlessEcommerceDevelopment() {
       {/* our tech optional */}
 
       {/* Why choose Appque */}
-      <div className="container-fluid pt-5 hide">
-        <div className="container pt-5">
-          <div className="row g-5">
-            <h2 className="display-4 mb-5 pb-5 px-5 text-center fw-bold underline">
-              AppQue Advantages
-            </h2>
-          </div>
 
-          <div className="row g-5">
-            <div className="col-12 col-xl-6 ">
-              <span className="text--primary fw-bold">
-                <small>Ecommerce Website Development</small>
-              </span>
-              <Fade bottom>
-                <h2 className="display-6 fw-bold mt-3">
-                  eCommerce development from scratch
-                </h2>
-              </Fade>
-              <Fade bottom>
-                <p className="fs-5 mt-3">
-                  Right from suggesting you the right platform and technology
-                  stacks to providing highly qualified eCommerce developers,
-                  Simform helps you build a robust online store that is
-                  flexible, scalable, and easy to manage.
-                </p>
-              </Fade>
-            </div>
-
-            <div className="col-12 col-xl-6 ">
-              <Fade bottom>
-                <ul>
-                  <li className="d-flex align-items-start mb-3">
-                    <span className="text--primary fs-4">
-                      <i className="bi bi-check2-circle"></i>
-                    </span>
-                    <span className="fs-5 font--weight-500 ">
-                      &nbsp; Always growing and committed to quality Always
-                      growing and committed to quality
-                    </span>
-                  </li>
-                  <li className="d-flex align-items-start mb-3">
-                    <span className="text--primary fs-4">
-                      <i className="bi bi-check2-circle"></i>
-                    </span>
-                    <span className="fs-5 font--weight-500 ">
-                      &nbsp; Always growing and committed to quality
-                    </span>
-                  </li>
-                  <li className="d-flex align-items-start mb-3">
-                    <span className="text--primary fs-4">
-                      <i className="bi bi-check2-circle"></i>
-                    </span>
-                    <span className="fs-5 font--weight-500 ">
-                      &nbsp; Always growing and committed to quality
-                    </span>
-                  </li>
-                  <li className="d-flex align-items-start mb-3">
-                    <span className="text--primary fs-4">
-                      <i className="bi bi-check2-circle"></i>
-                    </span>
-                    <span className="fs-5 font--weight-500 ">
-                      &nbsp; Always growing and committed to quality
-                    </span>
-                  </li>
-                  <li className="d-flex align-items-start mb-3">
-                    <span className="text--primary fs-4">
-                      <i className="bi bi-check2-circle"></i>
-                    </span>
-                    <span className="fs-5 font--weight-500 ">
-                      &nbsp; Always growing and committed to quality
-                    </span>
-                  </li>
-                  <li className="d-flex align-items-start mb-3">
-                    <span className="text--primary fs-4">
-                      <i className="bi bi-check2-circle"></i>
-                    </span>
-                    <span className="fs-5 font--weight-500 ">
-                      &nbsp; Always growing and committed to quality
-                    </span>
-                  </li>
-                </ul>
-              </Fade>
-            </div>
-          </div>
-        </div>
-      </div>
       <ContactForm />
     </Layout>
   );
