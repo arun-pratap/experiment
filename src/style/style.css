@@ -144,6 +144,7 @@ hr {
 .softbg--gradient-dark {
     background: linear-gradient(135deg, #041639 33%, #041239 66%);
     background: #f5f6fa !important;
+    background: #fffcf3 !important;
 }
 
 /* for section background end */

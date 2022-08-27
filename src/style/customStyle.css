@@ -96,12 +96,12 @@
 }
 
 .cardbg--light {
-    background-color: #ffffff09;
     transition: transform 0.3s, background-color 0.3s;
 }
 
 .cardbg--light:hover {
-    background-color: #ffffff09 !important;
+    /* background-color: #ffffff05 !important; */
+    opacity: 0.9;
     transform: translateY(-10px);
     transition: transform 0.3s, background-color 0.3s;
 }
