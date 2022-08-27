@@ -4,7 +4,7 @@ import Zoom from "react-reveal/Zoom";
 
 export default function ContactForm() {
   return (
-    <div className="container-fluid py-5 softbg--gradient-dark">
+    <div className="container-fluid py-5 bg-white">
       <Zoom>
         <div className="container pt-5 my-5 rounded shadow-lg softbg--gradient-light">
           {/* Contact Form */}

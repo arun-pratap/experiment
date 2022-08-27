@@ -181,7 +181,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="container-fluid py-5 softbg--gradient-dark">
+        <div className="container-fluid py-5 bg-white">
           <div className="container py-5">
             <div className="row g-5 justify-content-between align-items-center">
               <div className="col-12 col-md-7 col-lg-6 col-xl-7">
@@ -263,7 +263,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="container-fluid py-5 text-white softbg--gradient-dark">
+        <div className="container-fluid py-5 bg-white">
           <div className="container py-5">
             <div className="row">
               <h2 className="display-2 mb-4 pb-5 text-center underline fw--700">
@@ -286,7 +286,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="container-fluid py-5 softbg--gradient-light">
+        <div className="container-fluid py-5 bg--light-gradient">
           <div className="container py-5">
             <div className="row">
               <h2 className="display-2 mb-4 pb-5 text-center underline fw--700">
