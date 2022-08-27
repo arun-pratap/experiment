@@ -21,7 +21,7 @@ export default function Card({ title, para, img, imgAlt, link }) {
                 <p className="fs-5 text--dark">{para}</p>
                 <a
                     href={`/${link}`}
-                    className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw--600 text-uppercase"
+                    className="d-inline-flex align-items-center btn btn-outline-primary mt-2 px-4 fs-6 fw--700 text-uppercase"
                     style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
                 >
                     Learn More &nbsp;

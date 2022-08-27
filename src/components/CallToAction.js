@@ -5,7 +5,7 @@ export default function CallToAction({ btnText, others }) {
     <a
       {...others}
       href="//forms.gle/pZtE6q4QVr6XneuD6"
-      className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw--600 text-uppercase"
+      className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw--700 text-uppercase"
       style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
     >
       {btnText}

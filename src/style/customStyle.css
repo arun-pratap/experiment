@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700|Open+Sans:300,400,600,700");
 
 
 :root {
@@ -27,8 +26,33 @@
 
 
 /* overridden CSS */
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: .2s ease-in;
+}
+
+.btn-primary:hover {
+    background: hsl(220, 87%, 46%);
+    border-color: hsl(220, 87%, 46%);
+    transition: .2s ease-in;
+}
+
+.btn-outline-primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary) !important;
+    transition: .2s ease-in;
+}
+
+.btn-outline-primary:hover {
+    background: hsl(220, 87%, 46%);
+    border-color: hsl(220, 87%, 46%);
+    color: #ffffff !important;
+    transition: .2s ease-in;
+}
 
 /* overridden CSS end */
+
 ::selection {
     background-color: hsl(220deg 87% 66%);
     color: #ffffff;
@@ -43,6 +67,7 @@
     font-weight: 700;
     letter-spacing: 0.03125rem;
 }
+
 .text--primary-gradient {
     color: var(--color-primary);
     background: linear-gradient(100deg, #ffffff, var(--color-primary));
@@ -67,6 +92,7 @@
 
 .bg--light {
     background: #f5f6fa;
+    background: #fef7e0 !important;
 }
 
 .cardbg--light {
@@ -135,11 +161,6 @@
     font-size: 5.65rem;
 }
 
-.fullWidth--col {
-    padding: 9rem !important;
-    padding-left: 7% !important;
-    padding-right: 7% !important;
-}
 /*
 .section--heading 
 display-5 mb-4 pb-5 text-center underline fw--700 
@@ -148,4 +169,12 @@ display-5 mb-4 pb-5 text-center underline fw--700
 .footerbg--dark {
     background-color: #16181d;
     color: #dddddd;
+}
+
+/* optional */
+.btn {
+    /* border-radius: 30px; */
+    padding: 15px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
 }

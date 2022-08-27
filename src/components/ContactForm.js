@@ -99,7 +99,7 @@ export default function ContactForm() {
 
                 <div className="col-12 text-end">
                   <button
-                    className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw--600 text-uppercase"
+                    className="d-inline-flex align-items-center btn btn-primary text-white mt-2 px-4 fs-6 fw--700 text-uppercase"
                     style={{ paddingTop: "0.60rem", paddingBottom: "0.75rem" }}
                     type="submit"
                   >
@@ -124,7 +124,7 @@ export default function ContactForm() {
               <Zoom>
                 <a
                   href="tel:7838200710"
-                  className=" btn btn-lg py-3 px-3 bg--primary text-light"
+                  className=" btn btn-lg py-3 px-3 btn-primary text-light"
                 >
                   <div className="d-flex align-items-center">
                     <span>

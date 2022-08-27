@@ -213,7 +213,7 @@ const MobileMenu = () => {
 
 const Contact = () => {
   return (
-    <div className="d-block text-end">
+    <div className="d-block text-start">
       <a href="//forms.gle/pZtE6q4QVr6XneuD6" className="btn fs-6 text-light py-2 text-uppercase fw-bold btn-primary">
         Get Free Quote
       </a>
@@ -242,7 +242,7 @@ export default function Header() {
             <div className="col align-self-center">
               <Logo />
             </div>
-            <div className="col-md-8 align-self-center d-none d-lg-block">
+            <div className="col-md-7 align-self-center d-none d-lg-block">
               <DesktopMenu />
             </div>
             <div className="col align-self-center d-none d-lg-block">
