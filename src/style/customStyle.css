@@ -53,6 +53,8 @@
 
 /* overridden CSS end */
 
+/* Typography */
+
 ::selection {
     background-color: hsl(220deg 87% 66%);
     color: #ffffff;
@@ -75,6 +77,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+h1,h2,h3,h4,h5,h6 {
+    color: #3d3d3d;
+}
+p{
+    color: #3d3d3d;
+}
+
+/* Typography end */
 
 .bg--secondary {
     background: #eef0f6 !important;
@@ -85,14 +95,12 @@
 }
 
 .bg--light-gradient {
-    /* 99% light */
-    background: linear-gradient(135deg, rgb(250 251 255) 33%, rgb(255 254 250) 66%);
-    /* background: rgb(255, 254, 250); */
+    background: hsl(0deg 100% 99%);
+    background: linear-gradient(135deg, hsl(334deg 100% 98%) 33%, hsl(0deg 100% 99%) 66%);
 }
 
 .bg--light {
     background: #f5f6fa;
-    background: #fef7e0 !important;
 }
 
 .cardbg--light {

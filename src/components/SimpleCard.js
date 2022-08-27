@@ -11,7 +11,7 @@ export default function Card({ title, para, img, imgAlt }) {
       </div>
       <div className="card-body">
         <h5 className="fs-1 mt-1 mb-3 fw--700">{title}</h5>
-        <p className="fs-5 text--dark">
+        <p className="fs-5">
           {para}
         </p>
       </div>

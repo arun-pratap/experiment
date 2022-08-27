@@ -18,7 +18,7 @@ export default function Card({ title, para, img, imgAlt, link }) {
                 <h5 className="fs-1 mt-1 mb-2 fw--700">
                     {title}
                 </h5>
-                <p className="fs-5 text--dark">{para}</p>
+                <p className="fs-5">{para}</p>
                 <a
                     href={`/${link}`}
                     className="d-inline-flex align-items-center btn btn-outline-primary mt-2 px-4 fs-6 fw--700 text-uppercase"

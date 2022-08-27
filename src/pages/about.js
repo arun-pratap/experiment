@@ -49,7 +49,7 @@ export default function About() {
                 </h4>
               </Fade>
               <Fade bottom>
-                <p className="fs-5 mt-3 text--dark">
+                <p className="fs-5 mt-3">
                   Helping businesses &amp; individuals to grow their online
                   presence and bring their targeted audience closer. We deliver
                   business solutions and experiences with the help of modern
@@ -152,7 +152,7 @@ export default function About() {
                   <h6 className="fs-2 fw-bold text-dark">
                     Join Our Team
                   </h6>
-                  <p className="fs-5 text--dark">
+                  <p className="fs-5">
                     Curious about how appQue team impact the growth of
                     businesses. Let's find out if we are the right match for
                     you.

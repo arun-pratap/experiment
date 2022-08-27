@@ -165,7 +165,7 @@ const IndexPage = () => {
                   </h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-5 mt-3 text--dark">
+                  <p className="fs-5 mt-3">
                     Accelerate your business growth with the power of fastest
                     and modern technology.
                   </p>
@@ -190,7 +190,7 @@ const IndexPage = () => {
                   credibility and engage visitors.
                 </h2>
                 <Fade bottom>
-                  <p className="fs-5 mb-4 text--dark">
+                  <p className="fs-5 mb-4">
                     Combining our team's experience in web development services
                     and modern cutting-edge technology keeps you one step ahead
                     of your competition. Our web development services help you
@@ -199,7 +199,7 @@ const IndexPage = () => {
                   </p>
                 </Fade>
                 <Fade bottom>
-                  <p className="fs-5 text--dark">
+                  <p className="fs-5">
                     We have the experience and demonstrated&nbsp;
                     results to show you how we can help with
                     your web development project. Contact us today to schedule a
@@ -242,7 +242,7 @@ const IndexPage = () => {
                   Ready to grow with us? Get your free proposal today
                 </h2>
                 <Fade bottom>
-                  <p className="fs-5 mb-4 text--dark">
+                  <p className="fs-5 mb-4">
                     Our team closely analyzes the successful strategies of your
                     competitors. We combine this knowledge with our expertise
                     and create a success plan for your business that unlocks

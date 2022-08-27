@@ -21,7 +21,7 @@ export default function Card({ title, para, img, imgAlt, step }) {
                 >
                     {title}
                 </h5>
-                <p className="fs-5 text--dark">{para}</p>
+                <p className="fs-5">{para}</p>
             </div>
         </div>
     );

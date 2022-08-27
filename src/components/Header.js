@@ -14,7 +14,7 @@ const navLink = [
   },
   {
     text: "Services",
-    slug: "",
+    slug: "#",
     isSubNav: true,
     subNav: [
       {
