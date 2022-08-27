@@ -65,7 +65,7 @@
 
 .fw--700 {
     font-weight: 700;
-    letter-spacing: 0.03125rem;
+    /* letter-spacing: 0.03125rem; */
 }
 
 .text--primary-gradient {
