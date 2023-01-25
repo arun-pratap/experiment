@@ -230,7 +230,7 @@ export default function Header() {
   return (
     <>
      <Helmet>
-       <meta name="monetag" content="7da3c371e2f070fc745802abe45c638f">
+       <meta name="monetag" content="7da3c371e2f070fc745802abe45c638f" />
       </Helmet>
       <div
         className="container-fluid d-flex align-items-center position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
