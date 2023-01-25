@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Helmet } from 'react-helmet';
 import { Link, Script } from "gatsby";
 import Slide from "react-reveal/Slide";
@@ -225,7 +225,7 @@ const Contact = () => {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  
+  useEffect(()=>{
   if (typeof window === "undefined" || !window.document) {
         return
     } else {
@@ -234,6 +234,7 @@ export default function Header() {
                 p.appendChild(s);
         })(document.createElement('script'), 'https://inklinkor.com/tag.min.js', 5674415, document.body || document.documentElement)
     }
+    },[])
     
     
   const handleMenu = () => {
