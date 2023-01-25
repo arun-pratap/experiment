@@ -224,14 +224,18 @@ const Contact = () => {
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+   (function (s, u, z, p) 
+        { 
+            s.src = u, s.setAttribute('data-zone', z),
+            p.appendChild(s);
+        })(document.createElement('script'), 'https://inklinkor.com/tag.min.js', 5674415, document.body || document.documentElement)
+  
   const handleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
   return (
     <>
-    <Script>
-    (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5674415,document.body||document.documentElement)
-    </Script>
      <Helmet>
        <meta name="monetag" content="7da3c371e2f070fc745802abe45c638f" />
       </Helmet>
