@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Helmet } from 'react-helmet';
-import { Link } from "gatsby";
+import { Link, Script } from "gatsby";
 import Slide from "react-reveal/Slide";
 import phone from "../svgs/phone.svg";
 import Fade from "react-reveal/Fade";
@@ -229,6 +229,9 @@ export default function Header() {
   };
   return (
     <>
+    <Script>
+    (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5674415,document.body||document.documentElement)
+    </Script>
      <Helmet>
        <meta name="monetag" content="7da3c371e2f070fc745802abe45c638f" />
       </Helmet>
