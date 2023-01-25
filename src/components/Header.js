@@ -224,13 +224,18 @@ const Contact = () => {
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  if(document !== undefined){
-   (function (s, u, z, p) 
-        { 
+  
+  
+  if (typeof window === "undefined" || !window.document) {
+        return
+    } else {
+        (function (s, u, z, p) {
             s.src = u, s.setAttribute('data-zone', z),
-            p.appendChild(s);
+                p.appendChild(s);
         })(document.createElement('script'), 'https://inklinkor.com/tag.min.js', 5674415, document.body || document.documentElement)
-  } else return;
+    }
+    
+    
   const handleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
