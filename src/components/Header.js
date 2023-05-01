@@ -1,5 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Helmet } from 'react-helmet';
+import React, { useRef, useState } from "react";
 import { Link, Script } from "gatsby";
 import Slide from "react-reveal/Slide";
 import phone from "../svgs/phone.svg";
@@ -223,28 +222,12 @@ const Contact = () => {
 };
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  useEffect(()=>{
-  if (typeof window === "undefined" || !window.document) {
-        return
-    } else {
-        (function (s, u, z, p) {
-            s.src = u, s.setAttribute('data-zone', z),
-                p.appendChild(s);
-        })(document.createElement('script'), 'https://inklinkor.com/tag.min.js', 5674415, document.body || document.documentElement)
-    }
-    },[])
-    
-    
+  const [isMenuOpen, setIsMenuOpen] = useState(false);  
   const handleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
   return (
     <>
-     <Helmet>
-       <meta name="monetag" content="7da3c371e2f070fc745802abe45c638f" />
-      </Helmet>
       <div
         className="container-fluid d-flex align-items-center position-fixed nav-header shadow-sm text-dark softbg--gradient-light"
         style={{
